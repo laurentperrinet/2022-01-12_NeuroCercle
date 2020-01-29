@@ -226,107 +226,10 @@ Pour résumer, les illusions visuelles, en plus de leur côté ludique, nous ré
     # TODO : add vasarely / etienne
 s.close_section()
 
+
 i_section += 1
 ###########################################
 # 🏄🏄🏄🏄🏄🏄🏄🏄 section no 2 🏄🏄🏄🏄🏄🏄🏄🏄
-###########################################
-
-s.open_section()
-title = meta['sections'][i_section]
-s.add_slide_outline(i_section,
-notes="""
-Avant d’essayer de donner une réponse à ces questions, rappelons une contrainte fondamentale à laquelle notre cerveau est confronté : l’environnement et dynamique et notre cerveau est (relativement) lent pour traiter ces informations.
-""")
-
-s.hide_slide(content=s.content_figures(
-   [path2('scheme_thorpe.jpg')], bgcolor="black",
-   height=s.meta['height']*height_ratio),
-notes="""
- En effet les travaux de Simon Thorpe à Toulouse au Cerco ont montré des capacités ultra-rapide de catégorisation d’image chez les primates. Cette vitesse peut atteindre environ 100 ms chez l’humain [@tag:Kirchner06] et 80 ms chez le singe.
- """)
-
-
-s.hide_slide(content=s.content_figures(
-    [path2('tsonga.png')], bgcolor="black",
-    height=s.meta['height']*height_ratio),
-    notes="""
-C’est remarquablement rapide mais relativement long si l'on considère cette fois-ci une tâche simple d’interception d’un objet en mouvement. Considérons par exemple un agent qui suit une balle de tennis lancée à une vitesse de 20 m/s à une distance de 1 m devant son regard.
-  """)
-
-s.add_slide(content=s.content_figures(
-    [path2('figure-tsonga.png')], bgcolor="black",
-    height=s.meta['height']*height_ratio),
-    #image_fname=os.path.join(figpath, 'figure-tsonga.png'), embed=s.meta['embed'],
-        notes="""
- Au moment de passer dans l’axe de vision du joueur de tennis, la balle va être perçue en arrière de la trajectoire à cause du délai sensoriel. Plus précisément la balle est placé à l’instant où l’image est prise à environ 45° d’angle visuel en retard sur la position réelle actuelle de la balle. À noter que la position de la balle est sur l’axe de vision (telle celle figurée par cette position des yeux), mais que pour le système sensoriel, cette position au temps présent doit être anticipée. Notons aussi notons aussi que la position de la balle, dans cette représentation rétinienne, au moment où l’action sera réalisé (après le délai sensorimoteur total) pourra être estimé à partir de la continuité du mouvement de la balle. C’est-à-dire qu’elle sera encore environ à 45° d’angle visuel mais cette fois ci en avant de la trajectoire, dans son futur. Il semble incroyable que ce genre de voyage dans le temps puisse s’opérer dans notre cerveau, mais une simple illusion visuelle permet de mettre ces mécanismes en évidence.
- """)
-
-figname='flash_lag.mp4'
-
-fle_bib = s.content_bib("Khoei, Masson and LP", "2017", 'PLoS CB', url="http://invibe.net/LaurentPerrinet/Publications/KhoeiMassonPerrinet17")
-
-s.add_slide(content="""
- <video controls autoplay loop width=99%/>
-   <source type="video/mp4" src="{}">
- </video>
- """.format(path2(figname)) + fle_bib,
-notes="""
-
-En effet, l’illusion du flash retardé ("Flash Lag Effect" en anglais) permet de mettre en évidence des dynamiques de traitement dans le système visuel. Dans cette illusion, l’observateur doit fixer environ au centre de l’écran. Une cible en mouvement horizontal apparaît et quand elle passe aux environs du centre de l’écran, un bref flash est présenté immédiatement au-dessous du centre de l'image. Perceptivement, on observe chez une vaste majorité d’observateurs que la cible en mouvement est perçue, au moment du flash, *en avant* de la trajectoire. L’hypothèse originale de Romi Nijhawan propose que la cible est perceptivement représentée de telle façon à ce qu’elle occupe sa position au temps présent, donc de manière anticipée. Par contre, le flash est imprévu et sa position ne peut pas être anticipée. C’est ce que nous avons montré dans ce travail de modélisation qui montre une évaluation quantitative des production d’un tel modèle [@tag:KhoeiMassonPerrinet17].
-
-
-""")
-
-#
-# s.add_slide(content=s.content_figures(
-#     [path2('FLE_histogram.png')], title=title, embed=s.meta['embed'],
-#     height=s.meta['height']*height_ratio) + fle_bib,
-#    notes="""
-#
-# Plus généralement, ce travail nous a conduit à émettre l’hypothèse que le cerveau utilise les régularité statistiques du monde pour arriver d’une façon ou d’une autre à compenser les contraintes de délai et par exemple à « prédire le présent ». Une telle hypothèse permet de formaliser un bon nombre d’illusions et en particulier l’illusion de Hering que nous avons défini ci-dessus. En effet, les lignes fuyantes donnent un contexte de perspective et induisent un mouvement écologiquement significatif, comme une marche vers le point de fuite. À ce titre, les courbes horizontales de la figure de Hering sont le plus probablement perpendiculaires à l’axe de vision et à celui de la marche. Au niveau perceptif, elles sont donc placées à des distances différentes de l’œil et sont alors anticipées dans l’espace rétinien de telle sorte à ce que leur position est prédite à l’instant présent, d’où la forme bombée caractéristique de la perception dans cette illusion. Une extension de cette hypothèse est que le cerveau construit par des processus prédictif une image mentale de la scène visuelle. Une telle hypothèse permet de développer un formalisme théorique complet qui peut être validé quantitativement vis à vis de notre compréhension actuelle du cerveau.
-#
-# """)
-
-
-
-bib = s.content_bib("Changizi et al", "2008", 'Cognitive Science', url="https://doi.org/10.1080/03640210802035191")
-for suff in ['']:
-    s.add_slide(content=s.content_figures([path2('Hering_illusion' + suff + '.svg')],
-        title=None, #'Classical visual illusions',
-        height=s.meta['height']*height_ratio) + bib,
-notes="""
-
-
-""")
-#
-# freemove_bib = ''
-# freemove_bib += s.content_bib("Friston , Adams, LP and Breakspear", "2012", 'Frontiers in Psychology', url="https://laurentperrinet.github.io/publication/friston-12/")
-# freemove_bib += s.content_bib("Adams, LP and Friston", "2012", 'PLoS ONE', url="https://laurentperrinet.github.io/publication/adams-12/")
-# freemove_bib += s.content_bib("LP, Adams and Friston", "2015", 'Biological Cybernetics', url="https://laurentperrinet.github.io/publication/perrinet-adams-friston-14/")
-#
-#
-# #for fname in ['figure1.png', 'figure2.png']:
-# # figpath_law = os.path.join(home, 'quantic/2016_science/2016-10-13_LAW/figures')
-# for fname, note in zip(['friston_figure1.png', 'friston_figure2.png'], ["""
-# Cette théorie a été formalisée par le professeur Karl Friston [@tag:Friston12] sous le terme de principe de minimisation de l’énergie libre. À ce jour, c'est le seul paradigme théorique qui soit aussi complet pour expliquer le fonctionnement global du cerveau. Sans rentrer dans les détails mathématiques de ce principe, cette théorie permet de formaliser des modèles génératif pour toute sensation qui est reçu par nos organes et de considérer une représentation interne comme un état dit caché, c’est-à-dire un état ou une représentation  interne que l’on va essayer d’estimer. L'ensemble de ces hypothèses définit un système dont on déduit ensuite une variable globale dite d’énergie libre, qui donne une borne supérieure à la surprise de l’agent connaissant un modèle génératif, des sensations, des états internes et des actions effectuées. L’agent peut alors minimiser cette variable propre pour prédire au mieux son état, comme la position d’une cible. On peut aussi considérer un agent qui puisse agir sur cette environnement et on parle alors d’inférence active. En utilisant cette formalisation, il est alors possible de l’exprimer sous forme d’équations qui reprennent la structure du passage d’information dans le graphe formé par les différentes régions cérébrales. Depuis les aires sensorielles comme la rétine aux aires associatives comme celle qui forment les voies visuelles jusqu’aux airs regroupant les motoneurones qui vont permettre de générer une action motrice et un comportement.
-#
-# ""","""
-#
-# Nous avons contribué avec Rick Adams et Karl Friston à l’application de ce principe pour expliquer des différences entre des patients typiques et des schizophrènes. En se focalisant sur les mouvements des yeux, nous avons démontré que ce paradigme permet d’expliquer les différences dans les mouvements dit de poursuites lente [@tag:Adams12]. Il est alors remarquable d’observer en perturbant dans le modèle les gains synaptiques des voies descendantes, c’est-à-dire celle qui permet d’affiner le modèle interne de représentation du monde, ont répliqué des caractéristiques comportementales des patients schizophrènes. En particulier, ces mouvements sont expliquées dans ce modèle comme une forme de délusion, qui consiste à accorder un poids relatif exagéré aux croyances représenté par le cerveau par rapport à celle apportées par les sens. Cette approche est actuellement étendue par le docteur Richard Adams afin d’apporter à terme des solutions thérapeutiques et une meilleure compréhension de pathologies comme la schizophrénie.
-#
-#
-# """]):
-#     s.add_slide(content=s.content_figures(
-# [os.path.join(figpath_talk, fname)], bgcolor="white",
-# #title=title,
-#  height=s.meta['height']*height_ratio*height_ratio) + freemove_bib,
-# notes=note)
-
-s.close_section()
-
-i_section += 1
-###########################################
-# 🏄🏄🏄🏄🏄🏄🏄🏄 section no 3 🏄🏄🏄🏄🏄🏄🏄🏄
 ###########################################
 
 s.open_section()
@@ -490,6 +393,106 @@ Imaging cortical correlates of illusion in early visual cortex.
 Nature 428, 423-426. (see movies of the illusion and its cortical correlate)
 
 """)
+
+s.close_section()
+
+
+
+i_section += 1
+###########################################
+# 🏄🏄🏄🏄🏄🏄🏄🏄 section no 3 🏄🏄🏄🏄🏄🏄🏄🏄
+###########################################
+
+s.open_section()
+title = meta['sections'][i_section]
+s.add_slide_outline(i_section,
+notes="""
+Avant d’essayer de donner une réponse à ces questions, rappelons une contrainte fondamentale à laquelle notre cerveau est confronté : l’environnement et dynamique et notre cerveau est (relativement) lent pour traiter ces informations.
+""")
+
+s.hide_slide(content=s.content_figures(
+   [path2('scheme_thorpe.jpg')], bgcolor="black",
+   height=s.meta['height']*height_ratio),
+notes="""
+ En effet les travaux de Simon Thorpe à Toulouse au Cerco ont montré des capacités ultra-rapide de catégorisation d’image chez les primates. Cette vitesse peut atteindre environ 100 ms chez l’humain [@tag:Kirchner06] et 80 ms chez le singe.
+ """)
+
+
+s.hide_slide(content=s.content_figures(
+    [path2('tsonga.png')], bgcolor="black",
+    height=s.meta['height']*height_ratio),
+    notes="""
+C’est remarquablement rapide mais relativement long si l'on considère cette fois-ci une tâche simple d’interception d’un objet en mouvement. Considérons par exemple un agent qui suit une balle de tennis lancée à une vitesse de 20 m/s à une distance de 1 m devant son regard.
+  """)
+
+s.add_slide(content=s.content_figures(
+    [path2('figure-tsonga.png')], bgcolor="black",
+    height=s.meta['height']*height_ratio),
+    #image_fname=os.path.join(figpath, 'figure-tsonga.png'), embed=s.meta['embed'],
+        notes="""
+ Au moment de passer dans l’axe de vision du joueur de tennis, la balle va être perçue en arrière de la trajectoire à cause du délai sensoriel. Plus précisément la balle est placé à l’instant où l’image est prise à environ 45° d’angle visuel en retard sur la position réelle actuelle de la balle. À noter que la position de la balle est sur l’axe de vision (telle celle figurée par cette position des yeux), mais que pour le système sensoriel, cette position au temps présent doit être anticipée. Notons aussi notons aussi que la position de la balle, dans cette représentation rétinienne, au moment où l’action sera réalisé (après le délai sensorimoteur total) pourra être estimé à partir de la continuité du mouvement de la balle. C’est-à-dire qu’elle sera encore environ à 45° d’angle visuel mais cette fois ci en avant de la trajectoire, dans son futur. Il semble incroyable que ce genre de voyage dans le temps puisse s’opérer dans notre cerveau, mais une simple illusion visuelle permet de mettre ces mécanismes en évidence.
+ """)
+
+figname='flash_lag.mp4'
+
+fle_bib = s.content_bib("Khoei, Masson and LP", "2017", 'PLoS CB', url="http://invibe.net/LaurentPerrinet/Publications/KhoeiMassonPerrinet17")
+
+s.add_slide(content="""
+ <video controls autoplay loop width=99%/>
+   <source type="video/mp4" src="{}">
+ </video>
+ """.format(path2(figname)) + fle_bib,
+notes="""
+
+En effet, l’illusion du flash retardé ("Flash Lag Effect" en anglais) permet de mettre en évidence des dynamiques de traitement dans le système visuel. Dans cette illusion, l’observateur doit fixer environ au centre de l’écran. Une cible en mouvement horizontal apparaît et quand elle passe aux environs du centre de l’écran, un bref flash est présenté immédiatement au-dessous du centre de l'image. Perceptivement, on observe chez une vaste majorité d’observateurs que la cible en mouvement est perçue, au moment du flash, *en avant* de la trajectoire. L’hypothèse originale de Romi Nijhawan propose que la cible est perceptivement représentée de telle façon à ce qu’elle occupe sa position au temps présent, donc de manière anticipée. Par contre, le flash est imprévu et sa position ne peut pas être anticipée. C’est ce que nous avons montré dans ce travail de modélisation qui montre une évaluation quantitative des production d’un tel modèle [@tag:KhoeiMassonPerrinet17].
+
+
+""")
+
+#
+# s.add_slide(content=s.content_figures(
+#     [path2('FLE_histogram.png')], title=title, embed=s.meta['embed'],
+#     height=s.meta['height']*height_ratio) + fle_bib,
+#    notes="""
+#
+# Plus généralement, ce travail nous a conduit à émettre l’hypothèse que le cerveau utilise les régularité statistiques du monde pour arriver d’une façon ou d’une autre à compenser les contraintes de délai et par exemple à « prédire le présent ». Une telle hypothèse permet de formaliser un bon nombre d’illusions et en particulier l’illusion de Hering que nous avons défini ci-dessus. En effet, les lignes fuyantes donnent un contexte de perspective et induisent un mouvement écologiquement significatif, comme une marche vers le point de fuite. À ce titre, les courbes horizontales de la figure de Hering sont le plus probablement perpendiculaires à l’axe de vision et à celui de la marche. Au niveau perceptif, elles sont donc placées à des distances différentes de l’œil et sont alors anticipées dans l’espace rétinien de telle sorte à ce que leur position est prédite à l’instant présent, d’où la forme bombée caractéristique de la perception dans cette illusion. Une extension de cette hypothèse est que le cerveau construit par des processus prédictif une image mentale de la scène visuelle. Une telle hypothèse permet de développer un formalisme théorique complet qui peut être validé quantitativement vis à vis de notre compréhension actuelle du cerveau.
+#
+# """)
+
+
+
+bib = s.content_bib("Changizi et al", "2008", 'Cognitive Science', url="https://doi.org/10.1080/03640210802035191")
+for suff in ['']:
+    s.add_slide(content=s.content_figures([path2('Hering_illusion' + suff + '.svg')],
+        title=None, #'Classical visual illusions',
+        height=s.meta['height']*height_ratio) + bib,
+notes="""
+
+
+""")
+#
+# freemove_bib = ''
+# freemove_bib += s.content_bib("Friston , Adams, LP and Breakspear", "2012", 'Frontiers in Psychology', url="https://laurentperrinet.github.io/publication/friston-12/")
+# freemove_bib += s.content_bib("Adams, LP and Friston", "2012", 'PLoS ONE', url="https://laurentperrinet.github.io/publication/adams-12/")
+# freemove_bib += s.content_bib("LP, Adams and Friston", "2015", 'Biological Cybernetics', url="https://laurentperrinet.github.io/publication/perrinet-adams-friston-14/")
+#
+#
+# #for fname in ['figure1.png', 'figure2.png']:
+# # figpath_law = os.path.join(home, 'quantic/2016_science/2016-10-13_LAW/figures')
+# for fname, note in zip(['friston_figure1.png', 'friston_figure2.png'], ["""
+# Cette théorie a été formalisée par le professeur Karl Friston [@tag:Friston12] sous le terme de principe de minimisation de l’énergie libre. À ce jour, c'est le seul paradigme théorique qui soit aussi complet pour expliquer le fonctionnement global du cerveau. Sans rentrer dans les détails mathématiques de ce principe, cette théorie permet de formaliser des modèles génératif pour toute sensation qui est reçu par nos organes et de considérer une représentation interne comme un état dit caché, c’est-à-dire un état ou une représentation  interne que l’on va essayer d’estimer. L'ensemble de ces hypothèses définit un système dont on déduit ensuite une variable globale dite d’énergie libre, qui donne une borne supérieure à la surprise de l’agent connaissant un modèle génératif, des sensations, des états internes et des actions effectuées. L’agent peut alors minimiser cette variable propre pour prédire au mieux son état, comme la position d’une cible. On peut aussi considérer un agent qui puisse agir sur cette environnement et on parle alors d’inférence active. En utilisant cette formalisation, il est alors possible de l’exprimer sous forme d’équations qui reprennent la structure du passage d’information dans le graphe formé par les différentes régions cérébrales. Depuis les aires sensorielles comme la rétine aux aires associatives comme celle qui forment les voies visuelles jusqu’aux airs regroupant les motoneurones qui vont permettre de générer une action motrice et un comportement.
+#
+# ""","""
+#
+# Nous avons contribué avec Rick Adams et Karl Friston à l’application de ce principe pour expliquer des différences entre des patients typiques et des schizophrènes. En se focalisant sur les mouvements des yeux, nous avons démontré que ce paradigme permet d’expliquer les différences dans les mouvements dit de poursuites lente [@tag:Adams12]. Il est alors remarquable d’observer en perturbant dans le modèle les gains synaptiques des voies descendantes, c’est-à-dire celle qui permet d’affiner le modèle interne de représentation du monde, ont répliqué des caractéristiques comportementales des patients schizophrènes. En particulier, ces mouvements sont expliquées dans ce modèle comme une forme de délusion, qui consiste à accorder un poids relatif exagéré aux croyances représenté par le cerveau par rapport à celle apportées par les sens. Cette approche est actuellement étendue par le docteur Richard Adams afin d’apporter à terme des solutions thérapeutiques et une meilleure compréhension de pathologies comme la schizophrénie.
+#
+#
+# """]):
+#     s.add_slide(content=s.content_figures(
+# [os.path.join(figpath_talk, fname)], bgcolor="white",
+# #title=title,
+#  height=s.meta['height']*height_ratio*height_ratio) + freemove_bib,
+# notes=note)
 
 s.close_section()
 
