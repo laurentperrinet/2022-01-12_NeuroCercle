@@ -51,9 +51,9 @@ meta = dict(
  short_title='Des illusions aux hallucinations visuelles',
  title='Des illusions aux hallucinations visuelles: <BR> une porte sur la perception',
  conference_url='https://www.jnlf.fr/agenda/jnlf-lille-2019',
- short_conference='JNLF 2019',
- conference='JNLF 2019',
- location='Lille (France)',
+ short_conference='Vedène 2020',
+ conference='Cinéma et sciences : rencontre avec les élèves du lycée des métiers',
+ location='Vedène (France)',
  abstract="""Les illusions visuelles sont des créations d'artistes, de scientifiques et plus récemment, grâce aux réseaux sociaux, du grand public qui proposent des situations souvent incongrues, dans lesquelles l'eau remonte une cascade, les personnes volent dans les airs ou des serpents se mettent à tourner. Au-delà de leur indéniable coté ludique, ces illusions nous apprennent beaucoup sur le fonctionnement du cerveau, notamment quand celles-ci se transforment en hallucinations visuelles, dépassant ainsi les limites des capacités de notre perception. En tant que chercheur en Neurosciences à l'Institut de Neurosciences de la Timone à Marseille, je vous dévoilerai des aspects du fonctionnement du cerveau qui sont souvent méconnus. En particulier, nous verrons pourquoi un magicien peut tromper nos sens ou comment des objets peuvent voyager dans le temps. Surtout nous essaierons de comprendre le fonctionnement de notre perception visuelle sur les bases d'une théorie de la vision non pas comme une simple caméra qui enregistre des images mais comme un processus actif en relation avec le monde qui nous entoure.""",
  summary = """Les objectifs sont :
 – mieux comprendre la fonction de la perception visuelle en explorant certaines limites ;
@@ -88,30 +88,31 @@ if not os.path.isfile(figname_qr):
 print(meta['sections'])
 s = Slides(meta)
 
-figpath_people = os.path.join(home, 'ownCNRS/2019-01_LACONEU/people')
-Karl = s.content_imagelet(os.path.join(figpath_people, 'karl.jpg'), height_px)
-Rick = s.content_imagelet(os.path.join(figpath_people, 'rick.jpg'), height_px)
-Anna = s.content_imagelet(os.path.join(figpath_people, 'anna.jpg'), height_px)
-# LM = s.content_imagelet(os.path.join(figpath_people, 'LM.png'), height_px)
-# JB = s.content_imagelet(os.path.join(figpath_people, 'JB.jpg'), height_px)
-Fredo = s.content_imagelet(os.path.join(figpath_people, 'fredo.png'), height_px)
+# figpath_people = os.path.join(home, 'ownCNRS/2019-01_LACONEU/people')
+# Karl = s.content_imagelet(os.path.join(figpath_people, 'karl.jpg'), height_px)
+# Rick = s.content_imagelet(os.path.join(figpath_people, 'rick.jpg'), height_px)
+# Anna = s.content_imagelet(os.path.join(figpath_people, 'anna.jpg'), height_px)
+# # LM = s.content_imagelet(os.path.join(figpath_people, 'LM.png'), height_px)
+# # JB = s.content_imagelet(os.path.join(figpath_people, 'JB.jpg'), height_px)
+# Fredo = s.content_imagelet(os.path.join(figpath_people, 'fredo.png'), height_px)
 # Python = s.content_imagelet('https://www.python.org/static/community_logos/python-powered-h-140x182.png', height_px)
 # <a href="https://github.com/laurentperrinet/slides.py">{Python}</a>
-s.meta['Acknowledgements'] =f"""
-<small>
-<h5>Acknowledgements:</h5>
-<ul>
-    <li>Rick Adams and Karl Friston @ UCL - Wellcome Trust Centre for Neuroimaging</li>
-    <li>Anna Montagnini  - INT</li>
-    <li>Frédéric Chavane - INT</li>
-</ul>
-<BR>
-{Rick}{Karl}{Anna}{Fredo}
-<BR>
-    This work was supported by ANR project "Horizontal-V1" N° ANR-17-CE37-0006.
-</small>
-
-"""
+s.meta['Acknowledgements'] = ''
+# f"""
+# <small>
+# <h5>Acknowledgements:</h5>
+# <ul>
+#     <li>Rick Adams and Karl Friston @ UCL - Wellcome Trust Centre for Neuroimaging</li>
+#     <li>Anna Montagnini  - INT</li>
+#     <li>Frédéric Chavane - INT</li>
+# </ul>
+# <BR>
+# {Rick}{Karl}{Anna}{Fredo}
+# <BR>
+#     This work was supported by ANR project "Horizontal-V1" N° ANR-17-CE37-0006.
+# </small>
+#
+# """
 ###########################################
 # 🏄🏄🏄🏄🏄🏄🏄🏄 section no 1 🏄🏄🏄🏄🏄🏄🏄🏄
 ###########################################
@@ -297,7 +298,7 @@ notes="""
 
 
 """)
-# 
+#
 # freemove_bib = ''
 # freemove_bib += s.content_bib("Friston , Adams, LP and Breakspear", "2012", 'Frontiers in Psychology', url="https://laurentperrinet.github.io/publication/friston-12/")
 # freemove_bib += s.content_bib("Adams, LP and Friston", "2012", 'PLoS ONE', url="https://laurentperrinet.github.io/publication/adams-12/")
