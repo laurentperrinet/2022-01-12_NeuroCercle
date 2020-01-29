@@ -213,6 +213,7 @@ Two ways in which the photograph of The dress may be perceived:
 
 for url in [
             'https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Multistability.svg/1488px-Multistability.svg.png',
+            path2('Convex-Or-Concave-Optical-Illusion-Picture.jpg'),
             'https://www.askideas.com/media/36/Convex-Or-Concave-Optical-Illusion-Picture.jpg',
             ]:
     s.add_slide(content=s.content_figures([url], #fragment=True,
