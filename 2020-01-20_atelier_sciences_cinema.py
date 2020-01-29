@@ -13,7 +13,6 @@
 #
 # Oskar Fischinger - Wikipedia
 #
-# “Ouchi Illusion” (Ouchi 1977, Spillmann et al 1986) | Optical illusions, Optical illusion photos, Illusions
 #
 # VOYAGE AU PAYS DE LA QUATRIEME DIMENSION | Gaston de Pawloski, Leonard Sarluis | Second edition
 # Flatland - Wikipedia
@@ -361,10 +360,10 @@ for url in ['https://www.askideas.com/media/36/Shake-Your-Head-Optical-Illusion.
     notes="""
     # CERVEAU
     #
-    # >  ouchi illusion - Recherche Google
+    # >  ouchi illusion - # “Ouchi Illusion” (Ouchi 1977, Spillmann et al 1986) | Optical illusions, Optical illusion photos, Illusions
     # >  ou
     #
-    # > trames https://laurentperrinet.github.io/post/2018-04-10_trames/ /  https://laurentperrinet.github.io/post/2018-04-10_trames/featured.png
+    # > trames https://laurentperrinet.github.io/post/2018-04-10_trames/ 
     # > mouvement des yeux
     #
     """)
