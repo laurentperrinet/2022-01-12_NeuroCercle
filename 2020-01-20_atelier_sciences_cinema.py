@@ -1,30 +1,6 @@
 # Atelier venelles
 #
 #
-# CINEMA
-#
-# > tomatrope / "persistence rétinienne"
-# > https://en.wikipedia.org/wiki/Wagon-wheel_effect
-# > flash-lag effect
-#
-# références
-#
-# Flatland - Wikipedia
-#
-# Oskar Fischinger - Wikipedia
-#
-#
-# VOYAGE AU PAYS DE LA QUATRIEME DIMENSION | Gaston de Pawloski, Leonard Sarluis | Second edition
-# Flatland - Wikipedia
-#
-#
-# zootrope
-# Pixilation - Wikipedia
-# praxinotrope
-#
-# cinematiscopes
-#
-#
 
 
 
@@ -256,6 +232,22 @@ for url in [
     """)
 
 
+for url in ['https://upload.wikimedia.org/wikipedia/commons/6/63/Reification.jpg', # ou https://www.askideas.com/media/36/Hidden-Picture-Optical-Illusion.jpg
+            'https://upload.wikimedia.org/wikipedia/commons/2/22/Gestalt_proximity.svg',
+            'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Gestalt_similarity.svg/600px-Gestalt_similarity.svg.png',
+            ]:
+    s.add_slide(content=s.content_figures([url], #fragment=True,
+            title=None, height=s.meta['height']*height_ratio),
+    notes="""
+
+ORGANISATION PERCEPTIVE / GESTALT
+
+> reification 
+> proximité
+> similarité
+
+    """)
+
 bib = s.content_bib("Cydonia Mensae", "1976", 'Viking Orbiter image', url="Viking Orbiter image")
 s.add_slide(content=s.content_figures(
         [path2(fname) for fname in ['Face-on-mars.jpg', 'Viking_moc_face_20m_low.png', 'Viking_moc_face_20m_high.png']], fragment=True,
@@ -266,8 +258,20 @@ Pour aller plus loin, il est intéressant de considérer cette image prise en 19
 Pour résumer, les illusions visuelles, en plus de leur côté ludique, nous révèlent des caractéristiques essentielles de notre perception visuelle tant sur leurs caractéristiques universelles que sur les variabilités inter et intra individuelles. Malgré la diversité des formes des illusions visuelles et la diversité des explications qu’on peut leur faire correspondre, existe-t-il des points communs qui permettraient d’en avoir une compréhension unifiée ? Quelles pourraient être les liens profonds entre illusions visuelles avec des hallucinations aussi bien chez les sujets neuro-typique que dans des pathologies psychologiques?
     """)
 
+for url in ['https://sensiseeds.com/nl/blog/files/2013/03/Mysterious-Dalmatian-Optical-Illusion.jpg',
+            ]:
+    s.add_slide(content=s.content_figures([url], #fragment=True,
+            title=None, height=s.meta['height']*height_ratio),
+    notes="""
 
-    # TODO : add vasarely / etienne
+> dalmatien
+
+> illusion taille https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/M%C3%BCller-Lyer_illusion.svg/1200px-M%C3%BCller-Lyer_illusion.svg.png
+(> Contraste de luminosité ?)
+
+
+    """)
+
 s.close_section()
 
 
@@ -334,22 +338,36 @@ for no in ['2b', '2a', '3', '7']:
 Une hypothèse novatrice proposée par Paul Bressloff et collègues en 2002 [@tag:Bressloff02] est de voir l’origine de certaines illusions ou hallucinations dans l'interaction entre la structure de la représentation rétinienne et des représentations de cette espace visuel dans l’aire visuelle primaire. En effet, la représentation rétinienne de l’espace visuel est organisés de façon radiale depuis le point de fixation (polaire) avec une forte densité de photorécepteurs près de l’axe de vision. La représentation corticale d’une ligne est un segment dans l’espace cortical et inversement un segment dans l’espace cortical va apparaître et être perçu comme une spirale une fois re-projetée dans l’espace visuel codé par l’espace rétinien. En se basant sur une modélisation des connexions latérales entre des populations voisines de neurones de l’aire visuelle primaire, ces auteurs ont alors établi dans un modèle de champ neural qui régit la dynamique de la carte d’activité l’émergence structurée de représentations privilégiées. Comme nous l’avons décrit à l’échelle macroscopique avec notre modèle d’agent schizophrénique [@tag:Adams12], ces auteurs ont alors analysé mathématiquement les états du système quand on perturbe certains paramètres du système, notamment les poids synaptiques régissant les interactions dans la carte corticale.
 Ils ont alors montré un point essentiel : à partir d’un certain seuil de prise de drogue, des « hallucinations » peuvent émerger comme des structures stables dans la carte corticale. Étonnamment, ces états une fois un re-projetés sur l’espace visuel dessinent des spirales et des ensembles de lignes qui sont très proches des hallucinations telles qu’elles ont été rapportées après la prise de drogues diverses allant de la marijuana au peyotl ou à la mescaline. Ce type de modélisation permet d’un côté d’expliquer la formation d’hallucinations, mais aussi de définir une « neuro-géométrie », c’est-à-dire un formalisme mathématique reliant neurosciences et la géométrie des relations existant entre des sous module de l’aire visuelle primaire. On peut aussi imaginer alors des hallucinations plus complexes émerger de réseaux plus complexes qui représentent par exemple des superpositions de visages.
 
-#
-# ORGANISATION PERCEPTIVE / GESTALT
-#
-# > reification : https://upload.wikimedia.org/wikipedia/commons/6/63/Reification.jpg
-# > proximité https://upload.wikimedia.org/wikipedia/commons/2/22/Gestalt_proximity.svg
-# > similarité https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Gestalt_similarity.svg/600px-Gestalt_similarity.svg.png
-#
-# > dalmatien  https://sensiseeds.com/nl/blog/files/2013/03/Mysterious-Dalmatian-Optical-Illusion.jpg
-#
-# > illusion taille https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/M%C3%BCller-Lyer_illusion.svg/1200px-M%C3%BCller-Lyer_illusion.svg.png
-# (> Contraste de luminosité ?)
-#
-#
 
+
+
+# CINEMA
+#
+# > tomatrope / "persistence rétinienne"
+# > https://en.wikipedia.org/wiki/Wagon-wheel_effect
+# > flash-lag effect
+#
+# références
+#
+# Flatland - Wikipedia
+#
+# Oskar Fischinger - Wikipedia
+#
+#
+# VOYAGE AU PAYS DE LA QUATRIEME DIMENSION | Gaston de Pawloski, Leonard Sarluis | Second edition
+# Flatland - Wikipedia
+#
+#
+# zootrope
+# Pixilation - Wikipedia
+# praxinotrope
+#
+# cinematiscopes
+#
+#
 
 """)
+
 
 for url in ['https://www.askideas.com/media/36/Shake-Your-Head-Optical-Illusion.jpg', # ou https://www.askideas.com/media/36/Hidden-Picture-Optical-Illusion.jpg
             'https://laurentperrinet.github.io/post/2018-04-10_trames/featured.png',
@@ -363,7 +381,7 @@ for url in ['https://www.askideas.com/media/36/Shake-Your-Head-Optical-Illusion.
     # >  ouchi illusion - # “Ouchi Illusion” (Ouchi 1977, Spillmann et al 1986) | Optical illusions, Optical illusion photos, Illusions
     # >  ou
     #
-    # > trames https://laurentperrinet.github.io/post/2018-04-10_trames/ 
+    # > trames https://laurentperrinet.github.io/post/2018-04-10_trames/
     # > mouvement des yeux
     #
     """)
