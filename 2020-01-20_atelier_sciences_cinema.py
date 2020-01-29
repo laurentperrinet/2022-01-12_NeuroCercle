@@ -98,8 +98,8 @@ meta = dict(
  time_end = '16:00:00',
  url=f'https://laurentperrinet.github.io/talk/{slugify(tag)}',
  sections=['Illusions visuelles & hallucinations',
-          'Coute que coute, prédire le présent',
           'Une neuro-anatomie fonctionnelle des illusions & hallucinations?',
+          'Coute que coute, prédire le présent',
           ]
 )
 
