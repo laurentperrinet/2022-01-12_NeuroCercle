@@ -46,7 +46,7 @@ meta = dict(
  # https://github.com/hakimel/reveal.js
  theme='simple',
  bgcolor="white",
- author='Perrinet, Laurent U',
+ author='Perrinet, Laurent U', 
  author_link=f'<a href="https://laurentperrinet.github.io/talk/{slugify(tag)}/">Laurent Perrinet</a>',
  short_title='Des illusions aux hallucinations visuelles',
  title='Des illusions aux hallucinations visuelles: <BR> une porte sur la perception',
@@ -599,7 +599,7 @@ Pour résumer, les illusions et hallucinations nous ouvre une porte sur les poss
 """)
 
 s.close_section()
- 
+
 ########################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################
 
 if slides_filename is None:
