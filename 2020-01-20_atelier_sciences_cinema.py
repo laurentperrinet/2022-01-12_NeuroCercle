@@ -242,20 +242,19 @@ Two ways in which the photograph of The dress may be perceived:
 
 """)
 
+for url in [
+            'https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Multistability.svg/1488px-Multistability.svg.png',
+            'https://www.askideas.com/media/36/Convex-Or-Concave-Optical-Illusion-Picture.jpg',
+            ]:
+    s.add_slide(content=s.content_figures([url], #fragment=True,
+            title=None, height=s.meta['height']*height_ratio),
+    notes="""
 
-s.add_slide(content=s.content_figures(
-    [
-    'https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Multistability.svg/1488px-Multistability.svg.png',
-    'https://www.askideas.com/media/36/Convex-Or-Concave-Optical-Illusion-Picture.jpg',
-    ], fragment=True,
-        title=None, height=s.meta['height']*height_ratio),
-notes="""
-#
-# -> necker /  https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Multistability.svg/1488px-Multistability.svg.png  canard / lapin
-#
-# -> concave convexe https://www.askideas.com/media/36/Convex-Or-Concave-Optical-Illusion-Picture.jpg
-#
-""")
+        -> necker /   canard / lapin
+
+        -> concave convexe
+
+    """)
 
 
 bib = s.content_bib("Cydonia Mensae", "1976", 'Viking Orbiter image', url="Viking Orbiter image")
