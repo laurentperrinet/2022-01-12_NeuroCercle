@@ -180,6 +180,10 @@ Nous allons ici montrer comment les limites de la perception permettent et peuve
 
 """)
 
+
+s.add_slide(content=s.content_figures([figname_qr], cell_bgcolor=meta['bgcolor'], height=s.meta['height']*height_ratio) + '<BR><a href="{url}"> {url} </a>'.format(url=meta['url']),
+            notes="All the material is available online - please flash this code this leads to a page with links to further references and code ")
+
 url =  '<a href https://en.wikipedia.org/wiki/Hering_illusion">Hering illusion</a>'
 for suff in ['', '_without']:
     s.add_slide(content=s.content_figures([path2('Hering_illusion' + suff + '.svg')],
@@ -586,16 +590,13 @@ s.close_section()
 
 ############################################################################ 🏄🏄🏄🏄🏄🏄🏄🏄 OUTRO - 5''  🏄🏄🏄🏄🏄🏄🏄🏄
 ######################################################################################################################################################s.open_section()
+s.open_section()
 s.add_slide(content=intro,
             notes="""
 Pour résumer, les illusions et hallucinations nous ouvre une porte sur les possibilités de la perception mais aussi sur une compréhension des mécanismes cérébraux qui les induisent. La modélisation, notamment celle que nous proposons, offre une opportunité nouvelles d’appréhender ces mécanismes. Les outils théoriques permettant de progresser dans cette voie de recherche existent mais ne sont pas pour le moment exploités à leur plein potentiel. Ils seront essentiels pour une meilleure compréhension des illusions visuelles, des hallucinations et de ce qui peut la provoquer, mais aussi du cerveau en général.
 
 * Thanks for your attention!
 """)
-
-
-s.add_slide(content=s.content_figures([figname_qr], cell_bgcolor=meta['bgcolor'], height=s.meta['height']*height_ratio) + '<BR><a href="{url}"> {url} </a>'.format(url=meta['url']),
-            notes="All the material is available online - please flash this code this leads to a page with links to further references and code ")
 
 s.close_section()
 
