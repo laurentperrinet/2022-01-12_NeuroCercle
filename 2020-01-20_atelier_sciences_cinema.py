@@ -387,6 +387,57 @@ Ils ont alors montré un point essentiel : à partir d’un certain seuil de pri
 """)
 
 
+
+
+def create_movie(figname, duration=1.5,
+                radius=1/13, length=1/8,
+                fps=50, W=1000, H=600):
+    import gizeh as gz
+    import moviepy.editor as mpy
+
+    r = W*radius
+    def make_frame(t):
+        surface = gz.Surface(W, H, bg_color=(0, 0, 0))
+        if t > duration/3:
+            if t < duration*2/3:
+                x = W/2. - length*W/2
+            else:
+                x = W/2. + length*W/2
+            rect = gz.rectangle(xy=(x, H/2.),
+                                fill=(1, 1, 1), lx=r, ly=r)
+            rect.draw(surface)
+        return surface.get_npimage()
+
+    clip = mpy.VideoClip(make_frame, duration=duration)
+    clip.write_videofile(path2(figname), fps=fps)
+    return 'ok'
+
+figname='phi_motion.mp4'
+if not os.path.isfile(path2(figname)): create_movie(figname)
+
+s.add_slide(content="""
+ <video controls autoplay loop width=99%/>
+   <source type="video/mp4" src="{}">
+ </video>
+ """.format(s.embed_video(path2(figname))) ,
+notes="""
+
+
+""")
+
+
+bib = s.content_bib("Chemla, Reynaud, diVolo, Zerlaut, Perrinet, Destexhe and Chavane", "2019", 'Journal of Neuroscience', url="https://laurentperrinet.github.io/publication/chemla-19/")
+bib = s.content_bib("Chemla et al", "2019", 'Journal of Neuroscience', url="https://laurentperrinet.github.io/publication/chemla-19/")
+
+s.add_slide(content=s.content_figures(
+    [path2('Chemla_etal2019.png')], title=title, embed=s.meta['embed'],
+    height=s.meta['height']*height_ratio) + bib,
+   notes="""
+
+Pour aller plus loin dans cette direction, peut-on étendre cette méthodologie à la dynamique présente dans certaines illusions, comme celle du « Point-Ligne » ? En effet, en présentant un simple point puis une ligne on induit une perception d’une expansion du point pour « remplir » la ligne (un mouvement dit Phi). L’originalité de l’étude de Jancke et collègues est d'utiliser une technique d’imagerie qui permet d’enregistrer l’activité sur le cortex visuel primaire (ici du chat anesthésié) lors de la présentation de cette illusion d’optique. À noter qu’en comparant l’activité produite par les deux éléments présentés séparément ou conjointement, on met en évidence une activité différentielle qui est caractéristique de la perception de cette illusion. Une même  méthodologie permet de mettre en évidence un mécanisme original. Pour cela on utilise cette fois une illusion encore plus simple qui consiste à montrer un point à une position de l’espace visuel puis un autre point exactement similaire mais à une distance proche (mais supérieure à la taille de ce point). On perçoit alors un et un seul point qui se déplace de la première à la seconde position. Au niveau des enregistrements (cette fois chez le macaque) la réponse différentielle montre que relativement à un traitement indépendant des deux points, il existe une vague d’activité qui se déplace sur le cortex qui en particulier supprime une partie de l’activité [@tag:Chemla19]. Une modélisation sur ordinateur a permis de montrer qu'une fonction de cette vague de suppression est de lever les ambiguïtés sur les différents mouvements possibles représentés sur la carte. Dans ce cas particulier, la vague permet de supprimer la représentation d’un mouvement dans le sens opposé. Toutefois, beaucoup de questions restent en suspens. Ces résultats montrent le rôle potentiel des vagues d’activité sur la surface du cortex comme un outil potentiel de traitement de l’information et de sa modulation [@tag:Muller18]. Ces vagues peuvent en effet induire facilitations ou suppressions dans l'espace et le temps et produire une forme de « calcul » pour représenter au mieux l’image visuelle.
+
+""")
+
 bib = s.content_bib("Jancke, Chavane, Naaman and Grinvald", "2004", 'Nature', url="http://homepage.ruhr-uni-bochum.de/Dirk.Jancke/line-motion-examples.html")
 
 def create_movie(figname, duration=1.5,
@@ -440,55 +491,6 @@ Nature 428, 423-426. (see movies of the illusion and its cortical correlate)
 
 """)
 
-
-def create_movie(figname, duration=1.5,
-                radius=1/13, length=1/8,
-                fps=50, W=1000, H=600):
-    import gizeh as gz
-    import moviepy.editor as mpy
-
-    r = W*radius
-    def make_frame(t):
-        surface = gz.Surface(W, H, bg_color=(0, 0, 0))
-        if t > duration/3:
-            if t < duration*2/3:
-                x = W/2. - length*W/2
-            else:
-                x = W/2. + length*W/2
-            rect = gz.rectangle(xy=(x, H/2.),
-                                fill=(1, 1, 1), lx=r, ly=r)
-            rect.draw(surface)
-        return surface.get_npimage()
-
-    clip = mpy.VideoClip(make_frame, duration=duration)
-    clip.write_videofile(path2(figname), fps=fps)
-    return 'ok'
-
-figname='phi_motion.mp4'
-if not os.path.isfile(path2(figname)): create_movie(figname)
-
-s.add_slide(content="""
- <video controls autoplay loop width=99%/>
-   <source type="video/mp4" src="{}">
- </video>
- """.format(s.embed_video(path2(figname))) ,
-notes="""
-
-
-""")
-
-
-bib = s.content_bib("Chemla, Reynaud, diVolo, Zerlaut, Perrinet, Destexhe and Chavane", "2019", 'Journal of Neuroscience', url="https://laurentperrinet.github.io/publication/chemla-19/")
-bib = s.content_bib("Chemla et al", "2019", 'Journal of Neuroscience', url="https://laurentperrinet.github.io/publication/chemla-19/")
-
-s.add_slide(content=s.content_figures(
-    [path2('Chemla_etal2019.png')], title=title, embed=s.meta['embed'],
-    height=s.meta['height']*height_ratio) + bib,
-   notes="""
-
-Pour aller plus loin dans cette direction, peut-on étendre cette méthodologie à la dynamique présente dans certaines illusions, comme celle du « Point-Ligne » ? En effet, en présentant un simple point puis une ligne on induit une perception d’une expansion du point pour « remplir » la ligne (un mouvement dit Phi). L’originalité de l’étude de Jancke et collègues est d'utiliser une technique d’imagerie qui permet d’enregistrer l’activité sur le cortex visuel primaire (ici du chat anesthésié) lors de la présentation de cette illusion d’optique. À noter qu’en comparant l’activité produite par les deux éléments présentés séparément ou conjointement, on met en évidence une activité différentielle qui est caractéristique de la perception de cette illusion. Une même  méthodologie permet de mettre en évidence un mécanisme original. Pour cela on utilise cette fois une illusion encore plus simple qui consiste à montrer un point à une position de l’espace visuel puis un autre point exactement similaire mais à une distance proche (mais supérieure à la taille de ce point). On perçoit alors un et un seul point qui se déplace de la première à la seconde position. Au niveau des enregistrements (cette fois chez le macaque) la réponse différentielle montre que relativement à un traitement indépendant des deux points, il existe une vague d’activité qui se déplace sur le cortex qui en particulier supprime une partie de l’activité [@tag:Chemla19]. Une modélisation sur ordinateur a permis de montrer qu'une fonction de cette vague de suppression est de lever les ambiguïtés sur les différents mouvements possibles représentés sur la carte. Dans ce cas particulier, la vague permet de supprimer la représentation d’un mouvement dans le sens opposé. Toutefois, beaucoup de questions restent en suspens. Ces résultats montrent le rôle potentiel des vagues d’activité sur la surface du cortex comme un outil potentiel de traitement de l’information et de sa modulation [@tag:Muller18]. Ces vagues peuvent en effet induire facilitations ou suppressions dans l'espace et le temps et produire une forme de « calcul » pour représenter au mieux l’image visuelle.
-
-""")
 s.close_section()
 
 ############################################################################ 🏄🏄🏄🏄🏄🏄🏄🏄 OUTRO - 5''  🏄🏄🏄🏄🏄🏄🏄🏄
