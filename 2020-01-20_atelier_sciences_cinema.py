@@ -1,9 +1,3 @@
-# Atelier venelles
-#
-#
-
-
-
 __author__ = "Laurent Perrinet INT - CNRS"
 __licence__ = 'GPL licence'
 DEBUG = True
@@ -242,7 +236,7 @@ for url in ['https://upload.wikimedia.org/wikipedia/commons/6/63/Reification.jpg
 
 ORGANISATION PERCEPTIVE / GESTALT
 
-> reification 
+> reification
 > proximité
 > similarité
 
@@ -327,46 +321,20 @@ http://i2.cdn.cnn.com/cnnnext/dam/assets/150410134301-cat-going-up-or-down-super
 
 """)
 
-bib = s.content_bib("Bressloff et al", "2002", 'Neural Computation', url="http://homepage.ruhr-uni-bochum.de/Dirk.Jancke/line-motion-examples.html")
-
-for no in ['2b', '2a', '3', '7']:
-    s.add_slide(content=s.content_figures(
-    [path2('Bressloff2002Fig' + no + '.png')], title=None, #title, embed=s.meta['embed'],
-    height=s.meta['height']*height_ratio) + bib,
-   notes="""
-
-Une hypothèse novatrice proposée par Paul Bressloff et collègues en 2002 [@tag:Bressloff02] est de voir l’origine de certaines illusions ou hallucinations dans l'interaction entre la structure de la représentation rétinienne et des représentations de cette espace visuel dans l’aire visuelle primaire. En effet, la représentation rétinienne de l’espace visuel est organisés de façon radiale depuis le point de fixation (polaire) avec une forte densité de photorécepteurs près de l’axe de vision. La représentation corticale d’une ligne est un segment dans l’espace cortical et inversement un segment dans l’espace cortical va apparaître et être perçu comme une spirale une fois re-projetée dans l’espace visuel codé par l’espace rétinien. En se basant sur une modélisation des connexions latérales entre des populations voisines de neurones de l’aire visuelle primaire, ces auteurs ont alors établi dans un modèle de champ neural qui régit la dynamique de la carte d’activité l’émergence structurée de représentations privilégiées. Comme nous l’avons décrit à l’échelle macroscopique avec notre modèle d’agent schizophrénique [@tag:Adams12], ces auteurs ont alors analysé mathématiquement les états du système quand on perturbe certains paramètres du système, notamment les poids synaptiques régissant les interactions dans la carte corticale.
-Ils ont alors montré un point essentiel : à partir d’un certain seuil de prise de drogue, des « hallucinations » peuvent émerger comme des structures stables dans la carte corticale. Étonnamment, ces états une fois un re-projetés sur l’espace visuel dessinent des spirales et des ensembles de lignes qui sont très proches des hallucinations telles qu’elles ont été rapportées après la prise de drogues diverses allant de la marijuana au peyotl ou à la mescaline. Ce type de modélisation permet d’un côté d’expliquer la formation d’hallucinations, mais aussi de définir une « neuro-géométrie », c’est-à-dire un formalisme mathématique reliant neurosciences et la géométrie des relations existant entre des sous module de l’aire visuelle primaire. On peut aussi imaginer alors des hallucinations plus complexes émerger de réseaux plus complexes qui représentent par exemple des superpositions de visages.
-
-
-
-
-# CINEMA
+# bib = s.content_bib("Bressloff et al", "2002", 'Neural Computation', url="http://homepage.ruhr-uni-bochum.de/Dirk.Jancke/line-motion-examples.html")
 #
-# > tomatrope / "persistence rétinienne"
-# > https://en.wikipedia.org/wiki/Wagon-wheel_effect
-# > flash-lag effect
+# for no in ['2b', '2a', '3', '7']:
+#     s.add_slide(content=s.content_figures(
+#     [path2('Bressloff2002Fig' + no + '.png')], title=None, #title, embed=s.meta['embed'],
+#     height=s.meta['height']*height_ratio) + bib,
+#    notes="""
 #
-# références
-#
-# Flatland - Wikipedia
-#
-# Oskar Fischinger - Wikipedia
+# Une hypothèse novatrice proposée par Paul Bressloff et collègues en 2002 [@tag:Bressloff02] est de voir l’origine de certaines illusions ou hallucinations dans l'interaction entre la structure de la représentation rétinienne et des représentations de cette espace visuel dans l’aire visuelle primaire. En effet, la représentation rétinienne de l’espace visuel est organisés de façon radiale depuis le point de fixation (polaire) avec une forte densité de photorécepteurs près de l’axe de vision. La représentation corticale d’une ligne est un segment dans l’espace cortical et inversement un segment dans l’espace cortical va apparaître et être perçu comme une spirale une fois re-projetée dans l’espace visuel codé par l’espace rétinien. En se basant sur une modélisation des connexions latérales entre des populations voisines de neurones de l’aire visuelle primaire, ces auteurs ont alors établi dans un modèle de champ neural qui régit la dynamique de la carte d’activité l’émergence structurée de représentations privilégiées. Comme nous l’avons décrit à l’échelle macroscopique avec notre modèle d’agent schizophrénique [@tag:Adams12], ces auteurs ont alors analysé mathématiquement les états du système quand on perturbe certains paramètres du système, notamment les poids synaptiques régissant les interactions dans la carte corticale.
+# Ils ont alors montré un point essentiel : à partir d’un certain seuil de prise de drogue, des « hallucinations » peuvent émerger comme des structures stables dans la carte corticale. Étonnamment, ces états une fois un re-projetés sur l’espace visuel dessinent des spirales et des ensembles de lignes qui sont très proches des hallucinations telles qu’elles ont été rapportées après la prise de drogues diverses allant de la marijuana au peyotl ou à la mescaline. Ce type de modélisation permet d’un côté d’expliquer la formation d’hallucinations, mais aussi de définir une « neuro-géométrie », c’est-à-dire un formalisme mathématique reliant neurosciences et la géométrie des relations existant entre des sous module de l’aire visuelle primaire. On peut aussi imaginer alors des hallucinations plus complexes émerger de réseaux plus complexes qui représentent par exemple des superpositions de visages.
 #
 #
-# VOYAGE AU PAYS DE LA QUATRIEME DIMENSION | Gaston de Pawloski, Leonard Sarluis | Second edition
-# Flatland - Wikipedia
 #
-#
-# zootrope
-# Pixilation - Wikipedia
-# praxinotrope
-#
-# cinematiscopes
-#
-#
-
-""")
+# """)
 
 
 for url in ['https://www.askideas.com/media/36/Shake-Your-Head-Optical-Illusion.jpg', # ou https://www.askideas.com/media/36/Hidden-Picture-Optical-Illusion.jpg
@@ -419,6 +387,30 @@ s.add_slide(content="""
  </video>
  """.format(s.embed_video(path2(figname))) ,
 notes="""
+
+CINEMA
+
+> tomatrope / "persistence rétinienne"
+> https://en.wikipedia.org/wiki/Wagon-wheel_effect
+> flash-lag effect
+
+références
+
+Flatland - Wikipedia
+
+Oskar Fischinger - Wikipedia
+
+
+VOYAGE AU PAYS DE LA QUATRIEME DIMENSION | Gaston de Pawloski, Leonard Sarluis | Second edition
+Flatland - Wikipedia
+
+
+zootrope
+Pixilation - Wikipedia
+praxinotrope
+
+cinematiscopes
+
 
 
 """)
