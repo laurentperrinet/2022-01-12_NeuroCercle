@@ -1,6 +1,6 @@
 # Des illusions aux hallucinations visuelles: <BR> une porte sur la perception
 
-* What:: talk @ [Cinéma et sciences : rencontre avec les élèves du lycée des métiers](https://www.jnlf.fr/agenda/jnlf-lille-2019)
+* What:: talk @ [Cinéma et sciences : rencontre avec les élèves du lycée des métiers](https://laurentperrinet.github.io/2020-01-20_atelier_sciences_cinema/)
 * Who:: Perrinet, Laurent U
 * Where: Vedène (France), see https://laurentperrinet.github.io/talk/2020-01-20-atelier-sciences-cinema
 * When: 20/01/2020, time: 10:00:00-16:00:00
