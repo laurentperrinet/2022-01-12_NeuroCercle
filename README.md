@@ -1,9 +1,9 @@
 # Des illusions aux hallucinations visuelles: <BR> une porte sur la perception
 
-* What:: talk @ [Cinéma et sciences : rencontre avec les élèves du lycée des métiers](https://laurentperrinet.github.io/2022-01-12_NeuroCercle/)
+* What:: talk @ [Neurocercle : Découvrir les neurosciences à Grenoble](https://www.jnlf.fr/agenda/jnlf-lille-2019)
 * Who:: Perrinet, Laurent U
-* Where: Vedène (France), see https://laurentperrinet.github.io/talk/2020-01-20-atelier-sciences-cinema
-* When: 20/01/2020, time: 10:00:00-16:00:00
+* Where: Vedène (France), see https://laurentperrinet.github.io/talk/2022-01-12-neuro-cercle
+* When: 12/01/2022, time: 10:00:00-16:00:00
 
 * What:
   * Slides @ https://laurentperrinet.github.io/2022-01-12_NeuroCercle
