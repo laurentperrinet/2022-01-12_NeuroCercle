@@ -1,6 +1,6 @@
 default: github
 
-SRC=2020-01-20_atelier_sciences_cinema
+SRC=2022-01-12_NeuroCercle
 
 edit:
 	atom $(SRC).py
