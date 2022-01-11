@@ -56,7 +56,7 @@ meta = dict(
  author_link=f'<a href="https://laurentperrinet.github.io/talk/{slugify(tag)}/">Laurent Perrinet</a>',
  short_title='Des illusions aux hallucinations visuelles',
  title='Des illusions aux hallucinations visuelles: <BR> une porte sur la perception',
- conference_url='https://www.jnlf.fr/agenda/jnlf-lille-2019',
+ conference_url='https://neurocercle.wordpress.com/2021/12/15/des-illusions-visuelles-aux-hallucinations-une-porte-sur-la-perception/',
  short_conference='Neurocercle',
  conference='Neurocercle : Découvrir les neurosciences à Grenoble',
  location='Vedène (France)',
