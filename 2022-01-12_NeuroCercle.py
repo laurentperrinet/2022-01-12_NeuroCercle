@@ -47,7 +47,7 @@ meta = dict(
  # height= 1024, #1000,
  margin=.01,  # 0.1618,#
  #reveal_path='https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/',
- reveal_path='/node_modules/',
+ reveal_path='/node_modules/reveal.js/',
  # reveal_path='https://s3.amazonaws.com/hakim-static/reveal-js/',
  # https://github.com/hakimel/reveal.js
  theme='simple',
