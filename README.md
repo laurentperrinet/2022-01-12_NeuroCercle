@@ -2,7 +2,7 @@
 
 * What:: talk @ [Neurocercle : Découvrir les neurosciences à Grenoble](https://neurocercle.wordpress.com/2021/12/15/des-illusions-visuelles-aux-hallucinations-une-porte-sur-la-perception/)
 * Who:: Perrinet, Laurent U
-* Where: Vedène (France), see https://laurentperrinet.github.io/talk/2022-01-12-neuro-cercle
+* Where: Grenoble (France), see https://laurentperrinet.github.io/talk/2022-01-12-neuro-cercle
 * When: 12/01/2022, time: 18:00:00-20:00:00
 
 * What:
