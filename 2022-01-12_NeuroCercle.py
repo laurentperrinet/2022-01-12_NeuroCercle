@@ -191,9 +191,9 @@ s.add_slide(content=s.content_figures(
     ], fragment=False,
     title=None, height=s.meta['height']*height_ratio) + url,
     notes="""
-Tout d'abord je voudrais faire un hommage à Jeanny Herault qui nous a malheureusement quitté l'année dernière… Il a été à une importante influence au cours de ma thèse par son travail scientifique et a eu la gentillesse de participer au jury de ma thèse en 2003, ici en compagnie de Michel Imbert, de mon directeur de thèse Manuel Samuelides et de Simon Thorpe qui était mon codirecteur.
-nous avons eu aussi la chance que Jeanny accepte d'écrire la préface de notre livre dont je montre ainsi la couverture. Cette préface, que vous pouvez lire en suivant le lien ci-dessous, est toujours d'actualité…
-je le remercie pour son travail et aussi pour sa gentillesse et qu'il serve longtemps d'inspiration pour les générations actuelles et futures...
+Tout d'abord je voudrais rendre hommage à Jeanny Herault qui nous a malheureusement quitté l'année dernière… Il a été une influence importante par son travail scientifique et a eu la gentillesse de participer au jury de ma thèse en 2003, ici en compagnie de Michel Imbert, de mon directeur de thèse Manuel Samuelides et de Simon Thorpe qui était mon codirecteur.
+nous avons eu aussi la chance que Jeanny accepte d'écrire la préface de notre livre dont je montre la couverture. Cette préface, que vous pouvez lire en suivant le lien ci-dessous, est toujours d'actualité…
+je le remercie pour son travail et aussi pour sa gentillesse et j'espère qu'il sera longtemps une inspiration pour les générations actuelles et futures...
 """)
 
 url = '<a href https://en.wikipedia.org/wiki/Hering_illusion">Hering illusion</a>'
@@ -202,15 +202,12 @@ for suff in ['_without', '']:
                                           title=None,  # 'Classical visual illusions',
                                           height=s.meta['height']*height_ratio) + url,
                 notes="""
-L’étymologie du mot illusion réfère à la tromperie et nous permet de définir les illusions visuelles comme une stimulation visuelle qui induit une perception décalée par rapport à la réalité physique (le stimulus proximal). Dans l’illusion classique dit de Hering par exemple deux lignes parallèles, quand elles sont placées sur un faisceau de lignes convergentes, semblent légèrement courbées comme si le centre de l’image avait gonflé par rapport à sa périphérie. Cette illusion est robuste même si l’on prend une règle pour vérifier physiquement le parallélisme des lignes (ou simplement en enlevant les lignes fuyantes): Il n’est pas possible de ne **pas** la percevoir. Ainsi, pour cette illusion comme pour une grande variété d’autres illusions visuelles (statiques ou dynamiques) ou sur d’autres modalités (comme le toucher), les illusions visuelles marquent tout d’abord par ce caractère quasi universel et intuitif, c’est-à-dire sans qu’il faille expliquer un mode d’emploi pour les illusions.
+L’étymologie du mot illusion réfère à la tromperie et nous permet de définir les illusions visuelles comme une stimulation visuelle qui induit une perception décalée par rapport à la réalité physique (le stimulus proximal). Dans l’illusion classique dit de Hering par exemple deux lignes parallèles, quand elles sont placées sur un faisceau de lignes convergentes, semblent légèrement courbées comme si le centre de l’image avait gonflé par rapport à sa périphérie. Cette illusion est robuste même si l’on prend une règle pour vérifier physiquement le parallélisme des lignes (ou simplement en enlevant les lignes fuyantes): Il n’est pas possible de ne **pas** la percevoir. Ainsi, pour cette illusion comme pour une grande variété d’autres illusions visuelles (statiques ou dynamiques) ou sur d’autres modalités (comme le toucher), les illusions visuelles marquent tout d’abord par ce caractère quasi universel et intuitif, c’est-à-dire sans qu’il faille expliquer ou donner un mode d’emploi pour percevoir ces illusions.
 """)
 
-url = '<a href https://en.wikipedia.org/wiki/Multistability">Multistabilité: Cube de Necker, Vase de Rubin</a>'
+url = '<a href https://en.wikipedia.org/wiki/Multistability>Multistabilité: Cube de Necker, Vase de Rubin</a>'
 
-for url in [
-            'https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Multistability.svg/1488px-Multistability.svg.png',
-            ]:
-    s.add_slide(content=s.content_figures([url],  # fragment=True,
+s.add_slide(content=s.content_figures(['https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Multistability.svg/1488px-Multistability.svg.png'],  # fragment=True,
                                           title=None, fragment=True, height=s.meta['height']*height_ratio)+ url,
                 notes="""
 Il existe une large classe d'illusions visuelles et je vais vous montrer tout d'abord des exemples très classiques qui montrent un premier phénomène dit de bistabilité :
@@ -223,16 +220,11 @@ Il existe une large classe d'illusions visuelles et je vais vous montrer tout d'
 
 url = '<a href https://www.cerveauetpsycho.fr/sd/illusions/les-ambiguites-de-la-perception-visuelle-7012.php">Les ambiguïtés de la perception visuelle (Pascal Mamassian)</a>'
 
-for url in [
-            path2('footprint.jpg'),
-            # path2('Convex-Or-Concave-Optical-Illusion-Picture.jpg'),
-            # 'https://www.askideas.com/media/36/Convex-Or-Concave-Optical-Illusion-Picture.jpg',
-            ]:
-    s.add_slide(content=s.content_figures([url],  # fragment=True,
+s.add_slide(content=s.content_figures([path2('footprint.jpg')],  # fragment=True,
                                           title=None, fragment=True, height=s.meta['height']*height_ratio)+ url,
                 notes="""
 * Ces illusions peuvent aussi apparaîtrent dans la vraie vie et quand on regarde cette image, Ces deux traces dans le sable sont identiques ; il suffit de tourner la page à 180 degrés pour s’en rendre compte. Pourtant, on a l’impression que l’une est en relief et l’autre en creux. une concavité (en creux comme un bol) - Notez qu'avec un peu d'entraînement on a pas besoin de retourner l'image pour passer de l'un à l'autre. (ref https://thewordcounter.com/concave-vs-convex/)
-* Notez aussi qu'ici on va avoir un biais pour une solution ou une autre notamment par rapport au cube dit de Necker. Cette illusion repose sur une hypothèse : le système visuel considère que la lumière vient d’en haut, et que les parties sombres sont des ombres. Cela permet d’interpréter l’image en trois dimensions. 
+* Notez aussi qu'ici on va avoir un biais pour une solution ou une autre notamment par rapport au cube dit de Necker. Cette illusion repose sur une hypothèse : le système visuel considère que la lumière vient d’en haut, et que les parties sombres sont des ombres. Cela permet d’interpréter l’image en trois dimensions.
     """)
 
 
@@ -246,7 +238,9 @@ s.add_slide(content=s.content_figures(
     notes="""
 
 https://en.wikipedia.org/wiki/The_dress
-À ce titre, une illusion récente est remarquable à bien des égards. En effet, certaines illusions illusions comme le cube de Necker sont multi-stable, dans le sens où la perception peut alterner autour de plusieurs interprétations possibles de la même image. Dans le cas de #LaRobe, nous avons une image qui a le pouvoir de diviser une population entre des perceptions alternatives. De plus, au lieu d’être créée par des scientifiques, cette illusion est née par [sérendipité](https://fr.wikipedia.org/wiki/S%C3%A9rendipit%C3%A9) à partir d’une simple photo prise lors de la préparation d’une cérémonie de mariage. Postée sur les réseaux sociaux, cette photo a eu un destin fulgurant et mondial grâce a l’ambiguïté sur l'interprétation de la couleur de la robe. Ainsi si je vous demande de donner vous-même votre avis à partir de la Figure @fig:larobe, pensez-vous qu’elle est blanche et or ou alors qu’elle est bleu avec des bandes noires ? Même si le débat fait toujours rage, les explications scientifiques (entre autres articles scientifiques ou sessions spéciales de conférence) convergent sur une perception de la couleur de la figure qui est modifiée par le contexte du fond. En effet notre système visuel doit pouvoir identifier la couleur d’un objet (par exemple pour évaluer la maturité d’un fruit comme une balade) quelque soit les conditions lumineuses, un matin le midi avec une lumière crue ou le crépuscule avec une lumière orangée du soir. Ici le fond est surexposé et rend cette interprétation ambiguë et deux interprétations sont possibles pour cette image comme illustré dans la figure de droite. Je peux vous dévoiler que sur un échantillon représentatif une courte majorité voilà la robe bleue et noir. Un aspect remarquable de cette illusion et d’une part sa stabilité et d’autre part la difficulté de changer d’interprétation une fois une première interprétation formée, c’est-à-dire de passer une couleur bleue à une perception d’une couleur blanche. Cette illusion est à mes yeux d’autant plus puissante car elle met en évidence que les images sont interprétées par notre système visuel. Celà apporte aussi ce message universel qu'une propriété de nos fonctions cognitives et de pouvoir interpréter la même objet physique de différentes façons, et réconcilier des groupes humains qui peuvent avoir des façons contrastées de voir des objets physiques qui sont identiques. Pour reprendre le célèbre proverbe on pourrait dire que « l’illusion est humaine »!
+À ce titre, une illusion récente est remarquable à bien des égards. En effet, certaines illusions illusions comme le cube de Necker sont multi-stable, dans le sens où la perception peut alterner autour de plusieurs interprétations possibles de la même image. Dans le cas de #LaRobe, nous avons une image qui a le pouvoir de diviser une population entre des perceptions alternatives. De plus, au lieu d’être créée par des scientifiques, cette illusion est née par [sérendipité](https://fr.wikipedia.org/wiki/S%C3%A9rendipit%C3%A9) à partir d’une simple photo prise lors de la préparation d’une cérémonie de mariage. Postée sur les réseaux sociaux, cette photo a eu un destin fulgurant et mondial grâce a l’ambiguïté sur l'interprétation de la couleur de la robe. Ainsi, pensez-vous qu’elle est blanche et or ou alors qu’elle est bleu avec des bandes noires ? Vous pouvez-voter avec le bouton "reaction"
+
+Même si le débat fait toujours rage, les explications scientifiques (entre autres articles scientifiques ou sessions spéciales de conférence) convergent sur une perception de la couleur de la figure qui est modifiée par le contexte du fond. En effet notre système visuel doit pouvoir identifier la couleur d’un objet (par exemple pour évaluer la maturité d’un fruit comme une balade) quelque soit les conditions lumineuses, un matin le midi avec une lumière crue ou le crépuscule avec une lumière orangée du soir. Ici le fond est surexposé et rend cette interprétation ambiguë et deux interprétations sont possibles pour cette image comme illustré dans la figure de droite. Je peux vous dévoiler que sur un échantillon représentatif une courte majorité voilà la robe bleue et noir. Un aspect remarquable de cette illusion et d’une part sa stabilité et d’autre part la difficulté de changer d’interprétation une fois une première interprétation formée, c’est-à-dire de passer une couleur bleue à une perception d’une couleur blanche. Cette illusion est à mes yeux d’autant plus puissante car elle met en évidence que les images sont interprétées par notre système visuel. Celà apporte aussi ce message universel qu'une propriété de nos fonctions cognitives et de pouvoir interpréter la même objet physique de différentes façons, et réconcilier des groupes humains qui peuvent avoir des façons contrastées de voir des objets physiques qui sont identiques. Pour reprendre le célèbre proverbe on pourrait dire que « l’illusion est humaine »!
 
 Two ways in which the photograph of The dress may be perceived:
 * black and blue under a yellow-tinted illumination (left figure) or
