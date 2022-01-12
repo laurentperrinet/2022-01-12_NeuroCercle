@@ -559,7 +559,7 @@ s.add_slide(content=s.content_figures(
 figname = 'flash_lag.mp4'
 
 fle_bib = s.content_bib("Khoei, Masson and LP", "2017", 'PLoS CB', url="http://invibe.net/LaurentPerrinet/Publications/KhoeiMassonPerrinet17")
-
+# pub pour https://laurentperrinet.github.io/Perrinet20PredictiveProcessing_manubot/v/latest/index.html ou en français https://raw.githubusercontent.com/laurentperrinet/2020-01-07_CNRS_concours-DR/master/perrinet20cnrs.pdf
 s.add_slide(content="""
  <video controls autoplay loop width=99%/>
    <source type="video/mp4" src="{}">
