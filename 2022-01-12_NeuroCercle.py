@@ -182,7 +182,7 @@ Nous allons ici montrer comment les limites de la perception permettent et peuve
 s.add_slide(content=s.content_figures([figname_qr], cell_bgcolor=meta['bgcolor'], height=s.meta['height']*height_ratio**2) + '<BR><a href="{url}"> {url} </a>'.format(url=meta['url']), notes="All the material is available online - please flash this code this leads to a page with links to further references and code ")
 
 
-url = 'Hommage à Jeanny... depuis <a href="https://laurentperrinet.github.io/publication/perrinet-03-these/">2003</a>, par <a href="https://laurentperrinet.github.io/publication/cristobal-perrinet-keil-15-bicv/"></a> <a href="http://bicv.github.io/toc/index.html">préface de BICV</a>'
+url = 'Hommage à Jeanny... en <a href="https://laurentperrinet.github.io/publication/perrinet-03-these/">2003</a>, la <a href="https://laurentperrinet.github.io/publication/cristobal-perrinet-keil-15-bicv/"></a> <a href="http://bicv.github.io/toc/index.html">préface de BICV</a>'
 s.add_slide(content=s.content_figures(
     [
         # path2('jeanny_herault_1517732548875.jpg'),
@@ -202,7 +202,7 @@ for suff in ['_without', '']:
                                           title=None,  # 'Classical visual illusions',
                                           height=s.meta['height']*height_ratio) + url,
                 notes="""
-L’étymologie du mot illusion réfère à la tromperie et nous permet de définir les illusions visuelles comme une stimulation visuelle qui induit une perception décalée par rapport à la réalité physique (le stimulus proximal). Dans l’illusion classique dit de Hering par exemple (voir Figure @fig:hering), deux lignes parallèles, quand elles sont placées sur un faisceau de lignes convergentes, semblent courbées comme si le centre de l’image avait gonflé par rapport à sa périphérie. Cette illusion est robuste même si l’on prend une règle pour vérifier physiquement le parallélisme des lignes (ou simplement en enlevant les lignes fuyantes): Il n’est pas possible de ne **pas** la percevoir. Ainsi, pour cette illusion comme pour une grande variété d’autres illusions visuelles statique ou dynamique ou sur d’autres modalités (comme le toucher), les illusions visuelles marquent tout d’abord par ce caractère quasi universel et intuitif, c’est-à-dire sans qu’il faille expliquer un mode d’emploi pour les illusions.
+L’étymologie du mot illusion réfère à la tromperie et nous permet de définir les illusions visuelles comme une stimulation visuelle qui induit une perception décalée par rapport à la réalité physique (le stimulus proximal). Dans l’illusion classique dit de Hering par exemple deux lignes parallèles, quand elles sont placées sur un faisceau de lignes convergentes, semblent légèrement courbées comme si le centre de l’image avait gonflé par rapport à sa périphérie. Cette illusion est robuste même si l’on prend une règle pour vérifier physiquement le parallélisme des lignes (ou simplement en enlevant les lignes fuyantes): Il n’est pas possible de ne **pas** la percevoir. Ainsi, pour cette illusion comme pour une grande variété d’autres illusions visuelles (statiques ou dynamiques) ou sur d’autres modalités (comme le toucher), les illusions visuelles marquent tout d’abord par ce caractère quasi universel et intuitif, c’est-à-dire sans qu’il faille expliquer un mode d’emploi pour les illusions.
 """)
 
 
@@ -212,11 +212,11 @@ for url in [
             'https://www.askideas.com/media/36/Convex-Or-Concave-Optical-Illusion-Picture.jpg',
             ]:
     s.add_slide(content=s.content_figures([url],  # fragment=True,
-                                          title=None, fragment=True, height=s.meta['height']*height_ratio),
+                                          title=None, fragment=True, height=s.meta['height']*height_ratio)+ 'Cube de Necker                                     Vase de Rubin',
                 notes="""
-Il existe une large classe d'illusions visuelles et je vais vous montrer tout d'abord de très classique qui montre le phénomène de bistabilités :
-*  tout d'abord dans le cube dit de Necker dans lequel vous voyez un ensemble de lignes qui forment une figure que vous pourrez interpréter sûrement de façon tridimensionnelle : le dessin correspond à un cube dont les arètes sont dessinées sur une perspective isométrique.
-* Si vous vous concentrer sur une face tour sur l'autre de ce cube et que dans votre imagination vous la mettez en avant ou en arrière alors vous avez un phénomène bis table qui permet de passer d'une configuration du cube à une autre qui est également aussi probable. Il existe en fait une infinité de configuration qui correspondent à la projection de figures tridimensionnelle sur ce plan mais c'est celle-ci que nous imaginons de préférence car elles sont les plus simples - c'est une manifeststation du rasoir d'ockham...
+Il existe une large classe d'illusions visuelles et je vais vous montrer tout d'abord des exemples très classiques qui montrent un premier phénomène dit de bistabilité :
+*  tout d'abord dans le cube dit de Necker dans lequel vous voyez un ensemble de lignes qui forment une figure que vous pourrez sûrement interpréter de façon tridimensionnelle : le dessin correspond à un cube dont les arètes sont dessinées sur une perspective isométrique.
+* Si vous vous concentrez maintenant sur une face puis sur l'autre de ce cube et que dans votre imagination vous la mettez en avant ou en arrière alors vous avez un phénomène changeant (bitable) qui permet de passer d'une configuration du cube à une autre les deux sont également aussi probables. Il existe en fait une infinité de configurations qui correspondent à la projection de figures tridimensionnelle sur ce plan mais c'est celle-ci que nous imaginons de préférence car elles sont les plus simples - c'est une manifeststation du rasoir d'ockham...
 * dans le vase dit de Rubin on a aussi une  phénomène bistable qui correspond à soit voir deux visages qui se font face soit un vase soit la silhouette d'un vase
 * Ses illusions peuvent aussi apparaître dans la vraie vie et quand on regarde cette image d'un élément architectural on peut imaginer que les lignes convergent vers une convexité (en bosse), Mais aussi qu'elle convergent sur une concavité (en creux comme un bol) - Notez qu'avec un peu d'entraînement on a pas besoin de retourner l'image pour passer de l'un à l'autre. (ref https://thewordcounter.com/concave-vs-convex/)
 * Noter aussi qu'ici on va avoir un billet pour une solution ou une autre notamment par rapport au cube dit de Necker. C'est dû au fait que dans ces images naturelles, le contexte joue un rôle et que comme nous avons l'habitude de voir le soleil dans le ciel et donc que la lumièrQue la lumière éclaire les objets du bas du haut vers le bas, alors d'après les ombres sur cette image nous pouvons en déduire sa concavité et sac House à convexité en fonction des autres indices dans l'image (ici que l'on regarde un mur).
@@ -263,7 +263,7 @@ s.add_slide(content="""
  <video controls autoplay loop width=99%/>
    <source type="video/mp4" src="{}">
  </video>
- """.format(s.embed_video(path2(figname))),
+ """.format(s.embed_video(path2(figname))) + url,
             notes="""
 Les illusions visuelles sont donc particulièrement utiles pour étudier scientifiquement la perception visuelle… Un exemple marquant et le travail d'Akiyoshi KITAOKA et je vous encourage à regarder son site et ses messages sur Twitter qui illustrent parfaitement des phénomènes étonnant de façon très didactique par exemple ici en montrant Comment un bout de papier gris peut paraître foncé ou clair en fonction de son contexte.
 
@@ -275,7 +275,7 @@ for url in ['https://sensiseeds.com/nl/blog/files/2013/03/Mysterious-Dalmatian-O
     s.add_slide(content=s.content_figures([url],  # fragment=True,
                                           title=None, height=s.meta['height']*height_ratio),
                 notes="""
-Mais au-delà d'être un outil qui nous permet de remettre en question notre connaissance de la perception visuelle et de l'intelligence naturelle en général, les illusions ne servent aussi à dépasser les frontières de ce que l'on sait il y en a toujours des nouvelles qui apparaissent comme par exemple :
+Mais au-delà d'être un outil qui nous permet de remettre en question notre connaissance de la perception visuelle et de l'intelligence naturelle en général, les illusions nous servent aussi à dépasser les frontières de ce que l'on sait il y en a toujours des nouvelles qui apparaissent comme par exemple :
 
 > Cette image qui semble montrer des taches noires aléatoire sur un fond blanc forment un objet familier si on y prête attention. Je préfère préfère ne pas vous le dire si vous n'avez jamais vu cette image car il suffit de donner le nom de l'objet qui y est caché pour le voir immédiatement et une fois qu'on l'a vu une fois une seule fois on ne pourra plus ne plus le voir pour le restant de sa vie… Alors prière de ne pas divul-gâcher ce plaisir :-)
 
