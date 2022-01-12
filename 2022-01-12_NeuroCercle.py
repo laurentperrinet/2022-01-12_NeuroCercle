@@ -249,9 +249,7 @@ s.add_slide(content=s.content_figures(
     ], fragment=True,
     title=None, height=s.meta['height']*height_ratio) + url,
     notes="""
-
-https://en.wikipedia.org/wiki/The_dress
-À ce titre, une illusion récente est remarquable à bien des égards. En effet, certaines illusions illusions comme le cube de Necker sont multi-stable, dans le sens où la perception peut alterner autour de plusieurs interprétations possibles de la même image. Dans le cas de #LaRobe, nous avons une image qui a le pouvoir de diviser une population entre des perceptions alternatives. De plus, au lieu d’être créée par des scientifiques, cette illusion est née par [sérendipité](https://fr.wikipedia.org/wiki/S%C3%A9rendipit%C3%A9) à partir d’une simple photo prise lors de la préparation d’une cérémonie de mariage. Postée sur les réseaux sociaux, cette photo a eu un destin fulgurant et mondial grâce a l’ambiguïté sur l'interprétation de la couleur de la robe. Ainsi, pensez-vous qu’elle est blanche et or ou alors qu’elle est bleu avec des bandes noires ? Vous pouvez-voter avec le bouton "reaction"
+À ce titre, une illusion récente est remarquable à bien des égards. En effet, certaines illusions illusions comme le cube de Necker sont multi-stable, dans le sens où la perception peut alterner autour de plusieurs interprétations possibles de la même image. Dans le cas de #LaRobe, nous avons une image qui a le pouvoir de diviser la population mondiale (au moins sur les réseaux sociaux) entre des perceptions alternatives. De plus, au lieu d’être créée par des scientifiques, cette illusion est née par [sérendipité](https://fr.wikipedia.org/wiki/S%C3%A9rendipit%C3%A9) à partir d’une simple photo prise lors de la préparation d’une cérémonie de mariage. Ainsi, pensez-vous qu’elle est blanche et or ou alors qu’elle est bleu avec des bandes noires ? Je vous invite à voter avec le bouton "reaction"
 
 Même si le débat fait toujours rage, les explications scientifiques (entre autres articles scientifiques ou sessions spéciales de conférence) convergent sur une perception de la couleur de la figure qui est modifiée par le contexte du fond. En effet notre système visuel doit pouvoir identifier la couleur d’un objet (par exemple pour évaluer la maturité d’un fruit comme une balade) quelque soit les conditions lumineuses, un matin le midi avec une lumière crue ou le crépuscule avec une lumière orangée du soir. Ici le fond est surexposé et rend cette interprétation ambiguë et deux interprétations sont possibles pour cette image comme illustré dans la figure de droite. Je peux vous dévoiler que sur un échantillon représentatif une courte majorité voilà la robe bleue et noir. Un aspect remarquable de cette illusion et d’une part sa stabilité et d’autre part la difficulté de changer d’interprétation une fois une première interprétation formée, c’est-à-dire de passer une couleur bleue à une perception d’une couleur blanche. Cette illusion est à mes yeux d’autant plus puissante car elle met en évidence que les images sont interprétées par notre système visuel. Celà apporte aussi ce message universel qu'une propriété de nos fonctions cognitives et de pouvoir interpréter la même objet physique de différentes façons, et réconcilier des groupes humains qui peuvent avoir des façons contrastées de voir des objets physiques qui sont identiques. Pour reprendre le célèbre proverbe on pourrait dire que « l’illusion est humaine »!
 
@@ -261,20 +259,23 @@ Two ways in which the photograph of The dress may be perceived:
 
 """)
 
-for url in ['https://upload.wikimedia.org/wikipedia/commons/6/63/Reification.jpg',  # ou https://www.askideas.com/media/36/Hidden-Picture-Optical-Illusion.jpg
-            'https://upload.wikimedia.org/wikipedia/commons/2/22/Gestalt_proximity.svg',
+for url in ['https://upload.wikimedia.org/wikipedia/commons/2/22/Gestalt_proximity.svg',
             'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Gestalt_similarity.svg/600px-Gestalt_similarity.svg.png',
-            ]:
+            'https://upload.wikimedia.org/wikipedia/commons/6/63/Reification.jpg',  # ou https://www.askideas.com/media/36/Hidden-Picture-Optical-Illusion.jpg
+                        ]:
     s.add_slide(content=s.content_figures([url],  # fragment=True,
                                           title=None, height=s.meta['height']*height_ratio),
                 notes="""
 
 Ces simples illustrations montrent que la vision, et le cerveau en général, effectue des opérations qui sont largement inconsciente. l'ensemble de ces processus participent à la "déraisonnable efficacité de la vision dans le monde naturel" (pour reprendre les mots d'Eugene Wigner). Le mouvement de la Gestalt a essayé de établir une typologie des différents mécanismes qui régissent cette ORGANISATION PERCEPTIVE :
 
-> reification
-> proximité
-> similarité
+ * proximité
 
+ * similarité
+
+ * reification
+
+Les illusions visuelles sont donc particulièrement utiles pour étudier scientifiquement la perception visuelle…
     """)
 
 figname = 'Kitaoka.mp4'
@@ -285,7 +286,7 @@ s.add_slide(content="""
  </video>
  """.format(s.embed_video(path2(figname))) + url,
             notes="""
-Les illusions visuelles sont donc particulièrement utiles pour étudier scientifiquement la perception visuelle… Un exemple marquant et le travail d'Akiyoshi KITAOKA et je vous encourage à regarder son site et ses messages sur Twitter qui illustrent parfaitement des phénomènes étonnant de façon très didactique par exemple ici en montrant Comment un bout de papier gris peut paraître foncé ou clair en fonction de son contexte.
+Un exemple marquant et le travail d'Akiyoshi KITAOKA et je vous encourage à regarder son site et ses messages sur Twitter qui illustrent parfaitement des phénomènes étonnant de façon très didactique par exemple ici en montrant Comment un bout de papier gris peut paraître foncé ou clair en fonction de son contexte.
 
 """)
 
@@ -295,33 +296,11 @@ for url in ['https://sensiseeds.com/nl/blog/files/2013/03/Mysterious-Dalmatian-O
     s.add_slide(content=s.content_figures([url],  # fragment=True,
                                           title=None, height=s.meta['height']*height_ratio),
                 notes="""
-Mais au-delà d'être un outil qui nous permet de remettre en question notre connaissance de la perception visuelle et de l'intelligence naturelle en général, les illusions nous servent aussi à dépasser les frontières de ce que l'on sait il y en a toujours des nouvelles qui apparaissent comme par exemple :
+Mais au-delà d'être un outil qui nous permet de remettre en question notre connaissance de la perception visuelle et de l'intelligence naturelle en général, les illusions nous servent aussi à dépasser les frontières de ce que l'on sait comme par exemple :
 
-> Cette image qui semble montrer des taches noires aléatoire sur un fond blanc forment un objet familier si on y prête attention. Je préfère préfère ne pas vous le dire si vous n'avez jamais vu cette image car il suffit de donner le nom de l'objet qui y est caché pour le voir immédiatement et une fois qu'on l'a vu une fois une seule fois on ne pourra plus ne plus le voir pour le restant de sa vie… Alors prière de ne pas divul-gâcher ce plaisir :-)
-
-> illusion taille https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/M%C3%BCller-Lyer_illusion.svg/1200px-M%C3%BCller-Lyer_illusion.svg.png
-(> Contraste de luminosité ?)
-
-
+> Cette image qui semble montrer des taches noires aléatoire sur un fond blanc représente un objet familier si on y prête attention. Je préfère préfère ne pas vous le dire si vous n'avez jamais vu cette image car il suffit de donner le nom de l'objet qui y est caché pour le voir immédiatement et une fois qu'on l'a vu une fois une seule fois on ne pourra plus ne plus le voir pour le restant de sa vie… Alors prière de ne pas divul-gâcher ce plaisir :-)
     """)
 
-s.close_section()
-
-
-i_section += 1
-###########################################
-# 🏄🏄🏄🏄🏄🏄🏄🏄 section no 2 🏄🏄🏄🏄🏄🏄🏄🏄
-###########################################
-
-s.open_section()
-title = meta['sections'][i_section]
-s.add_slide_outline(i_section,
-                    notes="""
-
-
-Au cours de notre description des mécanismes sous-tendant les illusions visuelles nous nous approchons progressivement des hallucinations. Mais à la différence des illusions visuelles, celles-ci émergent sans stimulation sensorielle. Mais comment peut-on expliquer la formation d’images hallucinées, comme celle induite par la prise de drogue ou de psychotropes? Peut-on alors identifier des mécanismes qui sont impliqués dans le cerveau, et définir une neuro-anatomie fonctionnelle qui puisse expliquer ces illusions et hallucinations dans un cadre unifié?
-
-""")
 
 
 url = 'Rotating Snakes - <a href http://www.ritsumei.ac.jp/~akitaoka/index-e.html">Akiyoshi KITAOKA</a>'
@@ -332,6 +311,9 @@ s.add_slide(content=s.content_figures(
     title=None,  # 'Rotating snakes',
     height=s.meta['height']*height_ratio) + url,
     notes="""
+
+Poussant maintenant notre étude à un niveau  supérieur avec cette figure proposé encore une fois par Akiyoshi Kitaoka’s dans laquelle l'arrangement des différentes formes sur l'image induit une forte impression de mouvement. Bien sûr ce n'est qu'une image il n'y a pas de mouvement. Pour s'en convaincre on peut facilement se rendre compte que les mouvements induits par cette image sont dépendants sont dépendant des mouvements des yeux que l'on fait. Cette illusion très surprenante se rapproche d'une hallucination et nous allons voir dans la suite sinon on peut déduire les mécanismes neuronaux sous-tendant cette illusion.
+
 https://www.illusionsindex.org/i/rotating-snakes
 
 See also Professor Kitaoka’s personal website at http://www.ritsumei.ac.jp/~akitaoka/index-e.html
@@ -357,6 +339,25 @@ Philosophers have also been interested in what illusions like the Rotating Snake
 
 
 http://i2.cdn.cnn.com/cnnnext/dam/assets/150410134301-cat-going-up-or-down-super-169.jpg
+
+""")
+
+
+s.close_section()
+
+
+i_section += 1
+###########################################
+# 🏄🏄🏄🏄🏄🏄🏄🏄 section no 2 🏄🏄🏄🏄🏄🏄🏄🏄
+###########################################
+
+s.open_section()
+title = meta['sections'][i_section]
+s.add_slide_outline(i_section,
+                    notes="""
+
+
+Au cours de notre description des mécanismes sous-tendant les illusions visuelles nous nous approchons progressivement des hallucinations. Mais à la différence des illusions visuelles, celles-ci émergent sans stimulation sensorielle. Mais comment peut-on expliquer la formation d’images hallucinées, comme celle induite par la prise de drogue ou de psychotropes? Peut-on alors identifier des mécanismes qui sont impliqués dans le cerveau, et définir une neuro-anatomie fonctionnelle qui puisse expliquer ces illusions et hallucinations dans un cadre unifié?
 
 """)
 
