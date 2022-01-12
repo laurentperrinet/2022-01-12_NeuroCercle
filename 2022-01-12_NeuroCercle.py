@@ -260,10 +260,24 @@ Mais au-delà d'être un outil qui nous permet de remettre en question notre con
 
     """)
 
+s.add_slide(content='<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">オープンキャンパスの定番。早く再開したい。 <a href="https://t.co/HWZtXNhvJX">pic.twitter.com/HWZtXNhvJX</a></p>&mdash; Akiyoshi Kitaoka (@AkiyoshiKitaoka) <a href="https://twitter.com/AkiyoshiKitaoka/status/1480179794130370560?ref_src=twsrc%5Etfw">January 9, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>', notes="""
+tweet
+
+
+""")
 s.add_slide(content="""
-<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">オープンキャンパスの定番。早く再開したい。 <a href="https://t.co/HWZtXNhvJX">pic.twitter.com/HWZtXNhvJX</a></p>&mdash; Akiyoshi Kitaoka (@AkiyoshiKitaoka) <a href="https://twitter.com/AkiyoshiKitaoka/status/1480179794130370560?ref_src=twsrc%5Etfw">January 9, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <iframe data-src='<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">オープンキャンパスの定番。早く再開したい。 <a href="https://t.co/HWZtXNhvJX">pic.twitter.com/HWZtXNhvJX</a></p>&mdash; Akiyoshi Kitaoka (@AkiyoshiKitaoka) <a href="https://twitter.com/AkiyoshiKitaoka/status/1480179794130370560?ref_src=twsrc%5Etfw">January 9, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>' data-preload></iframe>
 """, notes="""
-twwet
+tweet
+
+
+""")
+
+s.add_slide(content="""
+  <iframe data-src="https://twitter.com/AkiyoshiKitaoka/status/1480179794130370560" data-preload></iframe>""", notes="""
+tweet
+
+
 """)
 
 url = '<a href https://en.wikipedia.org/wiki/The_dress">#TheDress</a>: #whiteandgold or #blackandblue ?'
