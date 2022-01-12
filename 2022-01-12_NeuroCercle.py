@@ -299,17 +299,6 @@ Two ways in which the photograph of The dress may be perceived:
 """)
 
 
-bib = s.content_bib("Cydonia Mensae", "1976", 'Viking Orbiter image', url="Viking Orbiter image")
-s.add_slide(content=s.content_figures(
-        [path2(fname) for fname in ['Face-on-mars.jpg', 'Viking_moc_face_20m_low.png', 'Viking_moc_face_20m_high.png']], fragment=True,
-            title="Paréidolie", height=s.meta['height']*.5) + bib,
-    notes="""
-Pour aller plus loin, il est intéressant de considérer cette image prise en 1971 par la sonde Viking d’une partie de la surface de la planète Mars (Figure @fig:viking). L’image est relativement floue, et les points noirs sont des erreurs de mesure  mais l’on distingue très clairement un visage de type humain comme une sculpture géante laisser là par une civilisation extraterrestre. Quelques 20 ans plus tard, de nouvelles images ont été réalisés par de nouvelles sondes spatiales et montrent aussi une forme de visage. Mais une fois la résolution de l’image affinée, les détails du relief révèlent qu’il n’y a pas physiquement de sculpture de ce type mais seulement un simple rocher. C’est un cas de [paréidolie](https://fr.wikipedia.org/wiki/Par%C3%A9idolie) : quelque chose est perçu alors qu’il est physiquement absent. De la même façon, on peut voir un cheval courir dans les nuages, ou le visage du Christ dans un toast, le constat est le même : le système visuel et en particulier la perception qui en découlent non seulement interprète les images, mais sur surtout, il ne peut pas faire autrement que de générer une interprétation à partir d’images, et comme on vient de le voir même si elles ne font pas a priori sens. Dans ce genre d’illusion on se rapproche donc d’une hallucination, qui peut être définie comme une perception sans objet.
-
-Pour résumer, les illusions visuelles, en plus de leur côté ludique, nous révèlent des caractéristiques essentielles de notre perception visuelle tant sur leurs caractéristiques universelles que sur les variabilités inter et intra individuelles. Malgré la diversité des formes des illusions visuelles et la diversité des explications qu’on peut leur faire correspondre, existe-t-il des points communs qui permettraient d’en avoir une compréhension unifiée ? Quelles pourraient être les liens profonds entre illusions visuelles avec des hallucinations aussi bien chez les sujets neuro-typique que dans des pathologies psychologiques?
-    """)
-
-
 s.close_section()
 
 
@@ -364,6 +353,18 @@ Philosophers have also been interested in what illusions like the Rotating Snake
 http://i2.cdn.cnn.com/cnnnext/dam/assets/150410134301-cat-going-up-or-down-super-169.jpg
 
 """)
+
+
+bib = s.content_bib("Cydonia Mensae", "1976", 'Viking Orbiter image', url="Viking Orbiter image")
+s.add_slide(content=s.content_figures(
+        [path2(fname) for fname in ['Face-on-mars.jpg', 'Viking_moc_face_20m_low.png', 'Viking_moc_face_20m_high.png']], fragment=True,
+            title="Paréidolie", height=s.meta['height']*.5) + bib,
+    notes="""
+Pour aller plus loin, il est intéressant de considérer cette image prise en 1971 par la sonde Viking d’une partie de la surface de la planète Mars (Figure @fig:viking). L’image est relativement floue, et les points noirs sont des erreurs de mesure  mais l’on distingue très clairement un visage de type humain comme une sculpture géante laisser là par une civilisation extraterrestre. Quelques 20 ans plus tard, de nouvelles images ont été réalisés par de nouvelles sondes spatiales et montrent aussi une forme de visage. Mais une fois la résolution de l’image affinée, les détails du relief révèlent qu’il n’y a pas physiquement de sculpture de ce type mais seulement un simple rocher. C’est un cas de [paréidolie](https://fr.wikipedia.org/wiki/Par%C3%A9idolie) : quelque chose est perçu alors qu’il est physiquement absent. De la même façon, on peut voir un cheval courir dans les nuages, ou le visage du Christ dans un toast, le constat est le même : le système visuel et en particulier la perception qui en découlent non seulement interprète les images, mais sur surtout, il ne peut pas faire autrement que de générer une interprétation à partir d’images, et comme on vient de le voir même si elles ne font pas a priori sens. Dans ce genre d’illusion on se rapproche donc d’une hallucination, qui peut être définie comme une perception sans objet.
+
+Pour résumer, les illusions visuelles, en plus de leur côté ludique, nous révèlent des caractéristiques essentielles de notre perception visuelle tant sur leurs caractéristiques universelles que sur les variabilités inter et intra individuelles. Malgré la diversité des formes des illusions visuelles et la diversité des explications qu’on peut leur faire correspondre, existe-t-il des points communs qui permettraient d’en avoir une compréhension unifiée ? Quelles pourraient être les liens profonds entre illusions visuelles avec des hallucinations aussi bien chez les sujets neuro-typique que dans des pathologies psychologiques?
+    """)
+
 
 # bib = s.content_bib("Bressloff et al", "2002", 'Neural Computation', url="http://homepage.ruhr-uni-bochum.de/Dirk.Jancke/line-motion-examples.html")
 #
@@ -422,7 +423,6 @@ def create_movie(figname, duration=1.5,
     clip = mpy.VideoClip(make_frame, duration=duration)
     clip.write_videofile(path2(figname), fps=fps)
     return 'ok'
-
 
 figname = 'phi_motion.mp4'
 if not os.path.isfile(path2(figname)):
@@ -547,7 +547,7 @@ s.add_slide_outline(i_section,
 Avant d’essayer de donner une réponse à ces questions, rappelons une contrainte fondamentale à laquelle notre cerveau est confronté : l’environnement et dynamique et notre cerveau est (relativement) lent pour traiter ces informations.
 """)
 
-s.hide_slide(content=s.content_figures(
+s.add_slide(content=s.content_figures(
    [path2('scheme_thorpe.jpg')], bgcolor="black",
    height=s.meta['height']*height_ratio),
     notes="""
@@ -555,7 +555,7 @@ s.hide_slide(content=s.content_figures(
  """)
 
 
-s.hide_slide(content=s.content_figures(
+s.add_slide(content=s.content_figures(
     [path2('tsonga.png')], bgcolor="black",
     height=s.meta['height']*height_ratio),
     notes="""
