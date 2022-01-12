@@ -245,6 +245,19 @@ Ces simples illustrations montrent que la vision, et le cerveau en général, ef
     """)
 
 
+figname = 'Kitaoka.mp4'
+url = 'Ilusions of brightness or lightness - <a href http://www.psy.ritsumei.ac.jp/~akitaoka/gilchrist2006mytalke.html">Akiyoshi KITAOKA</a>'
+s.add_slide(content="""
+ <video controls autoplay loop width=99%/>
+   <source type="video/mp4" src="{}">
+ </video>
+ """.format(s.embed_video(path2(figname))),
+            notes="""
+Les illusions visuelles sont donc particulièrement utiles pour étudier scientifiquement la perception visuelle… Un exemple marquant et le travail d'Hay à Kochi qui est avocat et je vous encourage à regarder son site et ses messages sur Twitter qui illustre parfaitement des phénomènes étonnant de façon très didactique par exemple ici en montrant Comment un bout de papier gris peut paraître foncé ou clair en fonction de son contexte.
+
+""")
+
+
 for url in ['https://sensiseeds.com/nl/blog/files/2013/03/Mysterious-Dalmatian-Optical-Illusion.jpg',
             ]:
     s.add_slide(content=s.content_figures([url],  # fragment=True,
@@ -259,26 +272,6 @@ Mais au-delà d'être un outil qui nous permet de remettre en question notre con
 
 
     """)
-
-s.add_slide(content='<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">オープンキャンパスの定番。早く再開したい。 <a href="https://t.co/HWZtXNhvJX">pic.twitter.com/HWZtXNhvJX</a></p>&mdash; Akiyoshi Kitaoka (@AkiyoshiKitaoka) <a href="https://twitter.com/AkiyoshiKitaoka/status/1480179794130370560?ref_src=twsrc%5Etfw">January 9, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>', notes="""
-tweet
-
-
-""")
-s.add_slide(content="""
-  <iframe data-src='<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">オープンキャンパスの定番。早く再開したい。 <a href="https://t.co/HWZtXNhvJX">pic.twitter.com/HWZtXNhvJX</a></p>&mdash; Akiyoshi Kitaoka (@AkiyoshiKitaoka) <a href="https://twitter.com/AkiyoshiKitaoka/status/1480179794130370560?ref_src=twsrc%5Etfw">January 9, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>' data-preload></iframe>
-""", notes="""
-tweet
-
-
-""")
-
-s.add_slide(content="""
-  <iframe data-src="https://twitter.com/AkiyoshiKitaoka/status/1480179794130370560" data-preload></iframe>""", notes="""
-tweet
-
-
-""")
 
 url = '<a href https://en.wikipedia.org/wiki/The_dress">#TheDress</a>: #whiteandgold or #blackandblue ?'
 s.add_slide(content=s.content_figures(
