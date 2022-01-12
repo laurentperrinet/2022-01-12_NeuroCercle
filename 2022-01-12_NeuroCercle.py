@@ -211,9 +211,12 @@ s.add_slide(content=s.content_figures(['https://upload.wikimedia.org/wikipedia/c
                                           title=None, fragment=True, height=s.meta['height']*height_ratio)+ url,
                 notes="""
 Il existe une large classe d'illusions visuelles et je vais vous montrer tout d'abord des exemples très classiques qui montrent un premier phénomène dit de bistabilité :
-*  tout d'abord dans le cube dit de Necker dans lequel vous voyez un ensemble de lignes qui forment une figure que vous pourrez sûrement interpréter de façon tridimensionnelle : le dessin correspond à un cube dont les arètes sont dessinées sur une perspective isométrique.
-* Si vous vous concentrez maintenant sur une face puis sur l'autre de ce cube et que dans votre imagination vous la mettez en avant ou en arrière alors vous avez un phénomène changeant (bitable) qui permet de passer d'une configuration du cube à une autre les deux sont également aussi probables. Il existe en fait une infinité de configurations qui correspondent à la projection de figures tridimensionnelle sur ce plan mais c'est celle-ci que nous imaginons de préférence car elles sont les plus simples - c'est une manifeststation du rasoir d'ockham...
-* dans le vase dit de Rubin on a aussi une  phénomène bistable qui correspond à voir soit deux visages qui se font face soit un vase soit la silhouette d'un vase
+
+ *  tout d'abord dans le cube dit de Necker dans lequel vous voyez un ensemble de lignes qui forment une figure que vous pourrez sûrement interpréter de façon tridimensionnelle : le dessin correspond à un cube dont les arètes sont dessinées sur une perspective isométrique.
+
+ * Si vous vous concentrez maintenant sur une face puis sur l'autre de ce cube et que dans votre imagination vous la mettez en avant ou en arrière alors vous avez un phénomène changeant (bitable) qui permet de passer d'une configuration du cube à une autre les deux sont également aussi probables. Il existe en fait une infinité de configurations qui correspondent à la projection de figures tridimensionnelle sur ce plan mais c'est celle-ci que nous imaginons de préférence car elles sont les plus simples - c'est une manifeststation du rasoir d'ockham...
+
+ * dans le vase dit de Rubin on a aussi une  phénomène bistable qui correspond à voir soit deux visages qui se font face soit un vase soit la silhouette d'un vase
     """)
 
 
