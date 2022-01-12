@@ -193,7 +193,7 @@ s.add_slide(content=s.content_figures(
     title=None, height=s.meta['height']*height_ratio) + url,
     notes="""
 Avant tout, je voudrais rendre hommage à Jeanny Herault qui nous a malheureusement quitté l'année dernière… Il a été une influence importante par son travail scientifique et a eu la gentillesse de participer à mon jury de thèse en 2003, ici en compagnie de Michel Imbert, de mon directeur de thèse Manuel Samuelides et de Simon Thorpe qui était mon codirecteur.
-nous avons eu aussi la chance que Jeanny accepte d'écrire la préface de notre livre dont je montre la couverture. Cette préface, que vous pouvez lire en suivant le lien ci-dessous, est toujours d'actualité…
+nous avons eu aussi la chance que Jeanny accepte d'écrire la préface du livre que nous avions édité avec GC et MK et dont je montre la couverture. Cette préface, que vous pouvez lire en suivant le lien ci-dessous, est toujours d'actualité…
 je le remercie pour son travail et aussi pour sa gentillesse et j'espère qu'il sera longtemps une inspiration pour les générations actuelles et futures...
 """)
 
@@ -203,8 +203,16 @@ for suff in ['_without', '']:
                                           title=None,  # 'Classical visual illusions',
                                           height=s.meta['height']*height_ratio) + url,
                 notes="""
-                Les illusions visuelles...
-L’étymologie du mot illusion réfère à la tromperie et nous permet de définir les illusions visuelles comme une stimulation visuelle qui induit une perception décalée par rapport à la réalité physique (le stimulus proximal). Dans l’illusion classique dit de Hering par exemple deux lignes parallèles, quand elles sont placées sur un faisceau de lignes convergentes, semblent légèrement courbées comme si le centre de l’image avait gonflé par rapport à sa périphérie. Cette illusion est robuste même si l’on prend une règle pour vérifier physiquement le parallélisme des lignes (ou simplement en enlevant les lignes fuyantes): Il n’est pas possible de ne **pas** la percevoir. Ainsi, pour cette illusion comme pour une grande variété d’autres illusions visuelles (statiques ou dynamiques) ou sur d’autres modalités (comme le toucher), les illusions visuelles marquent tout d’abord par ce caractère quasi universel et intuitif, c’est-à-dire sans qu’il faille expliquer ou donner un mode d’emploi pour percevoir ces illusions.
+> Les illusions visuelles...
+
+1. L’étymologie du mot illusion réfère à la tromperie et nous permet de définir les illusions visuelles comme une stimulation visuelle qui induit une perception décalée par rapport à la réalité physique (le stimulus proximal). Dans l’illusion classique dit de Hering par exemple deux lignes parallèles,...
+
+2. quand elles sont placées sur un faisceau de lignes convergentes, semblent légèrement courbées comme si le centre de l’image avait gonflé par rapport à sa périphérie. Cette illusion est robuste même si l’on prend une règle pour vérifier physiquement le parallélisme des lignes (ou simplement en enlevant les lignes fuyantes):
+
+Il n’est pas possible de ne **pas** la percevoir. Ainsi, pour cette illusion comme pour une grande variété d’autres illusions visuelles (statiques ou dynamiques) ou sur d’autres modalités (comme le toucher), les illusions visuelles marquent tout d’abord par ce caractère quasi universel et intuitif, c’est-à-dire sans qu’il faille expliquer ou donner un mode d’emploi pour percevoir ces illusions.
+
+Il existe une large classe d'illusions visuelles et je vais vous montrer tout d'abord des exemples très classiques qui montrent...
+
 """)
 
 url = '<a href https://en.wikipedia.org/wiki/Multistability>Multistabilité: Cube de Necker, Vase de Rubin</a>'
@@ -212,11 +220,13 @@ url = '<a href https://en.wikipedia.org/wiki/Multistability>Multistabilité: Cub
 s.add_slide(content=s.content_figures(['https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Multistability.svg/1488px-Multistability.svg.png'],  # fragment=True,
                                           title=None, fragment=True, height=s.meta['height']*height_ratio)+ url,
                 notes="""
-Il existe une large classe d'illusions visuelles et je vais vous montrer tout d'abord des exemples très classiques qui montrent un premier phénomène dit de bistabilité :
+... un premier phénomène dit de bistabilité :
 
  *  tout d'abord dans le cube dit de Necker dans lequel vous voyez un ensemble de lignes qui forment une figure que vous pourrez sûrement interpréter de façon tridimensionnelle : le dessin correspond à un cube dont les arètes sont dessinées sur une perspective isométrique.
 
- * Si vous vous concentrez maintenant sur une face puis sur l'autre de ce cube et que dans votre imagination vous la mettez en avant ou en arrière alors vous avez un phénomène changeant (bitable) qui permet de passer d'une configuration du cube à une autre les deux sont également aussi probables. Il existe en fait une infinité de configurations qui correspondent à la projection de figures tridimensionnelle sur ce plan mais c'est celle-ci que nous imaginons de préférence car elles sont les plus simples - c'est une manifeststation du rasoir d'ockham...
+ * Si vous vous concentrez maintenant sur une face puis sur l'autre de ce cube et que dans votre imagination vous la mettez en avant ou en arrière alors vous avez un phénomène changeant (bitable) qui permet de passer d'une configuration du cube à une autre les deux sont également aussi probables.
+
+ * Notez, qu'il existe en fait une infinité de configurations qui correspondent à la projection de figures tridimensionnelle sur ce plan mais ce sont les deux configurations de cube que nous imaginons de préférence car elles sont les plus simples - c'est une manifestation du rasoir d'ockham...
 
  * dans le vase dit de Rubin on a aussi une  phénomène bistable qui correspond à voir soit deux visages qui se font face soit un vase soit la silhouette d'un vase
     """)
@@ -228,7 +238,7 @@ url = '<a href https://www.cerveauetpsycho.fr/sd/illusions/les-ambiguites-de-la-
 s.add_slide(content=s.content_figures([path2('footprint_half.jpg')],  # fragment=True,
                                           title=None, fragment=True, height=s.meta['height']*height_ratio)+ url,
                 notes="""
-* Ces illusions peuvent aussi apparaîtrent dans la vraie vie et quand on regarde cette image, on a l’impression que l’une est en relief (convexe, comme une bosse)
+* Ces illusions peuvent aussi apparaîtrent dans la vraie vie et quand on regarde cette image, on a l’impression que cette forme de pied est sculptée en relief (elle est convexe, comme une bosse)
 
     """)
 
@@ -236,9 +246,11 @@ s.add_slide(content=s.content_figures([path2('footprint.jpg')],  # fragment=True
                                           title=None, fragment=True, height=s.meta['height']*height_ratio)+ url,
                 notes="""
 
-Si onretourner l'image de 180 degrés on voit cette meme trace en creux (concavité, en creux comme un bol) - Notez qu'avec un peu d'entraînement on a pas besoin de retourner l'image pour passer de l'un à l'autre. (ref https://thewordcounter.com/concave-vs-convex/)
+* Si on retourne l'image de 180 degrés, on voit cette meme trace en creux (une concavité, en creux comme un bol)  (ref https://thewordcounter.com/concave-vs-convex/)
 
-* Notez aussi qu'ici on va avoir un biais pour une solution ou une autre notamment par rapport au cube dit de Necker. Cette illusion repose sur une hypothèse : le système visuel considère que la lumière vient d’en haut, et que les parties sombres sont des ombres. Cela permet d’interpréter l’image en trois dimensions.
+*  Notez qu'avec un peu d'entraînement on a pas besoin de retourner l'image pour passer de l'un à l'autre. Mais que c'est plus dur
+
+* Ce biais repose sur une hypothèse supplémentaire : le système visuel considère que la lumière vient d’en haut, et que les parties sombres sont des ombres. Cela permet d’interpréter l’image en trois dimensions. Les deux solutions ne sont plus équivalentes en terme de vraisemblance.
     """)
 
 
@@ -250,9 +262,16 @@ s.add_slide(content=s.content_figures(
     ], fragment=True,
     title=None, height=s.meta['height']*height_ratio) + url,
     notes="""
-À ce titre, une illusion récente est remarquable à bien des égards. En effet, certaines illusions illusions comme le cube de Necker sont multi-stable, dans le sens où la perception peut alterner autour de plusieurs interprétations possibles de la même image. Dans le cas de #LaRobe, nous avons une image qui a le pouvoir de diviser la population mondiale (au moins sur les réseaux sociaux) entre des perceptions alternatives. De plus, au lieu d’être créée par des scientifiques, cette illusion est née par [sérendipité](https://fr.wikipedia.org/wiki/S%C3%A9rendipit%C3%A9) à partir d’une simple photo prise lors de la préparation d’une cérémonie de mariage. Ainsi, pensez-vous qu’elle est blanche et or ou alors qu’elle est bleu avec des bandes noires ? Je vous invite à voter avec le bouton "reaction"
+1. À ce titre, une illusion récente est remarquable à bien des égards. En effet, certaines illusions illusions comme le cube de Necker sont multi-stable, dans le sens où la perception peut alterner autour de plusieurs interprétations possibles de la même image. Dans le cas de #LaRobe, nous avons une image qui a le pouvoir de diviser la population mondiale (au moins sur les réseaux sociaux) entre des perceptions alternatives. En plus, au lieu d’être créée par des scientifiques, cette illusion est née par [sérendipité](https://fr.wikipedia.org/wiki/S%C3%A9rendipit%C3%A9) à partir d’une simple photo prise lors de la préparation d’une cérémonie de mariage. Ainsi, pensez-vous qu’elle est blanche et or ou alors qu’elle est bleu avec des bandes noires ? Je vous invite à voter avec le bouton "reaction"
 
-Même si le débat fait toujours rage, les explications scientifiques (entre autres articles scientifiques ou sessions spéciales de conférence) convergent sur une perception de la couleur de la figure qui est modifiée par le contexte du fond. En effet notre système visuel doit pouvoir identifier la couleur d’un objet (par exemple pour évaluer la maturité d’un fruit comme une balade) quelque soit les conditions lumineuses, un matin le midi avec une lumière crue ou le crépuscule avec une lumière orangée du soir. Ici le fond est surexposé et rend cette interprétation ambiguë et deux interprétations sont possibles pour cette image comme illustré dans la figure de droite. Je peux vous dévoiler que sur un échantillon représentatif une courte majorité voilà la robe bleue et noir. Un aspect remarquable de cette illusion et d’une part sa stabilité et d’autre part la difficulté de changer d’interprétation une fois une première interprétation formée, c’est-à-dire de passer une couleur bleue à une perception d’une couleur blanche. Cette illusion est à mes yeux d’autant plus puissante car elle met en évidence que les images sont interprétées par notre système visuel. Celà apporte aussi ce message universel qu'une propriété de nos fonctions cognitives et de pouvoir interpréter la même objet physique de différentes façons, et réconcilier des groupes humains qui peuvent avoir des façons contrastées de voir des objets physiques qui sont identiques. Pour reprendre le célèbre proverbe on pourrait dire que « l’illusion est humaine »!
+Même si le débat fait toujours rage, les explications scientifiques (entre autres articles scientifiques ou sessions spéciales de conférence) convergent sur une perception de la couleur de la figure qui est modifiée par le contexte du fond. En effet notre système visuel doit pouvoir identifier la couleur d’un objet (par exemple pour évaluer la maturité d’un fruit comme une banane) quelque soit les conditions lumineuses, un matin le midi avec une lumière crue ou le crépuscule avec une lumière orangée du soir. Ici le fond est surexposé et rend cette interprétation ambiguë et deux interprétations sont possibles pour cette image...
+
+2. ... comme illustré dans la figure de droite. Je peux vous dévoiler que sur un échantillon représentatif une courte majorité voilà la robe bleue et noir.
+
+Un aspect remarquable de cette illusion et d’une part sa stabilité et d’autre part la difficulté de changer d’interprétation une fois une première interprétation formée, c’est-à-dire de passer une couleur bleue à une perception d’une couleur blanche. Cette illusion est à mes yeux d’autant plus puissante car elle met en évidence que les images sont interprétées par notre système visuel. Celà apporte aussi ce message universel qu'une propriété de nos fonctions cognitives et de pouvoir interpréter la même objet physique de différentes façons, et réconcilier des groupes humains qui peuvent avoir des façons contrastées de voir des objets physiques qui sont identiques. Pour reprendre le célèbre proverbe on pourrait dire que « l’illusion est humaine »!
+
+-----
+
 
 Two ways in which the photograph of The dress may be perceived:
 * black and blue under a yellow-tinted illumination (left figure) or
@@ -268,7 +287,11 @@ for url in ['https://upload.wikimedia.org/wikipedia/commons/2/22/Gestalt_proximi
                                           title=None, height=s.meta['height']*height_ratio),
                 notes="""
 
-Ces simples illustrations montrent que la vision, et le cerveau en général, effectue des opérations qui sont largement inconscientes. l'ensemble de ces processus participent à la "déraisonnable efficacité de la vision dans le monde naturel" (pour reprendre les mots d'Eugene Wigner). Le mouvement de la Gestalt a essayé de établir une typologie des différents mécanismes qui régissent cette ORGANISATION PERCEPTIVE :
+Ces simples illustrations montrent que la vision, et le cerveau en général, effectue des opérations qui sont largement inconscientes.
+
+Mon but ici est de montrer que ces illusions mettent à jour ces processus et que l'ensemble de ces processus participent à la "déraisonnable efficacité de la vision dans le monde naturel" (pour reprendre les mots d'Eugene Wigner) qui font que nous pouvons voir dans une large gamme d'environnements.
+
+Le mouvement de la Gestalt a essayé de établir une typologie des différents mécanismes qui régissent cette ORGANISATION PERCEPTIVE :
 
  * proximité
 
@@ -287,7 +310,9 @@ s.add_slide(content="""
  </video>
  """.format(s.embed_video(path2(figname))) + url,
             notes="""
-Un exemple marquant et le travail d'Akiyoshi KITAOKA et je vous encourage à regarder son site et ses messages sur Twitter qui illustrent parfaitement des phénomènes étonnant de façon très didactique par exemple ici en montrant Comment un bout de papier gris peut paraître foncé ou clair en fonction de son contexte.
+Un exemple marquant et le travail d'Akiyoshi KITAOKA et je vous encourage à regarder son site et ses messages sur Twitter qui illustrent parfaitement des phénomènes étonnant de façon très didactique par exemple ici en montrant...
+
+... comment un même bout de papier grisé peut paraître soit foncé soit clair en fonction du contexte.
 
 Mais au-delà d'être un outil qui nous permet de remettre en question notre connaissance de la perception visuelle et de l'intelligence naturelle en général, les illusions nous servent aussi à dépasser les frontières de ce que l'on sait comme ...
 """)
@@ -300,7 +325,9 @@ for url in ['https://sensiseeds.com/nl/blog/files/2013/03/Mysterious-Dalmatian-O
                 notes="""
 ...par exemple :
 
-> Cette image qui semble montrer des taches noires aléatoire sur un fond blanc représente un objet familier si on y prête attention. Je préfère ne pas vous le dire si vous n'avez jamais vu cette image car il suffit de donner le nom de l'objet qui y est caché pour le voir immédiatement et une fois qu'on l'a vu une fois une seule fois on ne pourra plus ne plus le voir pour le restant de sa vie… Alors prière de ne pas divul-gâcher ce plaisir :-)
+* Cette image qui semble montrer des taches noires aléatoires sur un fond blanc...
+* Elle représente en fait un objet familier si on y prête attention. Je préfère ne pas vous le dire si vous n'avez jamais vu cette image car il suffit de donner le nom de l'objet qui y est caché pour le voir immédiatement ...
+*  ... et une fois qu'on l'a vu une fois une seule fois on ne pourra plus ne plus le voir pour le restant de sa vie… Alors prière de ne pas divul-gâcher ce plaisir :-)
 
 Poussons maintenant notre étude à un niveau  supérieur avec cette figure proposé encore une fois par...
     """)
@@ -316,11 +343,11 @@ s.add_slide(content=s.content_figures(
     height=s.meta['height']*height_ratio) + url,
     notes="""
 
-... Akiyoshi Kitaoka’s dans laquelle l'arrangement des différentes formes sur l'image induit une forte impression de mouvement. Bien sûr ce n'est qu'une image il n'y a pas de mouvement.
+... Akiyoshi Kitaoka dans laquelle l'arrangement des différentes formes sur l'image induit une forte impression de mouvement. Bien sûr ce n'est qu'une image il n'y a pas de mouvement.
 
 Pour s'en convaincre on peut facilement se rendre compte que les mouvements induits par cette image sont dépendant des mouvements des yeux que l'on fait (et donc indépendants de mon écran).
 
-Cette illusion très surprenante se rapproche qualitativement d'un forme d'hallucination et nous allons voir dans la suite sinon on peut déduire les mécanismes neuronaux sous-tendant cette illusion.
+Cette illusion très surprenante se rapproche qualitativement d'un forme d'hallucination et nous allons voir dans la suite si on peut déduire des mécanismes neuronaux sous-tendant cette illusion.
 
 ----
 
@@ -365,7 +392,7 @@ s.open_section()
 title = meta['sections'][i_section]
 s.add_slide_outline(i_section,
                     notes="""
- 1. Au cours de notre description des mécanismes sous-tendant les illusions visuelles nous nous approchons progressivement des hallucinations.
+ 1. Nous sommes progressivement passé d'illusions visuelles simples à des illusions plus complexe qui se rapprochent d'hallucinations.
 
  2. Comment peut-on expliquer la formation d’images hallucinées, comme celle induite par la prise de drogue ou de psychotropes? Peut-on alors identifier des mécanismes qui sont impliqués dans le cerveau, et définir une neuro-anatomie fonctionnelle qui puisse expliquer ces illusions et hallucinations dans un cadre unifié?
 
@@ -377,12 +404,13 @@ s.add_slide(content=s.content_figures(
         [path2(fname) for fname in ['Face-on-mars.jpg', 'Viking_moc_face_20m_low.png', 'Viking_moc_face_20m_high.png']], fragment=True,
             title="<a href=https://fr.wikipedia.org/wiki/Par%C3%A9idolie>Paréidolie</a>", height=s.meta['height']*.5) + bib,
     notes="""
- 1. Tout d'abord, il est intéressant de considérer cette image prise en 1971 par la sonde Viking. elle représente une partie de la surface de la planète Mars. L’image est relativement floue, et les points noirs sont des erreurs de mesure (missing bits). on distingue très clairement un visage de type humain comme une sculpture géante laissée là par une civilisation extraterrestre.
+ 1. Tout d'abord, il est intéressant de considérer cette image prise en 1971 par la sonde Viking. elle représente une partie de la surface de la planète Mars. L’image est relativement floue, et les points noirs sont des erreurs de mesure (missing pixels). on distingue très clairement un visage de type humain comme une sculpture géante laissée là par une civilisation extraterrestre.
 
  2. Quelques 20 ans plus tard, de nouvelles images ont été réalisés par de nouvelles sondes spatiales et montrent aussi une forme de visage. Mais une fois la résolution de l’image affinée,
- 3. les détails du relief révèlent qu’il n’y a pas physiquement de sculpture de ce type mais seulement un simple rocher. C’est un cas de paréidolie: quelque chose est perçu alors qu’il est physiquement absent.
 
- De la même façon, on peut voir un cheval courir dans les nuages, ou le visage du Christ dans un toast, le constat est le même : le système visuel et en particulier la perception qui en découlent non seulement interprète les images, mais  surtout, il ne peut pas faire autrement que de générer une interprétation à partir d’images, et comme on vient de le voir même si elles ne font pas a priori sens. Dans ce genre d’illusion, on se rapproche donc d’une hallucination, qui peut être définie comme une perception sans objet.
+ 3. les détails du relief révèlent qu’il n’y a pas physiquement de sculpture de ce type mais seulement un simple rocher. C’est un cas de *paréidolie*: quelque chose est perçu alors qu’il est physiquement absent.
+
+ De la même façon, on peut voir un cheval courir dans les nuages, ou le visage du Christ dans un toast... Le constat est le même : le système visuel et en particulier la perception qui en découlent non seulement interprète les images, mais  surtout, il ne peut pas faire autrement que de générer une interprétation à partir d’images, et comme on vient de le voir même si elles ne font pas a priori sens. Dans ce genre d’illusion, on se rapproche donc d’une hallucination, qui peut être définie comme une perception sans objet.
 
     """)
 
@@ -464,11 +492,11 @@ s.add_slide(content="""
  </video>
  """.format(s.embed_video(path2(figname))),
             notes="""
-Pour aller plus loin dans cette direction étudions une illusion particulièrement simple mais qui est essentiel car elle est à la base de tout le cinéma.
+Pour aller plus loin dans cette direction étudions une illusion particulièrement simple mais qui est essentiel car elle est à la base du cinéma.
 
 Celle-ci consiste simplement à montrer des images statiques dans une succession rapide à fin de générer une illusion de mouvement.
 
-La façon la plus simple de le faire et le faire avec un seul point: c'est ce que l'on va voir maintenant dans cette courte vidéo. Pour cela on montre un point à une position de l’espace visuel puis un autre point exactement similaire mais à une distance proche (mais supérieure à la taille de ce point). On perçoit alors un et un seul point qui se déplace de la première à la seconde position.  La magie du cinéma opère : à partir de deux images statiques, on crée un mouvement.
+`[Play]` : La façon la plus simple de le faire et le faire avec un seul point: c'est ce que l'on va voir maintenant dans cette courte vidéo. Pour cela on montre un point à une position de l’espace visuel puis un autre point exactement similaire mais à une distance proche (mais supérieure à la taille de ce point). On perçoit alors un et un seul point qui se déplace de la première à la seconde position.  La magie du cinéma opère : à partir de deux images statiques, on crée un mouvement.
 
 ---
 
@@ -500,7 +528,6 @@ cinematiscopes
 """)
 
 
-bib = s.content_bib("Chemla, Reynaud, diVolo, Zerlaut, Perrinet, Destexhe and Chavane", "2019", 'Journal of Neuroscience', url="https://laurentperrinet.github.io/publication/chemla-19/")
 bib = s.content_bib("Chemla et al", "2019", 'Journal of Neuroscience', url="https://laurentperrinet.github.io/publication/chemla-19/")
 
 s.add_slide(content=s.content_figures(
@@ -508,13 +535,17 @@ s.add_slide(content=s.content_figures(
     height=s.meta['height']*height_ratio) + bib,
    notes="""
 
-Notre équipe a récemment regardé les corrélats neuronaux de cette illusion.
+Notre équipe a récemment étudié les corrélats neuronaux de cette illusion.
 
-L’originalité de l’étude menée par Sandrine Chemla est d'utiliser une technique d’imagerie qui permet d’enregistrer l’activité sur le cortex visuel primaire lors de la présentation de cette illusion d’optique. À noter qu’en comparant l’activité produite par les deux éléments présentés séparément ou conjointement, on met en évidence une activité différentielle qui est caractéristique de la perception de cette illusion.
+* L’originalité de l’étude menée par Sandrine Chemla est d'utiliser une technique d’imagerie qui permet d’enregistrer l’activité sur le cortex visuel primaire lors de la présentation de cette illusion d’optique.
 
-Cette  méthodologie permet de mettre en évidence un mécanisme original. Au niveau des enregistrements la réponse différentielle montre que relativement à un traitement indépendant des deux points, il existe une vague d’activité qui se déplace sur le cortex qui en particulier supprime une partie de l’activité.
+* La figure montre dans l'axe des abscisses l'évolution temporelle est dans l'axe des ordonnées une représentation de l'espace suivant la trajectoire du point. Les couleurs chaudes indique une activité neuronale plus forte et montre ainsi que les activités neuronales suivent des vagues d'activité qui se propagent sur la surface du cortex.
 
-Une modélisation sur ordinateur a permis de montrer qu'une fonction de cette vague de suppression est de lever les ambiguïtés sur les différents mouvements possibles représentés sur la carte. Dans ce cas particulier, la vague permet de supprimer la représentation d’un mouvement dans le sens opposé. Toutefois, beaucoup de questions restent en suspens. Ces résultats montrent le rôle potentiel des vagues d’activité sur la surface du cortex comme un outil potentiel de traitement de l’information et de sa modulation [@tag:Muller18]. Ces vagues peuvent en effet induire facilitations ou suppressions dans l'espace et le temps et produire une forme de « calcul » pour représenter au mieux l’image visuelle.
+* Cette  méthodologie permet de mettre en évidence un mécanisme original. Au niveau des enregistrements la réponse différentielle montre que relativement à un traitement indépendant des deux points, il existe une vague d’activité qui se déplace sur le cortex qui en particulier supprime la partie de l’activité dans la direction opposée.
+
+* Une modélisation sur ordinateur a permis de montrer qu'une fonction de cette vague de suppression est de lever les ambiguïtés sur les différents mouvements possibles représentés sur la carte. Dans ce cas particulier, la vague permet de supprimer la représentation d’un mouvement dans le sens opposé.
+
+* Toutefois, beaucoup de questions restent en suspens. Ces résultats montrent le rôle potentiel des vagues d’activité sur la surface du cortex comme un outil potentiel de traitement de l’information et de sa modulation [@tag:Muller18]. Ces vagues peuvent en effet induire facilitations ou suppressions dans l'espace et le temps et produire une forme de « calcul » pour représenter au mieux l’image visuelle.
 
 
 """)
@@ -560,7 +591,9 @@ s.add_slide(content="""
             notes="""
 
 
-Pour aller plus loin dans cette direction, peut-on étendre cette méthodologie à la dynamique présente dans certaines illusions, comme celle du « Point-Ligne » ? En effet, en présentant un simple point puis une ligne on induit une perception d’une expansion du point pour « remplir » la ligne (un mouvement dit Phi).
+Cette méthodologie avait précédemme été mise en évidence dans l'illusion du « Point-Ligne » :
+
+`[Play]` : en présentant un simple point puis une ligne on induit une perception d’une expansion du point pour « remplir » la ligne (un mouvement dit Phi).
 
 """)
 
@@ -569,6 +602,8 @@ s.add_slide(content=s.content_figures(
     [path2('Jancke_etal2004.png')], title=title, embed=s.meta['embed'],
     height=s.meta['height']*height_ratio) + bib,
    notes="""
+
+De façon similaire les auteurs avait trouvé un corrélat neuronal pour cette illusion En montrant que l'activité neuronale évoquée par l'illusion était plus proche de celle évoqué par un point en mouvement que celle évoquée par le stimulus physique…
 
 Imaging cortical correlates of illusion in early visual cortex.
 
@@ -588,16 +623,21 @@ s.open_section()
 title = meta['sections'][i_section]
 s.add_slide_outline(i_section,
                     notes="""
-Maintenant que nous en savons un petit peu plus comment une illusion peut émerger essayons maintenant d'étudier pourquoi ses illusions ont lieu.
+1. Maintenant que nous en savons un petit peu plus sur *comment* une illusion peut émerger essayons maintenant d'étudier *pourquoi* ces illusions ont lieu.
 
-Rappelons une contrainte fondamentale à laquelle notre cerveau est confronté : l’environnement est dynamique et notre cerveau est (relativement) lent pour traiter ces informations.
+2. Pour cela, rappelons une contrainte fondamentale à laquelle notre cerveau est confronté : l’environnement est dynamique et notre cerveau est (relativement) lent pour traiter ces informations.
 """)
 
+bib = s.content_bib("Thorpe, Fize, and Marlot", "1996", 'Nature', url="https://www.allpsych.uni-giessen.de/rauisch12/readings/ThorpeEtal.Nature.1996.pdf")
 s.add_slide(content=s.content_figures(
    [path2('scheme_thorpe.jpg')], bgcolor="black",
    height=s.meta['height']*height_ratio),
     notes="""
- En effet les travaux de Simon Thorpe à Toulouse au Cerco ont montré des capacités ultra-rapide de catégorisation d’image chez les primates. Cette vitesse peut atteindre environ 100 ms chez l’humain [@tag:Kirchner06] et 80 ms chez le singe.
+ En effet les travaux de Simon Thorpe à Toulouse au Cerco ont montré des capacités ultra-rapide de catégorisation d’image chez les primates.
+
+ Cette latence de réponse est del l'ordre de 80 ms chez le singe et de 100 ms chez l’humain [@tag:Kirchner06]...
+
+ C’est remarquablement rapide mais relativement long si l'on considère cette fois-ci...
  """)
 
 
@@ -605,7 +645,7 @@ s.add_slide(content=s.content_figures(
     [path2('tsonga.jpg')], bgcolor="black",
     height=s.meta['height']*height_ratio),
     notes="""
-C’est remarquablement rapide mais relativement long si l'on considère cette fois-ci une tâche simple d’interception d’un objet en mouvement. Considérons par exemple un agent qui suit une balle de tennis lancée à une vitesse de 20 m/s à une distance de 1 m devant son regard, ici un de mes tennisman préféré, Jo-Wilfried Tsonga.
+... une tâche simple d’interception d’un objet en mouvement. Considérons par exemple un agent qui suit une balle de tennis lancée à une vitesse de 20 m/s à une distance de 1 m devant son regard, ici un de mes tennismen préférés, Jo-Wilfried Tsonga, ici dans un sauvetage acrobatique de passing-shot à Wimbledon.
   """)
 
 s.add_slide(content=s.content_figures(
@@ -615,17 +655,76 @@ s.add_slide(content=s.content_figures(
     notes="""
  Au moment de passer dans l’axe de vision du joueur de tennis, la balle va être perçue en retard sur la trajectoire à cause du délai sensoriel.
 
- Plus précisément, on peut estimert que la balle est placée à l’instant où l’image est prise à environ 45° d’angle visuel en retard sur la position réelle actuelle de la balle (disque jaune).
+ Plus précisément, on peut estimer que par raport à la posiition physique de la balle *à l’instant où l’image est prise*  (disque jaune plein), celle qui atteint le système visuel primaire est placée à environ 45° d’angle visuel *en retard* sur la position réelle actuelle de la balle (disque jaune en pointillé).
 
- À noter que la position de la balle est sur l’axe de vision (telle celle figurée par la position des yeux sur cette photo), mais que pour le système sensoriel, cette position au temps présent doit être anticipée. Notons aussi notons aussi que la position de la balle, dans cette représentation rétinienne, au moment où l’action sera réalisé (après le délai sensorimoteur total) pourra être estimé à partir de la continuité du mouvement de la balle. C’est-à-dire qu’elle sera encore environ à 45° d’angle visuel mais cette fois ci en avant de la trajectoire, dans son futur.
+Notons aussi que la position de la balle, dans cette représentation rétinienne, et au moment où l’action sera réalisé (après le délai sensorimoteur total) pourra être estimé à partir de la continuité du mouvement de la balle. C’est-à-dire que pour que cette position au temps présent soit anticipée il faut qu'elle soit estimée à environ 45° d’angle visuel mais cette fois ci en avant de la trajectoire, dans son futur.
 
- Il semble incroyable que ce genre de voyage dans le temps puisse s’opérer dans notre cerveau, mais une simple illusion visuelle permet de mettre ces mécanismes en évidence.
+À noter que la position de la balle est sur l’axe de vision (telle celle figurée par la position des yeux sur cette photo), mais que pour le système sensoriel, une position intermédiaire  au temps présent entre passé et futur...  Il semble incroyable que ce genre de voyage dans le temps puisse s’opérer dans notre cerveau, mais une simple illusion visuelle permet de mettre ces mécanismes en évidence.
+ """)
+
+# import numpy as np
+# W, H = 1000, 600
+# duration = 1.
+# fps = 100
+# def create_movie(figname, r = 16,
+#                  duration = duration,
+#                  start = duration*.2,
+#                  stop = duration*.8, do_stop=False,
+#                  t_flash = 1.,
+#                  duration_flash = .02,
+#                  flash_fill=(0,1,0),
+#                  dot_fill=(1,0,0),
+#                  fps = fps,
+#                  W=W, H=H):
+#
+#     import gizeh as gz
+#     import moviepy.editor as mpy
+#
+#     flash = gz.rectangle(lx=r, ly=r, xy=(W/2., H/2.-r), fill=flash_fill)
+#     def make_frame(t):
+#         surface = gz.Surface(W, H, bg_color=(0, 0, 0))
+#         if np.abs(t-t_flash) < duration_flash: flash.draw(surface)
+#         if start < t < stop:
+#             if do_stop and t >= duration/2:
+#                 flash.draw(surface)
+#                 rect = gz.rectangle(lx=r, ly=r, xy=(W/2, H/2.+r), fill=dot_fill)
+#             else:
+#                 rect = gz.rectangle(lx=r, ly=r, xy=(W*t/duration, H/2.+r), fill=dot_fill)
+#             rect.draw(surface)
+#         return surface.get_npimage()
+#
+#     clip = mpy.VideoClip(make_frame, duration=duration)
+#     clip.write_videofile(path2(figname), fps=fps)
+#     return clip
+#
+# t_flashes = [0.90, 0.95, 1, 1.05, 1.10]
+# n_flashes = len(t_flashes)
+# color_flashes = [(0, v, 1-v) for v in np.linspace(0, 1, n_flashes, endpoint=True)]
+# for i, (t_flash, flash_fill) in enumerate(zip(t_flashes, color_flashes)):
+#     figname = f'flash_lag_{t_flash}.mp4'
+#     if not os.path.isfile(path2(figname)):
+#         clip = create_movie(figname, t_flash=t_flash, flash_fill=flash_fill)
+
+
+fle_bib = s.content_bib("Khoei, Masson and LP", "2017", 'PLoS CB', url="http://invibe.net/LaurentPerrinet/Publications/KhoeiMassonPerrinet17")
+
+for i in [0, 1, 2, 3]:
+    s.add_slide(content=f"""
+     <video controls autoplay loop width=99%/>
+       <source type="video/mp4" src="https://laurentperrinet.github.io/sciblog/files/2019-09-30_flash_lag_{i}.mp4">
+     </video>
+     """)
+
+s.add_slide(content=f"""
+ <video controls autoplay loop width=49%/>
+   <source type="video/mp4" src="https://laurentperrinet.github.io/sciblog/files/2019-09-30_flash_lag_1.mp4">
+ </video>
+  <video controls autoplay loop width=49%/>
+    <source type="video/mp4" src="https://laurentperrinet.github.io/sciblog/files/2019-09-30_flash_lag_2.mp4">
+  </video>
  """)
 
 figname = 'flash_lag.mp4'
-
-fle_bib = s.content_bib("Khoei, Masson and LP", "2017", 'PLoS CB', url="http://invibe.net/LaurentPerrinet/Publications/KhoeiMassonPerrinet17")
-# pub pour https://laurentperrinet.github.io/Perrinet20PredictiveProcessing_manubot/v/latest/index.html ou en français https://raw.githubusercontent.com/laurentperrinet/2020-01-07_CNRS_concours-DR/master/perrinet20cnrs.pdf
 s.add_slide(content="""
  <video controls autoplay loop width=99%/>
    <source type="video/mp4" src="{}">
@@ -654,6 +753,7 @@ C’est ce que nous avons montré dans ce travail de modélisation qui montre un
 #
 # """)
 
+# pub pour https://laurentperrinet.github.io/Perrinet20PredictiveProcessing_manubot/v/latest/index.html ou en français https://raw.githubusercontent.com/laurentperrinet/2020-01-07_CNRS_concours-DR/master/perrinet20cnrs.pdf
 
 bib = s.content_bib("Changizi et al", "2008", 'Cognitive Science', url="https://doi.org/10.1080/03640210802035191")
 for suff in ['']:
