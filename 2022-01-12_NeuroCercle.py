@@ -128,7 +128,6 @@ intro = """
 <h2 class="title">{title}</h2>
 <h3>{author_link}</h3>
 """.format(**meta)
-
 # intro += s.content_imagelet(os.path.join(figpath_slides, "troislogos.png"), s.meta['height']*.2)
 intro += s.content_figures(
     [path2('troislogos.png')], bgcolor=meta['bgcolor'],
@@ -136,7 +135,6 @@ intro += s.content_figures(
 #bgcolor="black",
 intro += """
 <h4><a href="{conference_url}">{conference}</a>, {DD}/{MM}/{YYYY} </h4>
-
 {Acknowledgements}
 """.format(**meta)
 ###########################################################################
