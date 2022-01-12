@@ -223,51 +223,6 @@ Il existe une large classe d'illusions visuelles et je vais vous montrer tout d'
     """)
 
 
-for url in ['https://upload.wikimedia.org/wikipedia/commons/6/63/Reification.jpg',  # ou https://www.askideas.com/media/36/Hidden-Picture-Optical-Illusion.jpg
-            'https://upload.wikimedia.org/wikipedia/commons/2/22/Gestalt_proximity.svg',
-            'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Gestalt_similarity.svg/600px-Gestalt_similarity.svg.png',
-            ]:
-    s.add_slide(content=s.content_figures([url],  # fragment=True,
-                                          title=None, height=s.meta['height']*height_ratio),
-                notes="""
-
-Ces simples illustrations montrent que la vision, et le cerveau en général, effectue des opérations qui sont largement inconsciente. l'ensemble de ces processus participent à la "déraisonnable efficacité de la vision dans le monde naturel" (pour reprendre les mots d'Eugene Wigner). Le mouvement de la Gestalt a essayé de établir une typologie des différents mécanismes qui régissent cette ORGANISATION PERCEPTIVE :
-
-> reification
-> proximité
-> similarité
-
-    """)
-
-
-figname = 'Kitaoka.mp4'
-url = 'Ilusions of brightness or lightness - <a href http://www.psy.ritsumei.ac.jp/~akitaoka/gilchrist2006mytalke.html">Akiyoshi KITAOKA</a>'
-s.add_slide(content="""
- <video controls autoplay loop width=99%/>
-   <source type="video/mp4" src="{}">
- </video>
- """.format(s.embed_video(path2(figname))),
-            notes="""
-Les illusions visuelles sont donc particulièrement utiles pour étudier scientifiquement la perception visuelle… Un exemple marquant et le travail d'Hay à Kochi qui est avocat et je vous encourage à regarder son site et ses messages sur Twitter qui illustre parfaitement des phénomènes étonnant de façon très didactique par exemple ici en montrant Comment un bout de papier gris peut paraître foncé ou clair en fonction de son contexte.
-
-""")
-
-
-for url in ['https://sensiseeds.com/nl/blog/files/2013/03/Mysterious-Dalmatian-Optical-Illusion.jpg',
-            ]:
-    s.add_slide(content=s.content_figures([url],  # fragment=True,
-                                          title=None, height=s.meta['height']*height_ratio),
-                notes="""
-Mais au-delà d'être un outil qui nous permet de remettre en question notre connaissance de la perception visuelle et de l'intelligence naturelle en général, les illusions ne servent aussi à dépasser les frontières de ce que l'on sait il y en a toujours des nouvelles qui apparaissent comme par exemple :
-
-> Cette image qui semble montrer des taches noires aléatoire sur un fond blanc forment un objet familier si on y prête attention. Je préfère préfère ne pas vous le dire si vous n'avez jamais vu cette image car il suffit de donner le nom de l'objet qui y est caché pour le voir immédiatement et une fois qu'on l'a vu une fois une seule fois on ne pourra plus ne plus le voir pour le restant de sa vie… Alors prière de ne pas divul-gâcher ce plaisir :-)
-
-> illusion taille https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/M%C3%BCller-Lyer_illusion.svg/1200px-M%C3%BCller-Lyer_illusion.svg.png
-(> Contraste de luminosité ?)
-
-
-    """)
-
 url = '<a href https://en.wikipedia.org/wiki/The_dress">#TheDress</a>: #whiteandgold or #blackandblue ?'
 s.add_slide(content=s.content_figures(
     [
@@ -286,6 +241,49 @@ Two ways in which the photograph of The dress may be perceived:
 
 """)
 
+for url in ['https://upload.wikimedia.org/wikipedia/commons/6/63/Reification.jpg',  # ou https://www.askideas.com/media/36/Hidden-Picture-Optical-Illusion.jpg
+            'https://upload.wikimedia.org/wikipedia/commons/2/22/Gestalt_proximity.svg',
+            'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Gestalt_similarity.svg/600px-Gestalt_similarity.svg.png',
+            ]:
+    s.add_slide(content=s.content_figures([url],  # fragment=True,
+                                          title=None, height=s.meta['height']*height_ratio),
+                notes="""
+
+Ces simples illustrations montrent que la vision, et le cerveau en général, effectue des opérations qui sont largement inconsciente. l'ensemble de ces processus participent à la "déraisonnable efficacité de la vision dans le monde naturel" (pour reprendre les mots d'Eugene Wigner). Le mouvement de la Gestalt a essayé de établir une typologie des différents mécanismes qui régissent cette ORGANISATION PERCEPTIVE :
+
+> reification
+> proximité
+> similarité
+
+    """)
+
+figname = 'Kitaoka.mp4'
+url = 'Ilusions of brightness or lightness - <a href http://www.psy.ritsumei.ac.jp/~akitaoka/gilchrist2006mytalke.html">Akiyoshi KITAOKA</a>'
+s.add_slide(content="""
+ <video controls autoplay loop width=99%/>
+   <source type="video/mp4" src="{}">
+ </video>
+ """.format(s.embed_video(path2(figname))),
+            notes="""
+Les illusions visuelles sont donc particulièrement utiles pour étudier scientifiquement la perception visuelle… Un exemple marquant et le travail d'Akiyoshi KITAOKA et je vous encourage à regarder son site et ses messages sur Twitter qui illustrent parfaitement des phénomènes étonnant de façon très didactique par exemple ici en montrant Comment un bout de papier gris peut paraître foncé ou clair en fonction de son contexte.
+
+""")
+
+
+for url in ['https://sensiseeds.com/nl/blog/files/2013/03/Mysterious-Dalmatian-Optical-Illusion.jpg',
+            ]:
+    s.add_slide(content=s.content_figures([url],  # fragment=True,
+                                          title=None, height=s.meta['height']*height_ratio),
+                notes="""
+Mais au-delà d'être un outil qui nous permet de remettre en question notre connaissance de la perception visuelle et de l'intelligence naturelle en général, les illusions ne servent aussi à dépasser les frontières de ce que l'on sait il y en a toujours des nouvelles qui apparaissent comme par exemple :
+
+> Cette image qui semble montrer des taches noires aléatoire sur un fond blanc forment un objet familier si on y prête attention. Je préfère préfère ne pas vous le dire si vous n'avez jamais vu cette image car il suffit de donner le nom de l'objet qui y est caché pour le voir immédiatement et une fois qu'on l'a vu une fois une seule fois on ne pourra plus ne plus le voir pour le restant de sa vie… Alors prière de ne pas divul-gâcher ce plaisir :-)
+
+> illusion taille https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/M%C3%BCller-Lyer_illusion.svg/1200px-M%C3%BCller-Lyer_illusion.svg.png
+(> Contraste de luminosité ?)
+
+
+    """)
 
 s.close_section()
 
