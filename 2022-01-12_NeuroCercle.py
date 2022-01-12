@@ -730,16 +730,16 @@ s.add_slide(content=f"""
   <video controls autoplay loop width=49%/>
     <source type="video/mp4" src="https://laurentperrinet.github.io/sciblog/files/2019-09-30_flash_lag_3.mp4">
   </video>
- """)
-
-s.add_slide(content=f"""
- <video controls autoplay loop width=49%/>
-   <source type="video/mp4" src="https://laurentperrinet.github.io/sciblog/files/2019-09-30_flash_lag_1.mp4">
- </video>
-  <video controls autoplay loop width=49%/>
-    <source type="video/mp4" src="https://laurentperrinet.github.io/sciblog/files/2019-09-30_flash_lag_2.mp4">
-  </video>
- """,
+""",
+#
+# s.add_slide(content=f"""
+#  <video controls autoplay loop width=49%/>
+#    <source type="video/mp4" src="https://laurentperrinet.github.io/sciblog/files/2019-09-30_flash_lag_1.mp4">
+#  </video>
+#   <video controls autoplay loop width=49%/>
+#     <source type="video/mp4" src="https://laurentperrinet.github.io/sciblog/files/2019-09-30_flash_lag_2.mp4">
+#   </video>
+ #""",
             notes="""
 
 En effet, l’illusion du flash retardé ("Flash Lag Effect" en anglais) permet de mettre en évidence des dynamiques de traitement dans le système visuel.
