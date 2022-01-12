@@ -267,7 +267,7 @@ for url in ['https://upload.wikimedia.org/wikipedia/commons/2/22/Gestalt_proximi
                                           title=None, height=s.meta['height']*height_ratio),
                 notes="""
 
-Ces simples illustrations montrent que la vision, et le cerveau en général, effectue des opérations qui sont largement inconsciente. l'ensemble de ces processus participent à la "déraisonnable efficacité de la vision dans le monde naturel" (pour reprendre les mots d'Eugene Wigner). Le mouvement de la Gestalt a essayé de établir une typologie des différents mécanismes qui régissent cette ORGANISATION PERCEPTIVE :
+Ces simples illustrations montrent que la vision, et le cerveau en général, effectue des opérations qui sont largement inconscientes. l'ensemble de ces processus participent à la "déraisonnable efficacité de la vision dans le monde naturel" (pour reprendre les mots d'Eugene Wigner). Le mouvement de la Gestalt a essayé de établir une typologie des différents mécanismes qui régissent cette ORGANISATION PERCEPTIVE :
 
  * proximité
 
@@ -288,6 +288,7 @@ s.add_slide(content="""
             notes="""
 Un exemple marquant et le travail d'Akiyoshi KITAOKA et je vous encourage à regarder son site et ses messages sur Twitter qui illustrent parfaitement des phénomènes étonnant de façon très didactique par exemple ici en montrant Comment un bout de papier gris peut paraître foncé ou clair en fonction de son contexte.
 
+Mais au-delà d'être un outil qui nous permet de remettre en question notre connaissance de la perception visuelle et de l'intelligence naturelle en général, les illusions nous servent aussi à dépasser les frontières de ce que l'on sait comme ...
 """)
 
 
@@ -296,9 +297,11 @@ for url in ['https://sensiseeds.com/nl/blog/files/2013/03/Mysterious-Dalmatian-O
     s.add_slide(content=s.content_figures([url],  # fragment=True,
                                           title=None, height=s.meta['height']*height_ratio),
                 notes="""
-Mais au-delà d'être un outil qui nous permet de remettre en question notre connaissance de la perception visuelle et de l'intelligence naturelle en général, les illusions nous servent aussi à dépasser les frontières de ce que l'on sait comme par exemple :
+...par exemple :
 
-> Cette image qui semble montrer des taches noires aléatoire sur un fond blanc représente un objet familier si on y prête attention. Je préfère préfère ne pas vous le dire si vous n'avez jamais vu cette image car il suffit de donner le nom de l'objet qui y est caché pour le voir immédiatement et une fois qu'on l'a vu une fois une seule fois on ne pourra plus ne plus le voir pour le restant de sa vie… Alors prière de ne pas divul-gâcher ce plaisir :-)
+> Cette image qui semble montrer des taches noires aléatoire sur un fond blanc représente un objet familier si on y prête attention. Je préfère ne pas vous le dire si vous n'avez jamais vu cette image car il suffit de donner le nom de l'objet qui y est caché pour le voir immédiatement et une fois qu'on l'a vu une fois une seule fois on ne pourra plus ne plus le voir pour le restant de sa vie… Alors prière de ne pas divul-gâcher ce plaisir :-)
+
+Poussons maintenant notre étude à un niveau  supérieur avec cette figure proposé encore une fois par...
     """)
 
 
@@ -312,7 +315,13 @@ s.add_slide(content=s.content_figures(
     height=s.meta['height']*height_ratio) + url,
     notes="""
 
-Poussant maintenant notre étude à un niveau  supérieur avec cette figure proposé encore une fois par Akiyoshi Kitaoka’s dans laquelle l'arrangement des différentes formes sur l'image induit une forte impression de mouvement. Bien sûr ce n'est qu'une image il n'y a pas de mouvement. Pour s'en convaincre on peut facilement se rendre compte que les mouvements induits par cette image sont dépendants sont dépendant des mouvements des yeux que l'on fait. Cette illusion très surprenante se rapproche d'une hallucination et nous allons voir dans la suite sinon on peut déduire les mécanismes neuronaux sous-tendant cette illusion.
+... Akiyoshi Kitaoka’s dans laquelle l'arrangement des différentes formes sur l'image induit une forte impression de mouvement. Bien sûr ce n'est qu'une image il n'y a pas de mouvement.
+
+Pour s'en convaincre on peut facilement se rendre compte que les mouvements induits par cette image sont dépendant des mouvements des yeux que l'on fait (et donc indépendants de mon écran).
+
+Cette illusion très surprenante se rapproche qualitativement d'un forme d'hallucination et nous allons voir dans la suite sinon on peut déduire les mécanismes neuronaux sous-tendant cette illusion.
+
+----
 
 https://www.illusionsindex.org/i/rotating-snakes
 
@@ -355,7 +364,9 @@ s.open_section()
 title = meta['sections'][i_section]
 s.add_slide_outline(i_section,
                     notes="""
-Au cours de notre description des mécanismes sous-tendant les illusions visuelles nous nous approchons progressivement des hallucinations. Comment peut-on expliquer la formation d’images hallucinées, comme celle induite par la prise de drogue ou de psychotropes? Peut-on alors identifier des mécanismes qui sont impliqués dans le cerveau, et définir une neuro-anatomie fonctionnelle qui puisse expliquer ces illusions et hallucinations dans un cadre unifié?
+ 1. Au cours de notre description des mécanismes sous-tendant les illusions visuelles nous nous approchons progressivement des hallucinations.
+
+ 2. Comment peut-on expliquer la formation d’images hallucinées, comme celle induite par la prise de drogue ou de psychotropes? Peut-on alors identifier des mécanismes qui sont impliqués dans le cerveau, et définir une neuro-anatomie fonctionnelle qui puisse expliquer ces illusions et hallucinations dans un cadre unifié?
 
 """)
 
@@ -365,9 +376,13 @@ s.add_slide(content=s.content_figures(
         [path2(fname) for fname in ['Face-on-mars.jpg', 'Viking_moc_face_20m_low.png', 'Viking_moc_face_20m_high.png']], fragment=True,
             title="<a href=https://fr.wikipedia.org/wiki/Par%C3%A9idolie>Paréidolie</a>", height=s.meta['height']*.5) + bib,
     notes="""
-Tout d'abord, il est intéressant de considérer cette image prise en 1971 par la sonde Viking d’une partie de la surface de la planète Mars (Figure @fig:viking). L’image est relativement floue, et les points noirs sont des erreurs de mesure  mais l’on distingue très clairement un visage de type humain comme une sculpture géante laisser là par une civilisation extraterrestre. Quelques 20 ans plus tard, de nouvelles images ont été réalisés par de nouvelles sondes spatiales et montrent aussi une forme de visage. Mais une fois la résolution de l’image affinée, les détails du relief révèlent qu’il n’y a pas physiquement de sculpture de ce type mais seulement un simple rocher. C’est un cas de [paréidolie](https://fr.wikipedia.org/wiki/Par%C3%A9idolie) : quelque chose est perçu alors qu’il est physiquement absent. De la même façon, on peut voir un cheval courir dans les nuages, ou le visage du Christ dans un toast, le constat est le même : le système visuel et en particulier la perception qui en découlent non seulement interprète les images, mais sur surtout, il ne peut pas faire autrement que de générer une interprétation à partir d’images, et comme on vient de le voir même si elles ne font pas a priori sens. Dans ce genre d’illusion on se rapproche donc d’une hallucination, qui peut être définie comme une perception sans objet.
+ 1. Tout d'abord, il est intéressant de considérer cette image prise en 1971 par la sonde Viking. elle représente une partie de la surface de la planète Mars. L’image est relativement floue, et les points noirs sont des erreurs de mesure (missing bits). on distingue très clairement un visage de type humain comme une sculpture géante laissée là par une civilisation extraterrestre.
 
-Pour résumer, les illusions visuelles, en plus de leur côté ludique, nous révèlent des caractéristiques essentielles de notre perception visuelle tant sur leurs caractéristiques universelles que sur les variabilités inter et intra individuelles. Malgré la diversité des formes des illusions visuelles et la diversité des explications qu’on peut leur faire correspondre, existe-t-il des points communs qui permettraient d’en avoir une compréhension unifiée ? Quelles pourraient être les liens profonds entre illusions visuelles avec des hallucinations aussi bien chez les sujets neuro-typique que dans des pathologies psychologiques?
+ 2. Quelques 20 ans plus tard, de nouvelles images ont été réalisés par de nouvelles sondes spatiales et montrent aussi une forme de visage. Mais une fois la résolution de l’image affinée,
+ 3. les détails du relief révèlent qu’il n’y a pas physiquement de sculpture de ce type mais seulement un simple rocher. C’est un cas de paréidolie: quelque chose est perçu alors qu’il est physiquement absent.
+
+ De la même façon, on peut voir un cheval courir dans les nuages, ou le visage du Christ dans un toast, le constat est le même : le système visuel et en particulier la perception qui en découlent non seulement interprète les images, mais  surtout, il ne peut pas faire autrement que de générer une interprétation à partir d’images, et comme on vient de le voir même si elles ne font pas a priori sens. Dans ce genre d’illusion, on se rapproche donc d’une hallucination, qui peut être définie comme une perception sans objet.
+
     """)
 
 
@@ -387,13 +402,21 @@ Pour résumer, les illusions visuelles, en plus de leur côté ludique, nous ré
 # """)
 
 
-for url in ['https://www.askideas.com/media/36/Shake-Your-Head-Optical-Illusion.jpg',  # ou https://www.askideas.com/media/36/Hidden-Picture-Optical-Illusion.jpg
+for url in [#'https://www.askideas.com/media/36/Shake-Your-Head-Optical-Illusion.jpg',  # ou https://www.askideas.com/media/36/Hidden-Picture-Optical-Illusion.jpg
             'https://laurentperrinet.github.io/post/2018-04-10_trames/featured.png',
-            'https://upload.wikimedia.org/wikipedia/commons/c/c1/Vision_2_secondes.jpg',
+            # 'https://upload.wikimedia.org/wikipedia/commons/c/c1/Vision_2_secondes.jpg',
             ]:
     s.add_slide(content=s.content_figures([url],  # fragment=True,
-                                          title=None, height=s.meta['height']*height_ratio),
+                                          title=None, height=s.meta['height']*height_ratio) + 'Etienne Rey - <a href https://laurentperrinet.github.io/post/2018-04-10_trames">Trames</a>',
                 notes="""
+
+
+Pour résumer, les illusions visuelles, en plus de leur côté ludique ou artistique comme dans cette œuvre d'Etienne Rey, nous révèlent des caractéristiques essentielles de notre perception visuelle tant sur leurs caractéristiques universelles que sur les variabilités inter et intra individuelles.
+
+Malgré la diversité des formes des illusions visuelles et la diversité des explications qu’on peut leur faire correspondre, existe-t-il des points communs qui permettraient d’en avoir une compréhension unifiée ? Quelles pourraient être les liens profonds entre illusions visuelles avec des hallucinations aussi bien chez les sujets neuro-typique que dans des pathologies psychologiques?
+
+-----
+
     # CERVEAU
     #
     # >  ouchi illusion - # “Ouchi Illusion” (Ouchi 1977, Spillmann et al 1986) | Optical illusions, Optical illusion photos, Illusions
@@ -402,6 +425,7 @@ for url in ['https://www.askideas.com/media/36/Shake-Your-Head-Optical-Illusion.
     # > trames https://laurentperrinet.github.io/post/2018-04-10_trames/
     # > mouvement des yeux
     #
+
     """)
 
 
@@ -439,6 +463,13 @@ s.add_slide(content="""
  </video>
  """.format(s.embed_video(path2(figname))),
             notes="""
+Pour aller plus loin dans cette direction étudions une illusion particulièrement simple mais qui est essentiel car elle est à la base de tout le cinéma.
+
+Celle-ci consiste simplement à montrer des images statiques dans une succession rapide à fin de générer une illusion de mouvement.
+
+La façon la plus simple de le faire et le faire avec un seul point: c'est ce que l'on va voir maintenant dans cette courte vidéo. Pour cela on montre un point à une position de l’espace visuel puis un autre point exactement similaire mais à une distance proche (mais supérieure à la taille de ce point). On perçoit alors un et un seul point qui se déplace de la première à la seconde position.  La magie du cinéma opère : à partir de deux images statiques, on crée un mouvement.
+
+---
 
 CINEMA
 
@@ -476,12 +507,18 @@ s.add_slide(content=s.content_figures(
     height=s.meta['height']*height_ratio) + bib,
    notes="""
 
-Pour aller plus loin dans cette direction, peut-on étendre cette méthodologie à la dynamique présente dans certaines illusions, comme celle du « Point-Ligne » ? En effet, en présentant un simple point puis une ligne on induit une perception d’une expansion du point pour « remplir » la ligne (un mouvement dit Phi). L’originalité de l’étude de Jancke et collègues est d'utiliser une technique d’imagerie qui permet d’enregistrer l’activité sur le cortex visuel primaire (ici du chat anesthésié) lors de la présentation de cette illusion d’optique. À noter qu’en comparant l’activité produite par les deux éléments présentés séparément ou conjointement, on met en évidence une activité différentielle qui est caractéristique de la perception de cette illusion. Une même  méthodologie permet de mettre en évidence un mécanisme original. Pour cela on utilise cette fois une illusion encore plus simple qui consiste à montrer un point à une position de l’espace visuel puis un autre point exactement similaire mais à une distance proche (mais supérieure à la taille de ce point). On perçoit alors un et un seul point qui se déplace de la première à la seconde position. Au niveau des enregistrements (cette fois chez le macaque) la réponse différentielle montre que relativement à un traitement indépendant des deux points, il existe une vague d’activité qui se déplace sur le cortex qui en particulier supprime une partie de l’activité [@tag:Chemla19]. Une modélisation sur ordinateur a permis de montrer qu'une fonction de cette vague de suppression est de lever les ambiguïtés sur les différents mouvements possibles représentés sur la carte. Dans ce cas particulier, la vague permet de supprimer la représentation d’un mouvement dans le sens opposé. Toutefois, beaucoup de questions restent en suspens. Ces résultats montrent le rôle potentiel des vagues d’activité sur la surface du cortex comme un outil potentiel de traitement de l’information et de sa modulation [@tag:Muller18]. Ces vagues peuvent en effet induire facilitations ou suppressions dans l'espace et le temps et produire une forme de « calcul » pour représenter au mieux l’image visuelle.
+Notre équipe a récemment regardé les corrélats neuronaux de cette illusion.
+
+L’originalité de l’étude menée par Sandrine Chemla est d'utiliser une technique d’imagerie qui permet d’enregistrer l’activité sur le cortex visuel primaire lors de la présentation de cette illusion d’optique. À noter qu’en comparant l’activité produite par les deux éléments présentés séparément ou conjointement, on met en évidence une activité différentielle qui est caractéristique de la perception de cette illusion.
+
+Cette  méthodologie permet de mettre en évidence un mécanisme original. Au niveau des enregistrements la réponse différentielle montre que relativement à un traitement indépendant des deux points, il existe une vague d’activité qui se déplace sur le cortex qui en particulier supprime une partie de l’activité.
+
+Une modélisation sur ordinateur a permis de montrer qu'une fonction de cette vague de suppression est de lever les ambiguïtés sur les différents mouvements possibles représentés sur la carte. Dans ce cas particulier, la vague permet de supprimer la représentation d’un mouvement dans le sens opposé. Toutefois, beaucoup de questions restent en suspens. Ces résultats montrent le rôle potentiel des vagues d’activité sur la surface du cortex comme un outil potentiel de traitement de l’information et de sa modulation [@tag:Muller18]. Ces vagues peuvent en effet induire facilitations ou suppressions dans l'espace et le temps et produire une forme de « calcul » pour représenter au mieux l’image visuelle.
+
 
 """)
 
 bib = s.content_bib("Jancke, Chavane, Naaman and Grinvald", "2004", 'Nature', url="http://homepage.ruhr-uni-bochum.de/Dirk.Jancke/line-motion-examples.html")
-
 
 def create_movie(figname, duration=1.5,
                  radius=1/18, length=.618,
@@ -521,7 +558,8 @@ s.add_slide(content="""
  """.format(s.embed_video(path2(figname))),
             notes="""
 
-Line motion illusion.
+
+Pour aller plus loin dans cette direction, peut-on étendre cette méthodologie à la dynamique présente dans certaines illusions, comme celle du « Point-Ligne » ? En effet, en présentant un simple point puis une ligne on induit une perception d’une expansion du point pour « remplir » la ligne (un mouvement dit Phi).
 
 """)
 
@@ -549,7 +587,9 @@ s.open_section()
 title = meta['sections'][i_section]
 s.add_slide_outline(i_section,
                     notes="""
-Avant d’essayer de donner une réponse à ces questions, rappelons une contrainte fondamentale à laquelle notre cerveau est confronté : l’environnement et dynamique et notre cerveau est (relativement) lent pour traiter ces informations.
+Maintenant que nous en savons un petit peu plus comment une illusion peut émerger essayons maintenant d'étudier pourquoi ses illusions ont lieu.
+
+Rappelons une contrainte fondamentale à laquelle notre cerveau est confronté : l’environnement est dynamique et notre cerveau est (relativement) lent pour traiter ces informations.
 """)
 
 s.add_slide(content=s.content_figures(
@@ -564,7 +604,7 @@ s.add_slide(content=s.content_figures(
     [path2('tsonga.jpg')], bgcolor="black",
     height=s.meta['height']*height_ratio),
     notes="""
-C’est remarquablement rapide mais relativement long si l'on considère cette fois-ci une tâche simple d’interception d’un objet en mouvement. Considérons par exemple un agent qui suit une balle de tennis lancée à une vitesse de 20 m/s à une distance de 1 m devant son regard.
+C’est remarquablement rapide mais relativement long si l'on considère cette fois-ci une tâche simple d’interception d’un objet en mouvement. Considérons par exemple un agent qui suit une balle de tennis lancée à une vitesse de 20 m/s à une distance de 1 m devant son regard, ici un de mes tennisman préféré, Jo-Wilfried Tsonga.
   """)
 
 s.add_slide(content=s.content_figures(
@@ -572,7 +612,13 @@ s.add_slide(content=s.content_figures(
     height=s.meta['height']*height_ratio),
     #image_fname=os.path.join(figpath, 'figure-tsonga.png'), embed=s.meta['embed'],
     notes="""
- Au moment de passer dans l’axe de vision du joueur de tennis, la balle va être perçue en arrière de la trajectoire à cause du délai sensoriel. Plus précisément la balle est placé à l’instant où l’image est prise à environ 45° d’angle visuel en retard sur la position réelle actuelle de la balle. À noter que la position de la balle est sur l’axe de vision (telle celle figurée par cette position des yeux), mais que pour le système sensoriel, cette position au temps présent doit être anticipée. Notons aussi notons aussi que la position de la balle, dans cette représentation rétinienne, au moment où l’action sera réalisé (après le délai sensorimoteur total) pourra être estimé à partir de la continuité du mouvement de la balle. C’est-à-dire qu’elle sera encore environ à 45° d’angle visuel mais cette fois ci en avant de la trajectoire, dans son futur. Il semble incroyable que ce genre de voyage dans le temps puisse s’opérer dans notre cerveau, mais une simple illusion visuelle permet de mettre ces mécanismes en évidence.
+ Au moment de passer dans l’axe de vision du joueur de tennis, la balle va être perçue en retard sur la trajectoire à cause du délai sensoriel.
+
+ Plus précisément, on peut estimert que la balle est placée à l’instant où l’image est prise à environ 45° d’angle visuel en retard sur la position réelle actuelle de la balle (disque jaune).
+
+ À noter que la position de la balle est sur l’axe de vision (telle celle figurée par la position des yeux sur cette photo), mais que pour le système sensoriel, cette position au temps présent doit être anticipée. Notons aussi notons aussi que la position de la balle, dans cette représentation rétinienne, au moment où l’action sera réalisé (après le délai sensorimoteur total) pourra être estimé à partir de la continuité du mouvement de la balle. C’est-à-dire qu’elle sera encore environ à 45° d’angle visuel mais cette fois ci en avant de la trajectoire, dans son futur.
+
+ Il semble incroyable que ce genre de voyage dans le temps puisse s’opérer dans notre cerveau, mais une simple illusion visuelle permet de mettre ces mécanismes en évidence.
  """)
 
 figname = 'flash_lag.mp4'
@@ -586,7 +632,13 @@ s.add_slide(content="""
  """.format(path2(figname)) + fle_bib,
             notes="""
 
-En effet, l’illusion du flash retardé ("Flash Lag Effect" en anglais) permet de mettre en évidence des dynamiques de traitement dans le système visuel. Dans cette illusion, l’observateur doit fixer environ au centre de l’écran. Une cible en mouvement horizontal apparaît et quand elle passe aux environs du centre de l’écran, un bref flash est présenté immédiatement au-dessous du centre de l'image. Perceptivement, on observe chez une vaste majorité d’observateurs que la cible en mouvement est perçue, au moment du flash, *en avant* de la trajectoire. L’hypothèse originale de Romi Nijhawan propose que la cible est perceptivement représentée de telle façon à ce qu’elle occupe sa position au temps présent, donc de manière anticipée. Par contre, le flash est imprévu et sa position ne peut pas être anticipée. C’est ce que nous avons montré dans ce travail de modélisation qui montre une évaluation quantitative des production d’un tel modèle [@tag:KhoeiMassonPerrinet17].
+En effet, l’illusion du flash retardé ("Flash Lag Effect" en anglais) permet de mettre en évidence des dynamiques de traitement dans le système visuel.
+
+Dans cette illusion, l’observateur doit fixer environ au centre de l’écran. Une cible en mouvement horizontal apparaît et quand elle passe aux environs du centre de l’écran, un bref flash est présenté immédiatement au-dessous du centre de l'image.
+
+Perceptivement, on observe chez une vaste majorité d’observateurs que la cible en mouvement est perçue, au moment du flash, *en avant* de la trajectoire. L’hypothèse originale de Romi Nijhawan propose que la cible est perceptivement représentée de telle façon à ce qu’elle occupe sa position au temps présent, donc de manière anticipée. Par contre, le flash est imprévu et sa position ne peut pas être anticipée.
+
+C’est ce que nous avons montré dans ce travail de modélisation qui montre une évaluation quantitative des production d’un tel modèle [@tag:KhoeiMassonPerrinet17].
 
 
 """)
@@ -609,6 +661,13 @@ for suff in ['']:
                                           height=s.meta['height']*height_ratio) + bib,
                 notes="""
 
+Plus généralement on peut en déduire qu'une fonction majeure du système visuel est de pouvoir représenter efficacemment le monde physique à partir d'informations potentiellement bruitées, retardées ou ambiguës. Par exemple on peut expliquer de nombreuses illusions visuelles comme celle de Hering à partir de la simple hypothèse que le système visuel anticipe la scène pour "prédire le présent".
+
+Par exemple, dans l'illusion de Hering les lignes parallèles placés dans un contexte qui évoque un point de fuite et donc une profondeur.
+
+Ceci induits que l'on a un mouvement en avant et donc que notre regard va passer dans ses lignes à travers ces lignes parallèles placées dans un plan frontaux parallèle sur l'axe de visée.
+
+La compensation pour le retard qui va être d'autant plus fort que les lignes sont proches,  c'est à dire dans l'axe vertical. on explique ainsi quantitativement cette illusion... 
 
 """)
 #
