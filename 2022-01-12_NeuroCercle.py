@@ -777,7 +777,7 @@ C’est ce que nous avons montré dans ce travail de modélisation qui montre un
 # pub pour https://laurentperrinet.github.io/Perrinet20PredictiveProcessing_manubot/v/latest/index.html ou en français https://raw.githubusercontent.com/laurentperrinet/2020-01-07_CNRS_concours-DR/master/perrinet20cnrs.pdf
 
 bib = s.content_bib("Changizi et al", "2008", 'Cognitive Science', url="https://doi.org/10.1080/03640210802035191")
-for suff in ['']:
+for suff in ['_without', '']:
     s.add_slide(content=s.content_figures([path2('Hering_illusion' + suff + '.svg')],
                                           title=None,  # 'Classical visual illusions',
                                           height=s.meta['height']*height_ratio) + bib,
