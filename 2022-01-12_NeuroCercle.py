@@ -205,12 +205,10 @@ for suff in ['_without', '']:
 L’étymologie du mot illusion réfère à la tromperie et nous permet de définir les illusions visuelles comme une stimulation visuelle qui induit une perception décalée par rapport à la réalité physique (le stimulus proximal). Dans l’illusion classique dit de Hering par exemple deux lignes parallèles, quand elles sont placées sur un faisceau de lignes convergentes, semblent légèrement courbées comme si le centre de l’image avait gonflé par rapport à sa périphérie. Cette illusion est robuste même si l’on prend une règle pour vérifier physiquement le parallélisme des lignes (ou simplement en enlevant les lignes fuyantes): Il n’est pas possible de ne **pas** la percevoir. Ainsi, pour cette illusion comme pour une grande variété d’autres illusions visuelles (statiques ou dynamiques) ou sur d’autres modalités (comme le toucher), les illusions visuelles marquent tout d’abord par ce caractère quasi universel et intuitif, c’est-à-dire sans qu’il faille expliquer un mode d’emploi pour les illusions.
 """)
 
-url = '<a href https://en.wikipedia.org/wiki/Multistability">Cube de Necker                                     Vase de Rubin</a>'
+url = '<a href https://en.wikipedia.org/wiki/Multistability">Multistabilité: Cube de Necker, Vase de Rubin</a>'
 
 for url in [
             'https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Multistability.svg/1488px-Multistability.svg.png',
-            path2('Convex-Or-Concave-Optical-Illusion-Picture.jpg'),
-            'https://www.askideas.com/media/36/Convex-Or-Concave-Optical-Illusion-Picture.jpg',
             ]:
     s.add_slide(content=s.content_figures([url],  # fragment=True,
                                           title=None, fragment=True, height=s.meta['height']*height_ratio)+ url,
@@ -219,8 +217,22 @@ Il existe une large classe d'illusions visuelles et je vais vous montrer tout d'
 *  tout d'abord dans le cube dit de Necker dans lequel vous voyez un ensemble de lignes qui forment une figure que vous pourrez sûrement interpréter de façon tridimensionnelle : le dessin correspond à un cube dont les arètes sont dessinées sur une perspective isométrique.
 * Si vous vous concentrez maintenant sur une face puis sur l'autre de ce cube et que dans votre imagination vous la mettez en avant ou en arrière alors vous avez un phénomène changeant (bitable) qui permet de passer d'une configuration du cube à une autre les deux sont également aussi probables. Il existe en fait une infinité de configurations qui correspondent à la projection de figures tridimensionnelle sur ce plan mais c'est celle-ci que nous imaginons de préférence car elles sont les plus simples - c'est une manifeststation du rasoir d'ockham...
 * dans le vase dit de Rubin on a aussi une  phénomène bistable qui correspond à voir soit deux visages qui se font face soit un vase soit la silhouette d'un vase
-* Ses illusions peuvent aussi apparaître dans la vraie vie et quand on regarde cette image d'un élément architectural on peut imaginer que les lignes convergent vers une convexité (en bosse), Mais aussi qu'elle convergent sur une concavité (en creux comme un bol) - Notez qu'avec un peu d'entraînement on a pas besoin de retourner l'image pour passer de l'un à l'autre. (ref https://thewordcounter.com/concave-vs-convex/)
-* Noter aussi qu'ici on va avoir un billet pour une solution ou une autre notamment par rapport au cube dit de Necker. C'est dû au fait que dans ces images naturelles, le contexte joue un rôle et que comme nous avons l'habitude de voir le soleil dans le ciel et donc que la lumièrQue la lumière éclaire les objets du bas du haut vers le bas, alors d'après les ombres sur cette image nous pouvons en déduire sa concavité et sac House à convexité en fonction des autres indices dans l'image (ici que l'on regarde un mur).
+    """)
+
+
+
+url = '<a href https://www.cerveauetpsycho.fr/sd/illusions/les-ambiguites-de-la-perception-visuelle-7012.php">Les ambiguïtés de la perception visuelle (Pascal Mamassian)</a>'
+
+for url in [
+            path2('footprint.jpg'),
+            # path2('Convex-Or-Concave-Optical-Illusion-Picture.jpg'),
+            # 'https://www.askideas.com/media/36/Convex-Or-Concave-Optical-Illusion-Picture.jpg',
+            ]:
+    s.add_slide(content=s.content_figures([url],  # fragment=True,
+                                          title=None, fragment=True, height=s.meta['height']*height_ratio)+ url,
+                notes="""
+* Ces illusions peuvent aussi apparaîtrent dans la vraie vie et quand on regarde cette image, Ces deux traces dans le sable sont identiques ; il suffit de tourner la page à 180 degrés pour s’en rendre compte. Pourtant, on a l’impression que l’une est en relief et l’autre en creux. une concavité (en creux comme un bol) - Notez qu'avec un peu d'entraînement on a pas besoin de retourner l'image pour passer de l'un à l'autre. (ref https://thewordcounter.com/concave-vs-convex/)
+* Notez aussi qu'ici on va avoir un biais pour une solution ou une autre notamment par rapport au cube dit de Necker. Cette illusion repose sur une hypothèse : le système visuel considère que la lumière vient d’en haut, et que les parties sombres sont des ombres. Cela permet d’interpréter l’image en trois dimensions. 
     """)
 
 
