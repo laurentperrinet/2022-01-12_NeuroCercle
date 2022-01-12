@@ -191,7 +191,7 @@ s.add_slide(content=s.content_figures(
     ], fragment=False,
     title=None, height=s.meta['height']*height_ratio) + url,
     notes="""
-Tout d'abord je voudrais rendre hommage à Jeanny Herault qui nous a malheureusement quitté l'année dernière… Il a été une influence importante par son travail scientifique et a eu la gentillesse de participer au jury de ma thèse en 2003, ici en compagnie de Michel Imbert, de mon directeur de thèse Manuel Samuelides et de Simon Thorpe qui était mon codirecteur.
+Avant tout, je voudrais rendre hommage à Jeanny Herault qui nous a malheureusement quitté l'année dernière… Il a été une influence importante par son travail scientifique et a eu la gentillesse de participer à mon jury de thèse en 2003, ici en compagnie de Michel Imbert, de mon directeur de thèse Manuel Samuelides et de Simon Thorpe qui était mon codirecteur.
 nous avons eu aussi la chance que Jeanny accepte d'écrire la préface de notre livre dont je montre la couverture. Cette préface, que vous pouvez lire en suivant le lien ci-dessous, est toujours d'actualité…
 je le remercie pour son travail et aussi pour sa gentillesse et j'espère qu'il sera longtemps une inspiration pour les générations actuelles et futures...
 """)
@@ -202,6 +202,7 @@ for suff in ['_without', '']:
                                           title=None,  # 'Classical visual illusions',
                                           height=s.meta['height']*height_ratio) + url,
                 notes="""
+                Les illusions visuelles...
 L’étymologie du mot illusion réfère à la tromperie et nous permet de définir les illusions visuelles comme une stimulation visuelle qui induit une perception décalée par rapport à la réalité physique (le stimulus proximal). Dans l’illusion classique dit de Hering par exemple deux lignes parallèles, quand elles sont placées sur un faisceau de lignes convergentes, semblent légèrement courbées comme si le centre de l’image avait gonflé par rapport à sa périphérie. Cette illusion est robuste même si l’on prend une règle pour vérifier physiquement le parallélisme des lignes (ou simplement en enlevant les lignes fuyantes): Il n’est pas possible de ne **pas** la percevoir. Ainsi, pour cette illusion comme pour une grande variété d’autres illusions visuelles (statiques ou dynamiques) ou sur d’autres modalités (comme le toucher), les illusions visuelles marquent tout d’abord par ce caractère quasi universel et intuitif, c’est-à-dire sans qu’il faille expliquer ou donner un mode d’emploi pour percevoir ces illusions.
 """)
 
@@ -223,10 +224,19 @@ Il existe une large classe d'illusions visuelles et je vais vous montrer tout d'
 
 url = '<a href https://www.cerveauetpsycho.fr/sd/illusions/les-ambiguites-de-la-perception-visuelle-7012.php">Les ambiguïtés de la perception visuelle (Pascal Mamassian)</a>'
 
+s.add_slide(content=s.content_figures([path2('footprint_half.jpg')],  # fragment=True,
+                                          title=None, fragment=True, height=s.meta['height']*height_ratio)+ url,
+                notes="""
+* Ces illusions peuvent aussi apparaîtrent dans la vraie vie et quand on regarde cette image, on a l’impression que l’une est en relief (convexe, comme une bosse)
+
+    """)
+
 s.add_slide(content=s.content_figures([path2('footprint.jpg')],  # fragment=True,
                                           title=None, fragment=True, height=s.meta['height']*height_ratio)+ url,
                 notes="""
-* Ces illusions peuvent aussi apparaîtrent dans la vraie vie et quand on regarde cette image, Ces deux traces dans le sable sont identiques ; il suffit de tourner la page à 180 degrés pour s’en rendre compte. Pourtant, on a l’impression que l’une est en relief et l’autre en creux. une concavité (en creux comme un bol) - Notez qu'avec un peu d'entraînement on a pas besoin de retourner l'image pour passer de l'un à l'autre. (ref https://thewordcounter.com/concave-vs-convex/)
+
+Si onretourner l'image de 180 degrés on voit cette meme trace en creux (concavité, en creux comme un bol) - Notez qu'avec un peu d'entraînement on a pas besoin de retourner l'image pour passer de l'un à l'autre. (ref https://thewordcounter.com/concave-vs-convex/)
+
 * Notez aussi qu'ici on va avoir un biais pour une solution ou une autre notamment par rapport au cube dit de Necker. Cette illusion repose sur une hypothèse : le système visuel considère que la lumière vient d’en haut, et que les parties sombres sont des ombres. Cela permet d’interpréter l’image en trois dimensions.
     """)
 
