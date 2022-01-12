@@ -137,6 +137,7 @@ intro += """
 <h4><a href="{conference_url}">{conference}</a>, {DD}/{MM}/{YYYY} </h4>
 {Acknowledgements}
 """.format(**meta)
+intro +=  '<BR><a href="{url}"> {url} </a>'.format(url=meta['url'])
 ###########################################################################
 # s.add_slide(content=intro)
 #
@@ -159,6 +160,8 @@ intro += """
 #
 #  """)
 #
+# s.add_slide(content=s.content_figures([figname_qr], cell_bgcolor=meta['bgcolor'], height=s.meta['height']*height_ratio**2) + '<BR><a href="{url}"> {url} </a>'.format(url=meta['url']), notes="All the material is available online - please flash this code this leads to a page with links to further references and code ")
+#
 # s.add_slide(content=s.content_figures([figname_qr], cell_bgcolor=meta['bgcolor'], height=s.meta['height']*height_ratio) + '<BR><a href="{url}"> {url} </a>'.format(url=meta['url']),
 #             notes="All the material is available online - please flash this QRcode this leads to a page with links to further references and code ")
 ########################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################
@@ -178,8 +181,6 @@ Nous allons ici montrer comment les limites de la perception permettent et peuve
 
 """)
 
-
-s.add_slide(content=s.content_figures([figname_qr], cell_bgcolor=meta['bgcolor'], height=s.meta['height']*height_ratio**2) + '<BR><a href="{url}"> {url} </a>'.format(url=meta['url']), notes="All the material is available online - please flash this code this leads to a page with links to further references and code ")
 
 
 url = 'Hommage à Jeanny... en <a href="https://laurentperrinet.github.io/publication/perrinet-03-these/">2003</a>, la <a href="https://laurentperrinet.github.io/publication/cristobal-perrinet-keil-15-bicv/"></a> <a href="http://bicv.github.io/toc/index.html">préface de BICV</a>'
@@ -667,7 +668,7 @@ Par exemple, dans l'illusion de Hering les lignes parallèles placés dans un co
 
 Ceci induits que l'on a un mouvement en avant et donc que notre regard va passer dans ses lignes à travers ces lignes parallèles placées dans un plan frontaux parallèle sur l'axe de visée.
 
-La compensation pour le retard qui va être d'autant plus fort que les lignes sont proches,  c'est à dire dans l'axe vertical. on explique ainsi quantitativement cette illusion... 
+La compensation pour le retard qui va être d'autant plus fort que les lignes sont proches,  c'est à dire dans l'axe vertical. on explique ainsi quantitativement cette illusion...
 
 """)
 #
