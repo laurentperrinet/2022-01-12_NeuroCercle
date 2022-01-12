@@ -187,6 +187,19 @@ Nous allons ici montrer comment les limites de la perception permettent et peuve
 s.add_slide(content=s.content_figures([figname_qr], cell_bgcolor=meta['bgcolor'], height=s.meta['height']*height_ratio**2) + '<BR><a href="{url}"> {url} </a>'.format(url=meta['url']), notes="All the material is available online - please flash this code this leads to a page with links to further references and code ")
 
 
+url = 'Hommage à Jeanny... [2003](https://laurentperrinet.github.io/publication/perrinet-03-these/) [BICV](https://laurentperrinet.github.io/publication/cristobal-perrinet-keil-15-bicv/) - [préface](https://onlinelibrary.wiley.com/doi/pdf/10.1002/9783527680863.fmatter)'
+s.add_slide(content=s.content_figures(
+    [
+        path2('jeanny_herault_1517732548875.jpg'),
+        'https://laurentperrinet.github.io/publication/perrinet-03-these/jury.jpg',
+        'https://laurentperrinet.github.io/publication/cristobal-perrinet-keil-15-bicv/featured.jpg',
+    ], fragment=True,
+    title=None, height=s.meta['height']*height_ratio) + url,
+    notes="""
+Tout d'abord je voudrais faire un hommage à Jeanny Herault qui nous a malheureusement quitté l'année dernière… Il a été à une importante influence au cours de ma thèse par son travail scientifique et a eu la gentillesse de participer au jury de ma thèse en 2003, ici en compagnie de Michel Imbert, de mon directeur de thèse Manuel Samuelides et de Simon Thorpe qui était mon codirecteur.
+nous avons eu aussi la chance que Jeanny accepte d'écrire la préface de notre livre dont je montre ainsi la couverture. Cette préface, que vous pouvez lire en suivant le lien ci-dessous, est toujours d'actualité…
+je le remercie pour son travail et aussi pour sa gentillesse et qu'il serve longtemps d'inspiration pour les générations actuelles et futures...
+""")
 
 url = '<a href https://en.wikipedia.org/wiki/Hering_illusion">Hering illusion</a>'
 for suff in ['', '_without']:
@@ -219,20 +232,6 @@ Two ways in which the photograph of The dress may be perceived:
 """)
 
 
-url = 'Hommage à Jeanny...'
-s.add_slide(content=s.content_figures(
-    [
-        'https://laurentperrinet.github.io/publication/perrinet-03-these/jury.jpg',
-        'https://laurentperrinet.github.io/publication/cristobal-perrinet-keil-15-bicv/featured.jpg',
-    ], fragment=True,
-    title=None, height=s.meta['height']*height_ratio) + url,
-    notes="""
-
-Tout d'abord je voudrais faire un hommage à Jeanny Hérault qui nous a malheureusement quitté l'année dernière… Il a été à une importante influence au cours de ma thèse par son travail scientifique et a eu la gentillesse de participer au jury de ma thèse en 2003, ici en compagnie de Michel Imbert, de mon directeur de thèse Manuel Samuelides et de Simon Thorpe qui était mon codirecteur.
-nous avons eu aussi la chance que Jeanny Accepte d'écrire la préface de notre livre dont je montre ainsi la couverture. Cette préface, que vous pouvez lire en suivant le lien ci-dessous, est toujours d'actualité…
-je le remercie pour son travail et aussi pour sa gentillesse et qu'il serve longtemps d'inspiration pour les générations actuelles et futures...
-
-""")
 
 for url in [
             'https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Multistability.svg/1488px-Multistability.svg.png',
