@@ -169,13 +169,8 @@ la Timone in Marseille, a joint unit from the CNRS and the AMU
 
 * (OBJECTIVE)
 
-Nous allons ici montrer comment les limites de la perception permettent et peuvent nous aider à mieux comprendre le fonctionnement du cerveau et de ses pathologies. En partant des illusions visuelles, nous allons ensuite explorer différentes hypothèses pour comprendre ses illusions, mais aussi pour aborder une neuro-anatomie fonctionnelle des hallucinations et illusions visuelles.
+Nous allons ici montrer comment les limites de la perception permettent et peuvent nous aider à mieux comprendre le fonctionnement du cerveau. En partant des illusions visuelles, nous allons ensuite explorer différentes hypothèses pour comprendre les illusions viseulles, mais aussi pour aborder une neuro-anatomie fonctionnelle afin de mieux comprendre les bases neurales des hallucinations  et des pathologies du cerveau;
 
-
-- Mieux comprendre les bases neurales des hallucinations;
-
-
-* Let's me first describe the motivation of this work...
 
 
 
@@ -549,7 +544,7 @@ s.add_slide(content=s.content_figures(
 
 
 s.add_slide(content=s.content_figures(
-    [path2('tsonga.png')], bgcolor="black",
+    [path2('tsonga.jpg')], bgcolor="black",
     height=s.meta['height']*height_ratio),
     notes="""
 C’est remarquablement rapide mais relativement long si l'on considère cette fois-ci une tâche simple d’interception d’un objet en mouvement. Considérons par exemple un agent qui suit une balle de tennis lancée à une vitesse de 20 m/s à une distance de 1 m devant son regard.
