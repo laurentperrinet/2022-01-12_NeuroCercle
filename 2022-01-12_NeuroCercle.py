@@ -707,13 +707,30 @@ Notons aussi que la position de la balle, dans cette représentation rétinienne
 
 
 fle_bib = s.content_bib("Khoei, Masson and LP", "2017", 'PLoS CB', url="http://invibe.net/LaurentPerrinet/Publications/KhoeiMassonPerrinet17")
+#
+# for i in [0, 1, 2, 3]:
+#     s.add_slide(content=f"""
+#      <video controls autoplay loop width=99%/>
+#        <source type="video/mp4" src="https://laurentperrinet.github.io/sciblog/files/2019-09-30_flash_lag_{i}.mp4">
+#      </video>
+#      """)
 
-for i in [0, 1, 2, 3]:
-    s.add_slide(content=f"""
-     <video controls autoplay loop width=99%/>
-       <source type="video/mp4" src="https://laurentperrinet.github.io/sciblog/files/2019-09-30_flash_lag_{i}.mp4">
-     </video>
-     """)
+
+s.add_slide(content=f"""
+ <video controls autoplay loop width=49%/>
+   <source type="video/mp4" src="https://laurentperrinet.github.io/sciblog/files/2019-09-30_flash_lag_0.mp4">
+ </video>
+  <video controls autoplay loop width=49%/>
+    <source type="video/mp4" src="https://laurentperrinet.github.io/sciblog/files/2019-09-30_flash_lag_2.mp4">
+  </video>
+  <BR>
+  <video controls autoplay loop width=49%/>
+   <source type="video/mp4" src="https://laurentperrinet.github.io/sciblog/files/2019-09-30_flash_lag_1.mp4">
+ </video>
+  <video controls autoplay loop width=49%/>
+    <source type="video/mp4" src="https://laurentperrinet.github.io/sciblog/files/2019-09-30_flash_lag_3.mp4">
+  </video>
+ """)
 
 s.add_slide(content=f"""
  <video controls autoplay loop width=49%/>
@@ -722,7 +739,16 @@ s.add_slide(content=f"""
   <video controls autoplay loop width=49%/>
     <source type="video/mp4" src="https://laurentperrinet.github.io/sciblog/files/2019-09-30_flash_lag_2.mp4">
   </video>
- """)
+ """,
+            notes="""
+
+En effet, l’illusion du flash retardé ("Flash Lag Effect" en anglais) permet de mettre en évidence des dynamiques de traitement dans le système visuel.
+
+Dans cette illusion, l’observateur doit fixer environ au centre de l’écran. Une cible en mouvement horizontal apparaît et quand elle passe aux environs du centre de l’écran, un bref flash est présenté immédiatement au-dessous du centre de l'image.
+
+Comme précédemment, je vais demander votre participation active. Je vais vous demander de regarder alternativement le film de gauche puis le film de droite. À vous de me dire dans lequel des deux films le point en mouvement apparaît le plus en adéquation avec la position à la verticale du point flashé, au moment ou celui-ci apparait. Ce n'est pas facile...
+
+""")
 
 figname = 'flash_lag.mp4'
 s.add_slide(content="""
@@ -732,14 +758,9 @@ s.add_slide(content="""
  """.format(path2(figname)) + fle_bib,
             notes="""
 
-En effet, l’illusion du flash retardé ("Flash Lag Effect" en anglais) permet de mettre en évidence des dynamiques de traitement dans le système visuel.
-
-Dans cette illusion, l’observateur doit fixer environ au centre de l’écran. Une cible en mouvement horizontal apparaît et quand elle passe aux environs du centre de l’écran, un bref flash est présenté immédiatement au-dessous du centre de l'image.
-
 Perceptivement, on observe chez une vaste majorité d’observateurs que la cible en mouvement est perçue, au moment du flash, *en avant* de la trajectoire. L’hypothèse originale de Romi Nijhawan propose que la cible est perceptivement représentée de telle façon à ce qu’elle occupe sa position au temps présent, donc de manière anticipée. Par contre, le flash est imprévu et sa position ne peut pas être anticipée.
 
 C’est ce que nous avons montré dans ce travail de modélisation qui montre une évaluation quantitative des production d’un tel modèle [@tag:KhoeiMassonPerrinet17].
-
 
 """)
 
