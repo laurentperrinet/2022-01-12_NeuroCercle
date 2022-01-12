@@ -187,7 +187,7 @@ Nous allons ici montrer comment les limites de la perception permettent et peuve
 s.add_slide(content=s.content_figures([figname_qr], cell_bgcolor=meta['bgcolor'], height=s.meta['height']*height_ratio**2) + '<BR><a href="{url}"> {url} </a>'.format(url=meta['url']), notes="All the material is available online - please flash this code this leads to a page with links to further references and code ")
 
 
-url = 'Hommage à Jeanny... <a href="https://laurentperrinet.github.io/publication/perrinet-03-these/">2003</a> <a href="https://laurentperrinet.github.io/publication/cristobal-perrinet-keil-15-bicv/">BICV</a> <a href="https://onlinelibrary.wiley.com/doi/pdf/10.1002/9783527680863.fmatter">préface</a>'
+url = 'Hommage à Jeanny... <a href="https://laurentperrinet.github.io/publication/perrinet-03-these/">2003</a> <a href="https://laurentperrinet.github.io/publication/cristobal-perrinet-keil-15-bicv/">BICV</a> <a href="http://bicv.github.io/toc/index.html">préface</a>'
 s.add_slide(content=s.content_figures(
     [
         # path2('jeanny_herault_1517732548875.jpg'),
