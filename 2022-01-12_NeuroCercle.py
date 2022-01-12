@@ -187,13 +187,13 @@ Nous allons ici montrer comment les limites de la perception permettent et peuve
 s.add_slide(content=s.content_figures([figname_qr], cell_bgcolor=meta['bgcolor'], height=s.meta['height']*height_ratio**2) + '<BR><a href="{url}"> {url} </a>'.format(url=meta['url']), notes="All the material is available online - please flash this code this leads to a page with links to further references and code ")
 
 
-url = 'Hommage à Jeanny... <a href="https://laurentperrinet.github.io/publication/perrinet-03-these/">2003</a> <a href="https://laurentperrinet.github.io/publication/cristobal-perrinet-keil-15-bicv/">BICV</a> <a href="http://bicv.github.io/toc/index.html">préface</a>'
+url = 'Hommage à Jeanny... depuis <a href="https://laurentperrinet.github.io/publication/perrinet-03-these/">2003</a>, par <a href="https://laurentperrinet.github.io/publication/cristobal-perrinet-keil-15-bicv/"></a> <a href="http://bicv.github.io/toc/index.html">préface de BICV</a>'
 s.add_slide(content=s.content_figures(
     [
         # path2('jeanny_herault_1517732548875.jpg'),
         'https://laurentperrinet.github.io/publication/perrinet-03-these/jury.jpg',
         'https://laurentperrinet.github.io/publication/cristobal-perrinet-keil-15-bicv/featured.jpg',
-    ], fragment=True,
+    ], fragment=False,
     title=None, height=s.meta['height']*height_ratio) + url,
     notes="""
 Tout d'abord je voudrais faire un hommage à Jeanny Herault qui nous a malheureusement quitté l'année dernière… Il a été à une importante influence au cours de ma thèse par son travail scientifique et a eu la gentillesse de participer au jury de ma thèse en 2003, ici en compagnie de Michel Imbert, de mon directeur de thèse Manuel Samuelides et de Simon Thorpe qui était mon codirecteur.
@@ -202,16 +202,69 @@ je le remercie pour son travail et aussi pour sa gentillesse et qu'il serve long
 """)
 
 url = '<a href https://en.wikipedia.org/wiki/Hering_illusion">Hering illusion</a>'
-for suff in ['', '_without']:
+for suff in ['_without', '']:
     s.add_slide(content=s.content_figures([path2('Hering_illusion' + suff + '.svg')],
                                           title=None,  # 'Classical visual illusions',
                                           height=s.meta['height']*height_ratio) + url,
                 notes="""
-L’étymologie du mot illusion réfère à la tromperie et nous permet de définir les illusions visuelles comme une stimulation visuelle qui induit une perception décalée par rapport à la réalité physique (le stimulus proximal). Dans l’illusion classique dit de Hering par exemple (voir Figure @fig:hering), deux lignes parallèles placés sur un faisceau de lignes convergente semble courbées comme si le centre de l’image avait gonflé par rapport à sa périphérie. Cette illusion est robuste même si l’on prend une règle pour vérifier physiquement le parallélisme des lignes (ou simplement en enlevant les lignes fuyante): Il n’est pas possible de ne **pas** la percevoir. Ainsi, pour cette illusion comme pour une grande variété d’autres illusions visuelles statique ou dynamique ou sur d’autres modalités (comme le toucher), les illusions visuelles marquent tout d’abord par ce caractère quasi universel et intuitif, c’est-à-dire sans qu’il faille expliquer un mode d’emploi pour les illusions.
-
-
+L’étymologie du mot illusion réfère à la tromperie et nous permet de définir les illusions visuelles comme une stimulation visuelle qui induit une perception décalée par rapport à la réalité physique (le stimulus proximal). Dans l’illusion classique dit de Hering par exemple (voir Figure @fig:hering), deux lignes parallèles, quand elles sont placées sur un faisceau de lignes convergentes, semblent courbées comme si le centre de l’image avait gonflé par rapport à sa périphérie. Cette illusion est robuste même si l’on prend une règle pour vérifier physiquement le parallélisme des lignes (ou simplement en enlevant les lignes fuyantes): Il n’est pas possible de ne **pas** la percevoir. Ainsi, pour cette illusion comme pour une grande variété d’autres illusions visuelles statique ou dynamique ou sur d’autres modalités (comme le toucher), les illusions visuelles marquent tout d’abord par ce caractère quasi universel et intuitif, c’est-à-dire sans qu’il faille expliquer un mode d’emploi pour les illusions.
 """)
 
+
+for url in [
+            'https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Multistability.svg/1488px-Multistability.svg.png',
+            path2('Convex-Or-Concave-Optical-Illusion-Picture.jpg'),
+            'https://www.askideas.com/media/36/Convex-Or-Concave-Optical-Illusion-Picture.jpg',
+            ]:
+    s.add_slide(content=s.content_figures([url],  # fragment=True,
+                                          title=None, fragment=True, height=s.meta['height']*height_ratio),
+                notes="""
+Il existe une large classe d'illusions visuelles et je vais vous montrer tout d'abord de très classique qui montre le phénomène de bistabilités :
+*  tout d'abord dans le cube dit de Necker dans lequel vous voyez un ensemble de lignes qui forment une figure que vous pourrez interpréter sûrement de façon tridimensionnelle : le dessin correspond à un cube dont les arètes sont dessinées sur une perspective isométrique.
+* Si vous vous concentrer sur une face tour sur l'autre de ce cube et que dans votre imagination vous la mettez en avant ou en arrière alors vous avez un phénomène bis table qui permet de passer d'une configuration du cube à une autre qui est également aussi probable. Il existe en fait une infinité de configuration qui correspondent à la projection de figures tridimensionnelle sur ce plan mais c'est celle-ci que nous imaginons de préférence car elles sont les plus simples - c'est une manifeststation du rasoir d'ockham...
+* dans le vase dit de Rubin on a aussi une  phénomène bistable qui correspond à soit voir deux visages qui se font face soit un vase soit la silhouette d'un vase
+* Ses illusions peuvent aussi apparaître dans la vraie vie et quand on regarde cette image d'un élément architectural on peut imaginer que les lignes convergent vers une convexité (en bosse), Mais aussi qu'elle convergent sur une concavité (en creux comme un bol) - Notez qu'avec un peu d'entraînement on a pas besoin de retourner l'image pour passer de l'un à l'autre. (ref https://thewordcounter.com/concave-vs-convex/)
+* Noter aussi qu'ici on va avoir un billet pour une solution ou une autre notamment par rapport au cube dit de Necker. C'est dû au fait que dans ces images naturelles, le contexte joue un rôle et que comme nous avons l'habitude de voir le soleil dans le ciel et donc que la lumièrQue la lumière éclaire les objets du bas du haut vers le bas, alors d'après les ombres sur cette image nous pouvons en déduire sa concavité et sac House à convexité en fonction des autres indices dans l'image (ici que l'on regarde un mur).
+    """)
+
+
+for url in ['https://upload.wikimedia.org/wikipedia/commons/6/63/Reification.jpg',  # ou https://www.askideas.com/media/36/Hidden-Picture-Optical-Illusion.jpg
+            'https://upload.wikimedia.org/wikipedia/commons/2/22/Gestalt_proximity.svg',
+            'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Gestalt_similarity.svg/600px-Gestalt_similarity.svg.png',
+            ]:
+    s.add_slide(content=s.content_figures([url],  # fragment=True,
+                                          title=None, height=s.meta['height']*height_ratio),
+                notes="""
+
+Ces simples illustrations montrent que la vision, et le cerveau en général, effectue des opérations qui sont largement inconsciente. l'ensemble de ces processus participent à la "déraisonnable efficacité de la vision dans le monde naturel" (pour reprendre les mots d'Eugene Wigner). Le mouvement de la Gestalt a essayé de établir une typologie des différents mécanismes qui régissent cette ORGANISATION PERCEPTIVE :
+
+> reification
+> proximité
+> similarité
+
+    """)
+
+
+for url in ['https://sensiseeds.com/nl/blog/files/2013/03/Mysterious-Dalmatian-Optical-Illusion.jpg',
+            ]:
+    s.add_slide(content=s.content_figures([url],  # fragment=True,
+                                          title=None, height=s.meta['height']*height_ratio),
+                notes="""
+Mais au-delà d'être un outil qui nous permet de remettre en question notre connaissance de la perception visuelle et de l'intelligence naturelle en général, les illusions ne servent aussi à dépasser les frontières de ce que l'on sait il y en a toujours des nouvelles qui apparaissent comme par exemple :
+
+> Cette image qui semble montrer des taches noires aléatoire sur un fond blanc forment un objet familier si on y prête attention. Je préfère préfère ne pas vous le dire si vous n'avez jamais vu cette image car il suffit de donner le nom de l'objet qui y est caché pour le voir immédiatement et une fois qu'on l'a vu une fois une seule fois on ne pourra plus ne plus le voir pour le restant de sa vie… Alors prière de ne pas divul-gâcher ce plaisir :-)
+
+> illusion taille https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/M%C3%BCller-Lyer_illusion.svg/1200px-M%C3%BCller-Lyer_illusion.svg.png
+(> Contraste de luminosité ?)
+
+
+    """)
+
+s.add_slide(content="""
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">オープンキャンパスの定番。早く再開したい。 <a href="https://t.co/HWZtXNhvJX">pic.twitter.com/HWZtXNhvJX</a></p>&mdash; Akiyoshi Kitaoka (@AkiyoshiKitaoka) <a href="https://twitter.com/AkiyoshiKitaoka/status/1480179794130370560?ref_src=twsrc%5Etfw">January 9, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+""", notes="""
+twwet
+""")
 
 url = '<a href https://en.wikipedia.org/wiki/The_dress">#TheDress</a>: #whiteandgold or #blackandblue ?'
 s.add_slide(content=s.content_figures(
@@ -232,39 +285,6 @@ Two ways in which the photograph of The dress may be perceived:
 """)
 
 
-
-for url in [
-            'https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Multistability.svg/1488px-Multistability.svg.png',
-            path2('Convex-Or-Concave-Optical-Illusion-Picture.jpg'),
-            'https://www.askideas.com/media/36/Convex-Or-Concave-Optical-Illusion-Picture.jpg',
-            ]:
-    s.add_slide(content=s.content_figures([url],  # fragment=True,
-                                          title=None, height=s.meta['height']*height_ratio),
-                notes="""
-
-        -> necker /   canard / lapin
-
-        -> concave convexe
-
-    """)
-
-
-for url in ['https://upload.wikimedia.org/wikipedia/commons/6/63/Reification.jpg',  # ou https://www.askideas.com/media/36/Hidden-Picture-Optical-Illusion.jpg
-            'https://upload.wikimedia.org/wikipedia/commons/2/22/Gestalt_proximity.svg',
-            'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Gestalt_similarity.svg/600px-Gestalt_similarity.svg.png',
-            ]:
-    s.add_slide(content=s.content_figures([url],  # fragment=True,
-                                          title=None, height=s.meta['height']*height_ratio),
-                notes="""
-
-ORGANISATION PERCEPTIVE / GESTALT
-
-> reification
-> proximité
-> similarité
-
-    """)
-
 bib = s.content_bib("Cydonia Mensae", "1976", 'Viking Orbiter image', url="Viking Orbiter image")
 s.add_slide(content=s.content_figures(
         [path2(fname) for fname in ['Face-on-mars.jpg', 'Viking_moc_face_20m_low.png', 'Viking_moc_face_20m_high.png']], fragment=True,
@@ -275,19 +295,6 @@ Pour aller plus loin, il est intéressant de considérer cette image prise en 19
 Pour résumer, les illusions visuelles, en plus de leur côté ludique, nous révèlent des caractéristiques essentielles de notre perception visuelle tant sur leurs caractéristiques universelles que sur les variabilités inter et intra individuelles. Malgré la diversité des formes des illusions visuelles et la diversité des explications qu’on peut leur faire correspondre, existe-t-il des points communs qui permettraient d’en avoir une compréhension unifiée ? Quelles pourraient être les liens profonds entre illusions visuelles avec des hallucinations aussi bien chez les sujets neuro-typique que dans des pathologies psychologiques?
     """)
 
-for url in ['https://sensiseeds.com/nl/blog/files/2013/03/Mysterious-Dalmatian-Optical-Illusion.jpg',
-            ]:
-    s.add_slide(content=s.content_figures([url],  # fragment=True,
-                                          title=None, height=s.meta['height']*height_ratio),
-                notes="""
-
-> dalmatien
-
-> illusion taille https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/M%C3%BCller-Lyer_illusion.svg/1200px-M%C3%BCller-Lyer_illusion.svg.png
-(> Contraste de luminosité ?)
-
-
-    """)
 
 s.close_section()
 
