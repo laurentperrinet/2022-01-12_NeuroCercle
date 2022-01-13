@@ -109,7 +109,7 @@ s.meta['Acknowledgements'] = ''
 # <ul>
 #     <li>Rick Adams and Karl Friston @ UCL - Wellcome Trust Centre for Neuroimaging</li>
 #     <li>Anna Montagnini  - INT</li>
-#     <li>Frédéric Chavane - INT</li>
+#     <li>Frédéric Chavane - INT</li> 
 # </ul>
 # <BR>
 # {Rick}{Karl}{Anna}{Fredo}
