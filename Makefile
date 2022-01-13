@@ -10,7 +10,7 @@ html:
 
 page:
 	python3 $(SRC).py
-	cat /tmp/talk.bib |pbcopy
+	cat cite.bib |pbcopy
 	atom ~/quantic/blog/perrinet_curriculum-vitae_tex/LaurentPerrinet_Presentations.bib
 	# academic ...
 
