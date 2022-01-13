@@ -791,6 +791,20 @@ Ceci induits que l'on a un mouvement en avant et donc que notre regard va passer
 
 La compensation pour le retard qui va être d'autant plus fort que les lignes sont proches,  c'est à dire dans l'axe vertical. on explique ainsi quantitativement cette illusion...
 
+
+
+-----
+
+
+https://fr.wikipedia.org/wiki/Mark_Changizi Percevoir le présent
+
+Changizi propose d'expliquer les illusions visuelles avec le décalage entre le moment où la lumière frappe la rétine et celui où le cerveau traduit le signal en une perception visuelle du monde. Ce délai met environ un dixième de seconde.
+
+Changizi affirme que le système visuel humain a évolué pour compenser les retards de neurones en générant des images de ce qui se produira un dixième de seconde dans l'avenir. Cette clairvoyance permet aux humains de réagir à des événements au moment présent, d'accomplir des actes réfléchis comme attraper un ballon et de manœuvrer en douceur à travers une foule1.
+
+
+https://www.ted.com/talks/markchangiziwhydoweseeillusions
+
 """)
 #
 # freemove_bib = ''
