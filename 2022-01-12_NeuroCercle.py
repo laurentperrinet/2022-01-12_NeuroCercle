@@ -109,7 +109,7 @@ s.meta['Acknowledgements'] = ''
 # <ul>
 #     <li>Rick Adams and Karl Friston @ UCL - Wellcome Trust Centre for Neuroimaging</li>
 #     <li>Anna Montagnini  - INT</li>
-#     <li>Frédéric Chavane - INT</li> 
+#     <li>Frédéric Chavane - INT</li>
 # </ul>
 # <BR>
 # {Rick}{Karl}{Anna}{Fredo}
@@ -404,7 +404,7 @@ s.add_slide(content=s.content_figures(
         [path2(fname) for fname in ['Face-on-mars.jpg', 'Viking_moc_face_20m_low.png', 'Viking_moc_face_20m_high.png']], fragment=True,
             title="<a href=https://fr.wikipedia.org/wiki/Par%C3%A9idolie>Paréidolie</a>", height=s.meta['height']*.5) + bib,
     notes="""
- 1. Tout d'abord, il est intéressant de considérer cette image prise en 1971 par la sonde Viking. elle représente une partie de la surface de la planète Mars. L’image est relativement floue, et les points noirs sont des erreurs de mesure (missing pixels). on distingue très clairement un visage de type humain comme une sculpture géante laissée là par une civilisation extraterrestre.
+ 1. Tout d'abord, il est intéressant de considérer cette image prise en 1976 par la sonde Viking. elle représente une partie de la surface de la planète Mars. L’image est relativement floue, et les points noirs sont des erreurs de mesure (missing pixels). on distingue très clairement un visage de type humain comme une sculpture géante laissée là par une civilisation extraterrestre.
 
  2. Quelques 20 ans plus tard, de nouvelles images ont été réalisés par de nouvelles sondes spatiales et montrent aussi une forme de visage. Mais une fois la résolution de l’image affinée,
 
